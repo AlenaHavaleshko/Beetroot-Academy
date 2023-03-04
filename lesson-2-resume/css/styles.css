@@ -1,0 +1,108 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E5E5E5;
+    padding: 40px 40px 40px 40px;
+}
+
+.wrapper {
+display: flex;
+flex-direction: row-reverse;  
+background: white;
+width: 1200px;
+margin: 0 auto;
+}
+
+/* Main content */
+
+.main-content {
+    padding-top: 88px;
+    padding-bottom: 88px;
+    padding-left: 88px;
+    padding-right: 88px;    
+}
+
+/* About me */
+
+.my-profession {
+    margin-bottom: 180px;
+}
+
+h2 {
+    font-size: 35px;  
+}
+
+.project-item {
+    background-color: yellow;
+}
+
+/* Sidebar */
+
+.sidebar {
+    width: 370px;
+    background: #E0EBFE;
+}
+
+.my-photo{
+    margin-top: 40px;
+}
+
+.contacts-container,
+.tech-skills-container,
+.soft-skills-container {
+    margin: 48px 0 0 40px;
+}
+
+.sidebar-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #161D2A;
+    margin-bottom: 8px;
+}
+
+/* contacts*/
+.contacts-type{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #161D2A;
+    margin-right: 8px;
+}
+
+.contats-item{
+    margin: 0;    
+}
+
+.contacts-number{
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #161D2A;
+
+}
+
+.contacts-emale{
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #2979FF;
+}
+/* Skills */
+.skills-list {
+    margin: 0;
+    padding: 0 0 0 12px;
+}
+.skills-list-item{
+    color: #6d9bf5;
+}
+.skills-list-text{
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    Line-height: 24px;
+    color: #161D2A
+}
