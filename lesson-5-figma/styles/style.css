@@ -1,0 +1,252 @@
+/*header*/
+.links a {
+  list-style-type: none;
+  color: #828282;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.navbar-menu {
+  fill: Solid;
+  color: #828282;
+  font-family: 'Open Sans', sans-serif;
+  font-style: regular;
+  font-size: 18px;
+  line-height: 24.51px;
+  vertical-align: top;
+  letter-spacing: 2%;
+}
+
+.links li {
+  display: inline-block;
+  fill: Solid;
+  color: #828282;
+  font-family: 'Open Sans', sans-serif;
+  font-style: regular;
+  font-size: 18px;
+  line-height: 24.51px;
+  vertical-align: top;
+  letter-spacing: 2%;
+  padding: 0 20px;
+}
+
+/*line*/
+.top-line {
+  width: 945px;
+  height: 0px;
+  color: #828282;
+}
+
+
+/* Main content*/
+
+.main-content {
+  background: #ffffff;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main-content-base-block-title {
+  font-family: 'Open Sans', sans-serif;
+  font-style: bold;
+  font-size: 48px;
+  line-height: 65.37px;
+  text-align: left;
+  color: #070707;
+}
+
+/* About me*/
+.about {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: #070707;
+  background-color: #F6F6F6;
+}
+
+.about-me {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about-me-section {
+  vertical-align: top;
+  font-size: 34px;
+  line-height: 25px;
+  font-style: Bold;
+  font-size: 34px;
+  line-height: 46.3px;
+  margin: 0;
+}
+
+.about-me-section-item {
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+
+/* Skills block */
+.skills {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-style: Bold;
+  font-size: 34px;
+  line-height: 46.3px;
+  color: #070707;
+}
+
+.skills-header {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.skills-header-title {
+  font-family: 'Open Sans', sans-serif;
+  font-style: Bold;
+  font-size: 34px;
+  line-height: 46.3px;
+  line-height: 100%;
+  vertical-align: Top;
+  fill: Solid;
+  color: #070707;
+}
+
+.skills-header-sub-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 24.51px;
+  color: #070707;
+  text-align: center;
+  vertical-align: top;
+}
+
+.skills-header-list {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 97px;
+}
+
+.skills-header-list-item-header {
+  font-family: 'Open Sans';
+  font-style: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #828282;
+  text-align: center;
+  vertical-align: top;
+  letter-spacing: 2%;
+  display: inline;
+}
+
+.skills-header-list-item-header-text {
+  margin-top: 25px;
+}
+
+.main-content_base-block {
+  text-align: center;
+  display: inline-block;
+}
+
+/*Portfolio*/
+
+.portfolio {
+  background-color: #F6F6F6;
+}
+
+
+.main-content_base-block-title {
+  font-family: 'Open Sans', sans-serif;
+  font-style: bold;
+  font-size: 34px;
+  line-height: 46.3px;
+  line-height: 100%;
+  text-align: center;
+  vertical-align: top;
+  color: black;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+.main-content_base-block-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 24.51px;
+  text-align: center;
+  vertical-align: top;
+  color: #070707;
+  text-decoration-line: underline;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
+/*Footer*/
+.contacts {
+  font-family: 'Open Sans', sans-serif;
+  color: #070707;
+  text-align: center;
+}
+
+.contacts-footer-item {
+  font-style: bold;
+  font-size: 34px;
+  line-height: 46.3px;
+  margin-bottom: 5px;
+}
+
+.contacts-footer-item-text {
+  font-size: 18px;
+  line-height: 24.51px;
+  margin-bottom: 40px;
+}
+
+.contacts-footer-item-button {
+  background: #070707;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 16px;
+  width: 190px;
+  height: 44px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 30px;
+
+}
+
+.message {
+
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+
+}
+
+.contacts-footer-item-text-social {
+  font-size: 14px;
+  line-height: 19.07px;
+  color: #828282;
+}
+
+.footer {
+  text-align: center;
+  justify-content: center;
+  flex: none;
+}
