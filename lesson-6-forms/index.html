@@ -1,0 +1,65 @@
+git<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="./style/normolize.css" rel="stylesheet">
+ <link href="./style/style.css" rel="stylesheet">
+ <title>Document</title>
+</head>
+<body>
+  <section>
+    <h3>Select goods</h3>
+    <form action="#" method="get">
+      <div class="omg-chose-goods-section">
+        <div>
+            <input type="checkbox" id="check1"><label for="check1">blanket</label><Br>
+            <input type="checkbox" id="check2"><label for="check2">pillow</label><Br>
+            <input type="checkbox" id="check3"><label for="check3">towel</label><Br>
+            <input type="checkbox" id="check4"><label for="check4">sofa</label><Br>
+            <input type="checkbox" id="check5"><label for="check5">chair</label><Br>
+            <input type="checkbox" id="check6"><label for="check6">pot</label><Br>
+        </div>
+        
+        <div>
+          <label for="goods">Types of goods</label>
+          <input
+            id="goods"
+            type="text"
+            name="name"
+            placeholder="Type of goods"
+            class="omg-chose-goods-input"
+            required>
+          <select name="goods" class="omg-chose-goods-input">
+            <option required disabled="disabled" selected="selected">Types of goods</option>
+            <option value="1">blanket</option>
+            <option value="2">pillow</option>
+            <option value="3">towel</option>
+            <option value="4">sofa</option>
+            <option value="5">chair</option>
+            <option value="5">pot</option>
+          </select>
+          <select name="quantity-of-goods" class="omg-quantity-goods-input">
+            <option required disabled="disabled" selected="selected">Quantity of goods</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="5">6</option>
+          </select>
+        </div>
+        <div class="omg-form-button">
+          <button type="reset" class="omg-form-button-btn">
+            Reset
+          </button>
+          <button type="submit" class="omg-form-button-btn">
+            Submit
+          </button>
+        </div>
+      </div>
+    </form>
+  </section>
+</body>
+</html>
