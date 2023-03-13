@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/normolize.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <form action="action_page.php">
+        <h1>Зареєструватися</h1>
+        <p>Будь ласка, заповніть цю форму, щоб створити обліковий запис.</p>
+        <hr>
+        <div class="row">
+          <label class="label-item" for="name"><b>Повне ім'я</b></label>
+          <input type="text" placeholder="Введіть ПІБ" id="name" name="name" required>
+        </div>
+        <div class="row">
+          <label class="label-item" for="email"><b>Email</b></label>
+          <input type="text" placeholder="Введіть Email" id="email" name="email" required>
+        </div>
+        <div class="row">
+          <label class="label-item" for="psw"><b>Пароль</b></label>
+          <input type="password" placeholder="Пароль" id="psw" name="psw" required>
+        </div>
+        <div class="row">
+          <label class="label-item" for="psw-repeat"><b>Повторити пароль</b></label>
+          <input type="password" placeholder="Повторити пароль" id="psw-repeat" name="psw-repeat" required>
+        </div>
+        <div class="row">
+          <label class="label-item" for="gender-man"><b>Ваша стать</b></label>
+          <input type="radio" id="gender-man" name="gender" value="чоловіча">
+          <label class="width-auto" for="gender-man">чоловіча</label>
+          <input type="radio" id="gender-woman" name="gender" value="жіноча">
+          <label class="width-auto" for="gender-woman">жіноча</label>
+        </div>
+        <div class="row">
+          <label class="label-item" for="age"><b>Вік</b></label>
+          <input type="text" placeholder="вік" id="age" name="вік" required>
+        </div>
+        <div class="row">
+          <label class="label-item" for="courses"><b>Курс</b></label>
+          <select name="courses" class="courses-types" id="courses">
+            <option required disabled="disabled" selected="selected">Обери свій курс</option>
+            <option value="1">Front-End</option>
+            <option value="2">Fullstack</option>
+            <option value="3">QA Manual</option>
+            <option value="4">Automation QA</option>
+            <option value="5">Business Analyst</option>
+            <option value="5">Project Manager</option>
+          </select>
+        </div>
+        <div class="row">
+          <label class="label-item" for="address"><b>Повна адреса</b></label>
+          <textarea name="address" id="address" rows="10" cols="28">
+          Країна, регіон, місто/селище,вулиця
+        </textarea>
+        </div>
+        <div class="row">
+          <input type="checkbox" id="check"><label for="check"></label>
+          <label class="width-auto" for="check"><b>Я погоджуюсь з обробкою персональних даних</b></label>
+        </div>
+        <div class="form-button">
+          <button type="reset" class="form-button-reset">
+            Очистити форму
+          </button>
+          <button type="submit" class="form-button-submit">
+            Заеєструватися
+          </button>
+        </div>
+      </form>
+      <hr>
+      <div class="sep">
+        <span class="or">OR</span>
+      </div>
+      <nav class="connect">
+        <ul class="connect-social-button">
+          <li class="connect-social-button-facebook"><a href="#">Facebook</a></li>
+          <li class="connect-social-button-twitter"><a href="#">Twitter</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+</body>
+
+</html>
