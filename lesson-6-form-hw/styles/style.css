@@ -1,0 +1,63 @@
+.row {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 450px;
+  height: 800px;
+  display: inline-block;
+  background-color: #f1f1f1;
+  border: double;
+}
+
+.label-item {
+  display: inline-block;
+  width: 170px;
+  line-height: 30px;
+  display: blocks;
+} 
+
+input[type=text],
+input[type=password] {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+  padding: 5px;
+  font-size: 0.9em;
+  background: rgba(0, 0, 0, 0.07);
+}
+
+.form-button {
+  font-size: 1em;
+  border-radius: 50px;
+  padding: 10px;
+  text-align: center;
+
+}
+.sep {
+  text-align: center;
+}
+
+.connect {
+  text-align: center;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: large;
+  display: inline-block;
+}
+.connect-social-button li {
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: underline;
+  display: inline-block;
+}
+
+.connect-social-button-facebook {
+  padding: 0 70px;
+}
