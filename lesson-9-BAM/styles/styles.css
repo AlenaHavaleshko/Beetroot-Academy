@@ -4,13 +4,11 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 60px;
-  Width: 1088px;
+  width: 1088px;
   Height: 46px;
-  Top:1px;
   margin-left: auto;
   margin-right: auto;
 }
-.header__logo {}
 
 .header__navigation {
   font-family: 'Montserrat', sans-serif;
@@ -23,6 +21,7 @@
   padding-left: 142px;
   padding-right: 142px;
 }
+
 .header__navigation-list {
   display: flex;
   align-items: center;
@@ -43,6 +42,7 @@
   justify-content: space-between;
   padding: 10px 1px;
 }
+
 .header__button {
   display: flex;
   font-family: 'Montserrat', sans-serif;
@@ -51,6 +51,7 @@
   font-size: 16px;
   line-height: 20px;
 }
+
 .header__button-sign-in {
   margin-right: 32px;
   padding: 13px 25px;
@@ -59,9 +60,8 @@
   border-width: 1px;
   width: 110px;
   height: 46px;
-  left: 978px;
-  top: 0px;
   }
+
   .header__button-sign-up {
   color: #FFFFFF;
   padding: 13px 23px;
@@ -71,20 +71,23 @@
   border-width: 1px;
   width: 110px;
   height: 46px;
-  left: 978px;
-  top: 0px;
 }
+
 .header__button:hover:before {
   color: #FF9900;
 }
+
 a {
   text-decoration: none;
   color: #2F281E;
 }
+
 a:hover {
   color: #FF9900;
 }
+
 /* Main content*/
+
 .content {
   display: flex;
   flex-direction: row;
@@ -101,8 +104,6 @@ a:hover {
 .content__main-item {
   width: 500px;
   height: 110px;
-  left: 0px;
-  top: 97px;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -112,8 +113,7 @@ a:hover {
 }
 
 .content__main-discription {
-  width: 500px;
-  height: 91px;
+  
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -185,7 +185,6 @@ a:hover {
   line-height: 44px;
   text-align: center;
   color: #2F281E;
-  margin: 50px 0 31px 0; 
   width: 539px;
   margin: 0 auto;
 }
@@ -207,8 +206,6 @@ a:hover {
   line-height: 26px;
   color: #544837;
   width: 270px;
-  height: 52px;
-  top: 123px;
 }
 
 .content2__item-button {
@@ -249,10 +246,6 @@ a:hover {
   margin-top: 15px;
 }
 
-.footer__navigation {
-
-}
-
 .footer__navigation-list {
   list-style-type:none;
   font-family: 'Montserrat', sans-serif;
@@ -273,6 +266,7 @@ a:hover {
   color: #544837;
   margin-bottom: 30px;
 }
+
 .row {
   margin-bottom: 25px;
   box-sizing: initial;
@@ -299,8 +293,5 @@ a:hover {
   margin-top: 0px;
 }
 
-.footer__item-button {
 
-
-}
 
