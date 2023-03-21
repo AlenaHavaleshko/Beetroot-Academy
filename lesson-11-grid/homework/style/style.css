@@ -1,0 +1,398 @@
+/* First part*/
+
+.main-text-content {
+ max-width: 1170px;
+ margin: 0 auto;
+}
+
+.section {
+ display: flex;
+ flex-direction: column;
+}
+
+.section h2 {
+ font-family: 'Delius Unicase', cursive;
+ font-style: normal;
+ font-weight: 400;
+ font-size: 36px;
+ line-height: 45px;
+ text-align: center;
+ letter-spacing: 0.05em;
+ color: #000000;
+}
+
+.grid-container {
+ display: grid;
+ /* приклад: grid-template-columns: repet(3 1fr);*/
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-gap: 30px;
+ grid-auto-rows: 370px;
+}
+
+.grid-container-item1 {
+ border-radius: 20px;
+ width: 100%;
+ height: 100%;
+ display: inline-block;
+ position: relative;
+ display: flex;
+ align-items: flex-end;
+ justify-content: space-between;
+ grid-gap: 8px;
+}
+
+/*Роблю кртинку бекграундом із градієнтом*/
+
+.background-red-tower {
+ background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url("../img/J-Melgoza.jpg");
+}
+
+.background-road {
+ background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url("../img/road.jpg");
+}
+
+.background-house {
+ /* url в конце - и заработал градиент)*/
+ background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url("../img/house.jpg");
+}
+
+.background-castle {
+ background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url("../img/castle.jpg");
+}
+
+.background-lights {
+ background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url("../img/lights.jpg");
+}
+
+.background-bridge {
+ background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url("../img/bridge.jpg");
+}
+
+/* Робимо ховер на background gradient */
+
+.background-red-tower:hover {
+ background: url("../img/J-Melgoza.jpg");
+}
+
+.background-road:hover {
+ background: url("../img/road.jpg");
+}
+
+.background-house:hover {
+ background: url("../img/house.jpg");
+}
+
+.background-castle:hover {
+ background: url("../img/castle.jpg");
+}
+
+.background-lights:hover {
+ background: url("../img/lights.jpg");
+}
+
+.background-bridge:hover {
+ background: url("../img/bridge.jpg");
+}
+
+.grid-container-item1:nth-child(2) {
+ grid-column-start: 2;
+ grid-column-end: 4;
+}
+
+.grid-container-item1:nth-child(3) {
+ grid-column-start: 1;
+ grid-column-end: 3;
+}
+
+.grid-container-item1:nth-child(6) {
+ grid-column-start: 2;
+ grid-column-end: 4;
+}
+/*
+.grid-container-merge3 {
+ grid-column-start: 1;
+ grid-column-end: 3;
+}
+*/
+img {
+ object-fit: cover;
+ height: 100%;
+ width: 100%;
+}
+
+.grid-container-item-img {
+ border-radius: 20px;
+}
+
+.grid-container-item-text {
+ font-family: 'Roboto', sans-serif;
+ font-style: normal;
+ font-size: 19px;
+ line-height: 23px;
+}
+
+.grid-container-item-text-left {
+ text-align: left;
+ font-weight: 500;
+ color: #FFFFFF;
+ padding: 20px;
+}
+
+.grid-container-item-text-right {
+ text-align: right;
+ font-weight: 400;
+ color: #E0E0E0;
+ padding: 20px;
+}
+
+.grid-container-item1-heart {
+ position: absolute;
+ top: 0;
+ left: 0;
+ margin-top: 20px;
+ margin-left: 20px;
+ cursor: pointer;
+}
+
+.grid-container-item1-download {
+ position: absolute;
+ top: 0;
+ right: 0;
+ margin-top: 20px;
+ margin-right: 20px;
+ cursor: pointer;
+}
+
+.grid-container-item1-heart-img {
+ border-radius: 8px;
+}
+
+.icon {
+ border-radius: 8px;
+ opacity: 50%;
+}
+
+.icon:hover {
+ background: linear-gradient(270deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%);
+border-radius: 20px;
+opacity: 100%;
+}
+
+/* Second part*/
+
+.photography-header {
+ margin: 120px 0 80px 0;
+}
+
+.grid-container-item2 {
+ border-radius: 20px;
+ width: 100%;
+ height: 100%;
+ display: inline-block;
+ position: relative;
+ display: flex;
+ align-items: flex-end;
+ justify-content: space-between;
+ grid-gap: 8px;
+}
+
+.grid-container-item2:nth-child(2) {
+ grid-column-start: 2;
+ grid-column-end: 4;
+}
+
+.grid-container-item2:nth-child(3) {
+ grid-column-start: 1;
+ grid-column-end: 3;
+ grid-row-start: 2;
+ grid-row-end: 4;
+}
+
+.grid-container-item2:nth-child(4) {
+ grid-column-start: 3;
+ grid-column-end: 4;
+ grid-row-start: 2;
+ grid-row-end: 4;
+}
+
+.grid-container-item2:nth-child(5) {
+ grid-column-start: 1;
+ grid-column-end: 3;
+}
+
+.background-watherfall {
+ background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url("../img/watherfall.jpg");
+}
+
+.background-sea {
+ background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url("../img/sea.jpg");
+}
+
+.background-mountains {
+ background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url("../img/mountains.jpg");
+}
+
+.background-island {
+ background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url("../img/island.jpg");
+}
+
+.background-lavander {
+ background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url("../img/lavander.jpg");
+}
+
+.background-tree {
+ background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url("../img/tree.jpg");
+}
+
+.background-watherfall:hover {
+ background: url("../img/watherfall.jpg");
+}
+
+.background-sea:hover {
+ background: url("../img/sea.jpg");
+}
+
+.background-mountains:hover {
+ background: url("../img/mountains.jpg");
+}
+
+.background-island:hover {
+ background: url("../img/island.jpg");
+}
+
+.background-lavander:hover {
+ background: url("../img/lavander.jpg");
+}
+
+.background-tree:hover {
+ background: url("../img/tree.jpg");
+}
+
+
+/* Third part*/
+
+.grid-container-item3 {
+ border-radius: 20px;
+ width: 100%;
+ height: 100%;
+ display: inline-block;
+ position: relative;
+ display: flex;
+ align-items: flex-end;
+ justify-content: space-between;
+ grid-gap: 8px;
+}
+
+.grid-container-item3:nth-child(2) {
+ grid-column-start: 2;
+ grid-column-end: 3;
+ grid-row-start: 1;
+ grid-row-end: 3;
+}
+
+.grid-container-item3:nth-child(5) {
+ grid-column-start: 3;
+ grid-column-end: 4;
+ grid-row-start: 2;
+ grid-row-end: 4;
+}
+
+.grid-container-item3:nth-child(6) {
+ grid-column-start: 1;
+ grid-column-end: 2;
+ grid-row-start: 3;
+ grid-row-end: 5;
+}
+
+.grid-container-item3:nth-child(8) {
+ grid-column-start: 2;
+ grid-column-end: 4;
+ grid-row-start: 4;
+ grid-row-end: 5;
+}
+
+.grid-container-item3:nth-child(9) {
+ grid-column-start: 1;
+ grid-column-end: 3;
+ grid-row-start: 5;
+ grid-row-end: 6;
+}
+
+.background-black-dress {
+ background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url("../img/black-dress.jpg");
+}
+
+.background-yellow-suit {
+ background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url("../img/yellow-suit.jpg");
+}
+
+.background-man-long-hair {
+ background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url("../img/man-long-hair.jpg");
+}
+
+.background-curly-girl {
+ background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url("../img/curly-girl.jpg");
+}
+
+.background-oranges {
+ background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url("../img/oranges.jpg");
+}
+
+.background-hats {
+ background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url("../img/hats.jpg");
+}
+.background-man-in-glass {
+ background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url("../img/man-in-glass.jpg");
+}
+
+.background-friends {
+ background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url("../img/friends.jpg");
+}
+
+.background-guy-dred {
+ background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url("../img/guy-dred.jpg");
+}
+
+.background-lover {
+ background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url("../img/lover.jpg");
+}
+
+.background-black-dress:hover {
+ background: url("../img/black-dress.jpg");
+}
+
+.background-yellow-suit:hover {
+ background: url("../img/yellow-suit.jpg");
+}
+
+.background-man-long-hair:hover {
+ background: url("../img/man-long-hair.jpg");
+}
+
+.background-curly-girl:hover {
+ background: url("../img/curly-girl.jpg");
+}
+
+.background-oranges:hover {
+ background: url("../img/oranges.jpg");
+}
+
+.background-hats:hover {
+ background: url("../img/hats.jpg");
+}
+
+.background-man-in-glass:hover {
+ background: url("../img/man-in-glass.jpg");
+}
+
+.background-friends:hover {
+ background: url("../img/friends.jpg");
+}
+
+.background-guy-dred:hover {
+ background:  url("../img/guy-dred.jpg");
+}
+
+.background-lover:hover {
+ background: url("../img/lover.jpg");
+}
