@@ -41,7 +41,7 @@
  grid-gap: 8px;
 }
 
-/*Роблю кртинку бекграундом із градієнтом*/
+/*Роблю картинку бекграундом із градієнтом*/
 
 .background-red-tower {
  background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url("../img/J-Melgoza.jpg");
@@ -52,7 +52,7 @@
 }
 
 .background-house {
- /* url в конце - и заработал градиент)*/
+ /* url в конці - и запрацював градіент)*/
  background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url("../img/house.jpg");
 }
 
@@ -108,12 +108,7 @@
  grid-column-start: 2;
  grid-column-end: 4;
 }
-/*
-.grid-container-merge3 {
- grid-column-start: 1;
- grid-column-end: 3;
-}
-*/
+
 img {
  object-fit: cover;
  height: 100%;
@@ -268,7 +263,6 @@ opacity: 100%;
  background: url("../img/tree.jpg");
 }
 
-
 /* Third part*/
 
 .grid-container-item3 {
@@ -396,3 +390,5 @@ opacity: 100%;
 .background-lover:hover {
  background: url("../img/lover.jpg");
 }
+
+
