@@ -30,7 +30,7 @@
 
 .page-content-block-item1 {
   margin-top: 20px;
-  margin-left: 40px;
+  margin-left: 0px;
   margin-right: 20px;
 }
 
@@ -38,13 +38,13 @@
 
 .common-block {
   display: flex;
+  justify-content: center; 
 }
 
 /*side-bar*/
 
 .side-bar {
   margin-top: 0;
-  background-color: palevioletred;
   position: sticky;
   top: 100px;
   align-self: flex-start;
