@@ -1,0 +1,127 @@
+.container {
+  position: absolute;
+  width: 570px;
+  height: 590px;
+  left: 135px;
+  top: 55px;
+  border: 1px solid #E4E4E4;
+  background: #FFFFFF;
+  border-radius: 6px;
+}
+
+.container-block {
+  width: 500px;
+  height: 540px;
+  margin: 0 auto;
+}
+
+.container-block-form {}
+
+.container-block-form-header {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1C1C1C;
+}
+
+.label-item {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  color: #545454;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.field-items {
+  background: #FFFFFF;
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+  width: inherit;
+  height: 35px;
+  margin-right: 12px;
+  padding: 0px;
+  margin-bottom: 5px;
+  color: #969696;
+  margin-top: 5px;
+}
+
+.row-form {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.column {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+}
+
+.field {
+  margin-top: 20px;
+}
+
+.text {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+  color: #969696;
+}
+
+.form-button-submit {
+  width: inherit;
+  /* color: ; */
+  background-color:#007BFF;
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+  height: 38px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.1px;
+  color: #FFFFFF;
+}
+
+.row {
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+
+.select-color {
+  color: #545454;
+}
+
+a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.divider-color {
+  border: 1px solid #E4E4E4;
+}
+
+.link-property-log > span {
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.link-property-log > span:hover {
+  color: #007BFF;
+}
+
+.gender > span {
+  margin-right: 20px;
+}

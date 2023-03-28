@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/normolize.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Francois+One&family=Nunito+Sans:ital,wght@0,200;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <section class="container">
+    <div class="container-block">
+      <form class="container-block-form">
+        <h1 class="container-block-form-header">Create an Account</h1>
+
+        <div class="row-form">
+          <div class="column">
+            <label class="label-item field" for="first-name">First Name</label><br />
+            <input class="field-items" type="text" id="first-name" name="first-name" required>
+          </div>
+
+          <div class="column">
+            <label class="label-item email" for="last-name">Last Name</label><br />
+            <input class="field-items" type="text" id="last-name" name="last-name" required>
+          </div>
+        </div>
+
+        <!-- -- email -- -->
+        <div class="row-form">
+          <div class="column">
+            <label class="label-item" for="email">E-mail</label><br />
+            <input class="field-items" type="text" id="email" name="email" required>
+
+            <span class="label-item text">We'll never share your email with anyone else.</span>
+
+          </div>
+        </div>
+
+
+        <!-- -- email -- -->
+
+        <div class="row gender">
+          <span>
+            <input type="radio" id="gender-man" name="gender" value="Male" checked>
+            <label class="width-auto label-item" for="male">Male</label>
+          </span>
+          <span>
+            <input type="radio" id="gender-woman" name="gender" value="female" checked>
+            <label class="width-auto label-item" for="female">Female</label>
+          </span>
+        </div>
+
+        <div class="row-form">
+          <div class="column">
+            <label class="label-item" for="country">Country</label><br>
+            <select name="country" class="country-types field-items" id="country">
+              <option required disabled="disabled" class="label-item" selected="selected"><span
+                  class="select-color">Select</span></option>
+              <option value="1">Kyiv</option>
+              <option value="2">Kharkiv</option>
+              <option value="3">Chernivtci</option>
+              <option value="4">Odesa</option>
+              <option value="5">Lviv</option>
+              <option value="6">Dnipro</option>
+              <option value="7">Sumi</option>
+              <option value="8">Donets'k</option>
+              <option value="9">Lugans'k</option>
+              <option value="10">Khmelnitskiy</option>
+              <option value="11">Ivano-Frankivsk</option>
+              <option value="12">Zaporizhzhia</option>
+            </select>
+          </div>
+          <div class="column">
+            <label class="label-item" for="City">City</label><br />
+            <input class="field-items" type="text" id="city" name="city" required>
+          </div>
+        </div>
+
+        <div class="row-form">
+          <div class="column">
+            <button type="submit label-item" class="form-button-submit">
+              Sign Up
+            </button>
+          </div>
+        </div>
+        <br />
+        <div class="label-item text">
+          By clicking the 'Sign Up' button, you confirm that you accept our <br />
+          <span><a href="#">Terms of Use</a></span> and <span class="link-property"><a href="#">Privacy
+              Policy</a></span>
+        </div>
+        <hr class="divider-color"/>
+        <div class="label-item link-property-log">
+          <span>Have an account?</span>
+          <span>Log In</span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</body>
+
+</html>
