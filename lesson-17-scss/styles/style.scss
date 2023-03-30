@@ -1,0 +1,207 @@
+.main-page {
+  width: 1440px;
+  background: #FFFFFF;
+  margin: 0 auto;
+
+  &__content {
+    width: 1170px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 100px;
+
+  &__text {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #898F8F;
+  }
+
+  &__main-hdr {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 66px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFCC00;
+    margin-top: 15px;
+  }
+
+  &__divider {
+
+    &__line {
+      width: 210px;
+      height: 0px;
+      border-bottom: 1px solid #FFCC00;
+    }
+  }
+}
+
+.main-content {
+  text-align: center;
+  justify-content: center;
+
+  &__block {
+    position: relative;
+    margin-right: 30px;
+
+    &__left-square-1 {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: -15px;
+      left: -15px;
+      border-top: 1px solid #FFCC00;
+      border-left: 1px solid #FFCC00;
+    }
+
+    &__left-square-2 {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: -15px;
+      right: -15px;
+      border-top: 1px solid #FFCC00;
+      border-right: 1px solid #FFCC00;
+    }
+
+    &__left-square-3 {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 314px;
+      right: -15px;
+      border-bottom: 1px solid #FFCC00;
+      border-right: 1px solid #FFCC00;
+    }
+
+    &__left-square-4 {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 314px;
+      left: -15px;
+      border-bottom: 1px solid #FFCC00;
+      border-left: 1px solid #FFCC00;
+    }
+  }
+
+  &-centr {
+    width: 0px;
+    height: 560px;
+    border-left: 1px solid #FFCC00;
+    margin-left: 85px;
+    margin-right: 85px;
+    position: relative;
+    top: -26px;
+    margin-top: 40px;
+  }
+
+  &-right {
+    width: 430px;
+
+    &__hdr {
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 36px;
+      line-height: 42px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #666666;
+      margin-top: 0px;
+    }
+
+    &__dvdr {
+      width: 100px;
+      height: 0px;
+      border-top: 1px solid #FFCC00;
+      margin: 0 auto;
+    }
+
+    &__hdr2 {
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #666666;
+    }
+
+    &__text {
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      color: #333333;
+    }
+
+    &__divider {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 30px;
+
+      &__left {
+        width: 10px;
+        height: 4px;
+        background: #FFCC00;
+        position: absolute;
+        left: 190px;
+      }
+
+      &__centr {
+        width: 20px;
+        height: 4px;
+        background: #FFCC00;
+      }
+
+      &__right {
+        width: 10px;
+        height: 4px;
+        background: #FFCC00;
+        position: absolute;
+        right: 190px;
+      }
+    }
+
+    &__button {
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 14px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #666666;
+      border-color: #FFCC00;
+      padding-bottom: 4px;
+      padding-top: 5px;
+      background-color: none;
+      border-style: solid;
+      background-color: #FFFFFF;
+    }
+  }
+}
