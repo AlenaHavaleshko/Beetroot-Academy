@@ -15,8 +15,6 @@
   margin: 0 auto;
 }
 
-.container-block-form {}
-
 .container-block-form-header {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -80,7 +78,6 @@
 
 .form-button-submit {
   width: inherit;
-  /* color: ; */
   background-color:#007BFF;
   border: 1px solid #E4E4E4;
   border-radius: 6px;
