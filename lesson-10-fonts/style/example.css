@@ -1,0 +1,29 @@
+/* Свойство text-decoration
+Задаёт различное оформительное подчёркивание и другие эффекты текста.
+
+text-decoration: none | underline | line-through | overline*/
+
+.text > span {
+ text-decoration: line-through;
+}
+
+.link {
+ text-decoration: none;
+}
+
+/*Свойство text-transform
+Управляет регистром символов в тексте, например сделать все буквы заглавными или прописными.
+
+text-transform: none | uppercase | lowercase | capitalize*/
+.site-nav .link {
+ text-transform: capitalize;
+}
+
+/* Свойство text-indent
+Устанавливает величину отступа первой строки блока текста, например абзаца. Не влияет на все остальные строки кроме первой.
+
+text-indent: значение | проценты | inherit */
+
+.post-text {
+ text-indent: 100px;
+}
