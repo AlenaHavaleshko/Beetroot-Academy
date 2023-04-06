@@ -6,15 +6,21 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  max-width: 1440px;
-  width: 100%;
+  max-width: 1440px; // вопрос зачем max-width + width: 100% 
+  // width: 100%;
 
   &__header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding-left: 135px;
+    padding-right: 135px;
 
     &__logo {
-      margin: 44px 428px 44px 135px;
+      // margin: 44px 428px 44px 135px;
+      margin-top: 44px;
+      // margin-right: 428px;
+      // margin-bottom: 44px;
+      // margin-left: 135px;
     }
 
     &__nav {
@@ -55,7 +61,8 @@
       }
     }
     &__search {
-      margin: 42px 13px 42px 84px;
+      // margin: 42px 13px 42px 84px;
+      margin-top: 42px;
     }
   }
 
@@ -71,7 +78,7 @@
     &__block1 {
       position: relative;
       background-image: url(../images/big-image1.jpg);
-      width: 1440px;
+      // width: 1440px;
       height: 600px;
 
       &__img {
@@ -206,13 +213,23 @@
 
       &_posts {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
 
         &-item:not(:last-child) {
           margin-right: 30px;
         }
+
+        .long{
+          width: 570px;
+        }
+
+        .short {
+          width: 370px;
+        }
         
         &-item {
+         
           // margin-right: 30px;
           &__img {
           
