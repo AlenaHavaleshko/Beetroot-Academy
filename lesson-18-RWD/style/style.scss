@@ -1,13 +1,17 @@
 .page-container {
 
-  background: #FFFFFF;
+  background: #FFFFFF;;
   margin: 0 auto;
   border: 1px solid grey;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   max-width: 1440px; // вопрос зачем max-width + width: 100% 
-  // width: 100%;
+  // width: 100%; 
+  @media screen and (max-width: $screen-size-md) {
+    padding: 20px 20px;
+    margin: 10px 10px;
+  }
 
   &__header {
     display: flex;
@@ -15,20 +19,50 @@
     padding-left: 135px;
     padding-right: 135px;
 
+    @media screen and (max-width: $screen-size-xl) {
+      padding: 10px 10px;
+    }
+
     &__logo {
-      // margin: 44px 428px 44px 135px;
+      
       margin-top: 44px;
-      // margin-right: 428px;
-      // margin-bottom: 44px;
-      // margin-left: 135px;
+    }
+
+    .hide-desktop {
+      @media screen and (min-width: $screen-size-sm) {
+        display: none;
+      }
+    }
+
+    .burger-control {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 100px;
+      right: 110px;
+      @media screen and (min-width: $screen-size-sm) {
+        display: none;
+      }
+    }
+
+    .hide-mobile {
+      @media screen and (max-width: $screen-size-sm) {
+        display: none;
+      }
     }
 
     &__nav {
       &-list {
         display: flex;
+        gap: 20px;
         list-style-type: none;
         margin-top: 42px;
         margin-bottom: 42px;
+
+        @media screen and (max-width: $screen-size-xl) {
+          gap: 3px;
+          padding-left: 5px;
+        }
 
         &__item {
           margin-right: 42px;
@@ -39,6 +73,11 @@
           line-height: 17px;
           letter-spacing: 0.3em;
           text-transform: uppercase;
+
+          @media screen and (max-width: $screen-size-md) {
+            margin-right: 10px;
+            
+          }
 
           a {
             text-decoration: none;
@@ -55,13 +94,11 @@
                 top: 20px;
                 width: 40px;
               }
-
           }
         }
       }
     }
     &__search {
-      // margin: 42px 13px 42px 84px;
       margin-top: 42px;
     }
   }
@@ -70,31 +107,16 @@
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
-  
-    @media screen and (max-width: 520px) {
-      padding: 20px 40px;
-    }
 
     &__block1 {
       position: relative;
       background-image: url(../images/big-image1.jpg);
-      // width: 1440px;
       height: 600px;
 
-      &__img {
-        // width: 100%;
-        // height: 100%;
-
-        // min-width: 370px;
-        // min-height: 270px;
-
-        // max-width: 570px;
-        // max-height: 470px;
-      }
 
       &__text {
         position: absolute;
-        width: 770px;
+        max-width: 770px;
         height: 120px;
         left: 135px;
         top: 55px;
@@ -105,6 +127,10 @@
         line-height: 64px;
         letter-spacing: 0.05em;
         color: #000000;
+
+        @media screen and (max-width: $screen-size-sm) {
+          left: 40px;
+        }
       }
     }
 
@@ -115,6 +141,10 @@
       justify-content: flex-start;
       grid-gap: 30px;
       flex-wrap: wrap-reverse;
+
+      @media screen and (max-width: $screen-size-xl) {
+        padding: 20px 20px;
+      }
     
       &_reverse {
         flex-direction: row-reverse;
@@ -185,6 +215,10 @@
       padding: 0px 135px;
       flex-wrap: nowrap;
 
+      @media screen and (max-width: $screen-size-xl) {
+        padding: 20px 20px;
+      }
+
       &-name {
         display: flex;
         justify-content: space-between;
@@ -230,8 +264,8 @@
         
         &-item {
          
-          // margin-right: 30px;
           &__img {
+            max-width: 100%;
           
           }
 
@@ -245,6 +279,7 @@
             line-height: 166%;
             letter-spacing: 0.1em;
             color: #7B7B7B;
+            max-width: 370px;
           }
 
           &__hdr {
@@ -255,6 +290,7 @@
             line-height: 166%;
             letter-spacing: 0.1em;
             color: #000000;
+            max-width: 370px;
           }
 
           &__discription {
@@ -265,6 +301,7 @@
             line-height: 166%;
             letter-spacing: 0.05em;
             color: #565656;
+            max-width: 370px;
           }
         }
         
@@ -294,6 +331,10 @@
       display: flex;
       justify-content: space-between;
       padding: 90px 135px;
+
+      @media screen and (max-width: $screen-size-xl) {
+        padding: 20px 20px;
+      }
       
       &__item {
         width: 470px;
@@ -320,6 +361,10 @@
   &__footer {
         padding: 0px 135px;
         background-color: #F4F4F4;
+
+        @media screen and (max-width: $screen-size-xl) {
+          padding: 20px 20px;
+        }
 
         &-block {
           display: flex;
@@ -387,4 +432,4 @@
     color: #000000;
     }        
   }
-}
+}  
