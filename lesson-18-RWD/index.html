@@ -35,38 +35,29 @@
           <li class="page-container__header__nav-list__item"><a href="#">contact</a></li>
         </ul>
       </nav>
+      <!-- <div class=" hide-desktop burger-control"></div> -->
+
       <div class="page-container__header__search">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="none">
+        <svg class="page-container__header__search-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="none">
           <path fill="#000" fill-rule="evenodd"
             d="m13.894 11.072 3.777 3.56a.427.427 0 0 1-.019.613l-.66.623a.487.487 0 0 1-.336.132.487.487 0 0 1-.335-.132l-3.777-3.56a2.342 2.342 0 0 1-.283-.32l-.709-.89a6.868 6.868 0 0 1-4.126 1.362c-3.09.01-5.775-1.999-6.466-4.838-.69-2.838.798-5.75 3.584-7.009C7.33-.647 10.67.081 12.587 2.366c1.917 2.284 1.9 5.515-.043 7.78l.944.614c.148.089.284.194.406.312ZM2.705 6.23c0 2.458 2.114 4.45 4.721 4.45a4.871 4.871 0 0 0 3.339-1.303 4.324 4.324 0 0 0 1.383-3.147c0-2.457-2.114-4.45-4.722-4.45-2.607 0-4.72 1.993-4.72 4.45Z"
             clip-rule="evenodd" />
         </svg>
-      </div>
-      <!-- <div class=" hide-desktop burger-control"></div> -->
-
+      </div> 
       <div class="hide-desktop burger-control">
-        <div class="hamburger hamburger--squeeze js-hamburger">
+        <!-- is-active -->
+        <div class="hamburger hamburger--squeeze js-hamburger"> 
           <div class="hamburger-box">
             <div class="hamburger-inner"></div>
           </div>
         </div>
         <nav class="navigation navigation-mobile">
           <ul class="navigation__list">
-            <li class="navigation__list-item">
-              <a class="navigation__list-item-link" href="./index.html">home</a>
-            </li>
-            <li class="navigation__list-item">
-              <a class="navigation__list-item-link" href="./profile.html">about</a>
-            </li>
-            <li class="navigation__list-item">
-              <a class="navigation__list-item-link" href="">works</a>
-            </li>
-            <li class="navigation__list-item">
-              <a class="navigation__list-item-link" href="">blog</a>
-            </li>
-            <li class="navigation__list-item">
-              <a class="navigation__list-item-link" href="">contact</a>
-            </li>
+            <li class="navigation__list-item"><a class="navigation__list-item__link" href="#">home</a></li>
+            <li class="navigation__list-item"><a class="navigation__list-item__link" href="#">about</a></li>
+            <li class="navigation__list-item"><a class="navigation__list-item__link" href="#">works</a></li>
+            <li class="navigation__list-item"><a class="navigation__list-item__link" href="#">blog</a></li>
+            <li class="navigation__list-item"><a class="navigation__list-item__link" href="#">contact</a></li>
           </ul>
         </nav>
       </div>
@@ -240,23 +231,27 @@
           <p class="page-container__footer-block-left__mail">tanya.hill@example.com</p>
         </div>
         <div class="page-container__footer-block-right">
-          <svg class="page-container__footer-block-right__svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none">
-            <path fill= "#565656"
+          <svg class="page-container__footer-block-right__svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+            fill="none">
+            <path fill="#565656"
               d="M25.003 18.847A6.144 6.144 0 0 0 18.85 25a6.144 6.144 0 0 0 6.153 6.153A6.144 6.144 0 0 0 31.156 25a6.144 6.144 0 0 0-6.153-6.153Zm0 10.153c-2.201 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.799 4-4 4Zm7.84-10.405c0 .798-.643 1.435-1.435 1.435a1.435 1.435 0 1 1 1.435-1.435Zm4.076 1.457c-.091-1.923-.53-3.626-1.94-5.029-1.402-1.403-3.105-1.842-5.028-1.939-1.981-.112-7.92-.112-9.902 0-1.917.091-3.62.53-5.028 1.934-1.409 1.403-1.843 3.106-1.94 5.028-.112 1.982-.112 7.92 0 9.902.092 1.923.531 3.626 1.94 5.029 1.408 1.403 3.106 1.842 5.028 1.939 1.982.112 7.92.112 9.902 0 1.923-.091 3.626-.53 5.029-1.939 1.403-1.403 1.842-3.106 1.939-5.029.112-1.981.112-7.915 0-9.896Zm-2.56 12.022a4.05 4.05 0 0 1-2.282 2.282c-1.58.626-5.328.482-7.074.482-1.746 0-5.5.139-7.075-.482a4.05 4.05 0 0 1-2.28-2.282c-.627-1.58-.483-5.328-.483-7.074 0-1.746-.14-5.5.482-7.074a4.05 4.05 0 0 1 2.281-2.282c1.58-.626 5.33-.482 7.075-.482 1.746 0 5.5-.139 7.074.482a4.05 4.05 0 0 1 2.282 2.282c.626 1.58.482 5.328.482 7.074 0 1.746.144 5.5-.482 7.074Z" />
             <path stroke="#565656" d="M.5.5h49v49H.5z" />
           </svg>
-          <svg class="page-container__footer-block-right__svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none">
+          <svg class="page-container__footer-block-right__svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+            fill="none">
             <path fill="#565656"
               d="m30.584 26.5.667-4.343h-4.168v-2.819c0-1.188.583-2.347 2.45-2.347h1.894v-3.698S29.707 13 28.064 13c-3.433 0-5.676 2.08-5.676 5.846v3.31h-3.815V26.5h3.815V37h4.695V26.5h3.502Z" />
             <path stroke="#565656" d="M.5.5h49v49H.5z" />
           </svg>
-          <svg class="page-container__footer-block-right__svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none">
+          <svg class="page-container__footer-block-right__svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+            fill="none">
             <path fill="#565656" d="M.5.5h49v49H.5z" />
             <path fill="#fff"
               d="M36.738 18.981c.018.263.018.525.018.788 0 8.006-6.093 17.231-17.23 17.231-3.432 0-6.62-.994-9.3-2.719.487.056.955.075 1.462.075 2.83 0 5.437-.956 7.518-2.587a6.067 6.067 0 0 1-5.662-4.2c.375.056.75.094 1.144.094a6.41 6.41 0 0 0 1.593-.207 6.057 6.057 0 0 1-4.856-5.944v-.075c.806.45 1.744.732 2.737.77a6.052 6.052 0 0 1-2.7-5.044c0-1.125.3-2.157.825-3.057a17.215 17.215 0 0 0 12.488 6.338 6.839 6.839 0 0 1-.15-1.388c0-3.337 2.7-6.056 6.056-6.056 1.744 0 3.319.731 4.425 1.912a11.924 11.924 0 0 0 3.844-1.462 6.04 6.04 0 0 1-2.663 3.338 12.14 12.14 0 0 0 3.488-.938 13.015 13.015 0 0 1-3.037 3.131Z" />
             <path stroke="#565656" d="M.5.5h49v49H.5z" />
           </svg>
-          <svg class="page-container__footer-block-right__svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none">
+          <svg class="page-container__footer-block-right__svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+            fill="none">
             <path fill="#565656"
               d="M18.372 37h-4.976V20.976h4.976V37Zm-2.49-18.21C14.29 18.79 13 17.474 13 15.883a2.882 2.882 0 1 1 5.763 0c0 1.59-1.29 2.909-2.881 2.909ZM36.995 37H32.03v-7.8c0-1.86-.037-4.243-2.587-4.243-2.587 0-2.983 2.02-2.983 4.109V37h-4.97V20.976h4.771v2.186h.07c.664-1.259 2.287-2.587 4.708-2.587 5.036 0 5.962 3.316 5.962 7.623V37h-.006Z" />
             <path stroke="#565656" d="M.5.5h49.001v49H.5z" />
@@ -267,7 +262,7 @@
     </footer>
   </div>
 
-
+  <script src="./scripts/index.js"></script>
 </body>
 
 </html>
