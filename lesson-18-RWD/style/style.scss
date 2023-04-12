@@ -1,7 +1,6 @@
 .page-container {
 
   background: #FFFFFF;
-  ;
   margin: 0 auto;
   border: 1px solid grey;
   display: flex;
@@ -11,7 +10,7 @@
 
   // width: 100%; 
   @media screen and (max-width: $screen-size-md) {
-    padding: 20px 20px;
+    padding: 10px 10px;
     margin: 10px 10px;
   }
 
@@ -320,21 +319,41 @@
       &_posts {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
 
-        &-item:not(:last-child) {
-          margin-right: 30px;
-        }
+        // &-item:not(:last-child) {
+        //   margin-right: 30px;
+        //   @media screen and (max-width: $screen-size-md) {
+        //     margin-right: 0px;
+        //   }
+        // }
 
-        .long {
-          width: 570px;
-        }
+        //  .long {
+        //    width: 570px;
+        //  }
 
-        .short {
-          width: 370px;
-        }
+        //  .short {
+        //   // width: 370px;
+        //   @media screen and (min-width: $screen-size-xl) {
+        //     width: 370px;
+        //   }
+        //   @media screen and (max-width: $screen-size-sm) {
+        //      width: auto;
+        //   }
+        // }
 
         &-item {
+          @media screen and (max-width: $screen-size-xl) and (max-width: $screen-size-sm) {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap-reverse;
+          }
+          /*flex-direction: row;*/
+           @media screen and (max-width: $screen-size-md) {
+             display: flex;
+             flex-direction: row;
+           }
+         
 
           &__img {
             max-width: 100%;
@@ -342,7 +361,16 @@
           }
 
           &__text {
-            display: flex;
+            max-width: 340px;
+
+
+            @media screen and (min-width: $screen-size-sm) {
+              // margin-left: 20px;;
+            }
+          
+            
+            &-discriotion {
+              display: flex;
             justify-content: space-between;
             font-family: 'Lato', sans-serif;
             font-style: normal;
@@ -351,8 +379,10 @@
             line-height: 166%;
             letter-spacing: 0.1em;
             color: #7B7B7B;
-            max-width: 370px;
+            // max-width: 570px; 
+            }
           }
+
 
           &__hdr {
             font-family: 'Red Hat Display', sans-serif;
@@ -362,7 +392,7 @@
             line-height: 166%;
             letter-spacing: 0.1em;
             color: #000000;
-            max-width: 370px;
+            // max-width: 370px;
           }
 
           &__discription {
@@ -373,7 +403,7 @@
             line-height: 166%;
             letter-spacing: 0.05em;
             color: #565656;
-            max-width: 370px;
+            // max-width: 370px;
           }
         }
 
@@ -404,9 +434,9 @@
       justify-content: space-between;
       padding: 90px 135px;
 
-      @media screen and (max-width: $screen-size-xl) {
-        padding: 20px 20px;
-      }
+      // @media screen and (max-width: $screen-size-xl) {
+      //   padding: 20px 20px;
+      // }
 
       @media screen and (max-width: $screen-size-sm) {
         padding: 5px 5px;
@@ -420,7 +450,7 @@
       }
 
       &__item {
-        width: 470px;
+        max-width: 470px;
         font-family: 'Red Hat Display', sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -431,7 +461,7 @@
       }
 
       &__text {
-        width: 470px;
+        max-width: 470px;
         font-family: 'Lato', sans-serif;
         font-weight: 400;
         font-size: 19px;
@@ -447,7 +477,7 @@
     background-color: #F4F4F4;
 
     @media screen and (max-width: $screen-size-xl) {
-      padding: 20px 20px;
+      padding: 10px 10px;
     }
 
     @media screen and (max-width: $screen-size-sm) {
@@ -463,7 +493,6 @@
       &-left {
 
         &__header {
-          width: 372px;
           font-family: 'Red Hat Display', sans-serif;
           font-style: normal;
           font-weight: 400;

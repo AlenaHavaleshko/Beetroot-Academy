@@ -1365,11 +1365,11 @@
 }
 @media screen and (max-width: 768px) {
   .page-container {
-    padding: 20px 20px;
+    padding: 10px 10px;
     margin: 10px 10px;
   }
 }
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 360px) {
   .page-container {
     padding: 5px 5px;
     margin: 10px 10px;
@@ -1393,7 +1393,7 @@
 .page-container__header__logo {
   margin-top: 44px;
 }
-@media screen and (min-width: 710px) {
+@media screen and (min-width: 360px) {
   .page-container__header .hide-desktop {
     display: none;
   }
@@ -1402,12 +1402,12 @@
   position: relative;
   top: 61px;
 }
-@media screen and (min-width: 710px) {
+@media screen and (min-width: 360px) {
   .page-container__header .burger-control {
     display: none;
   }
 }
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 360px) {
   .page-container__header .hide-mobile {
     display: none;
   }
@@ -1539,7 +1539,7 @@
   letter-spacing: 0.05em;
   color: #000000;
 }
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 360px) {
   .page-container__main__block1__text {
     left: 40px;
   }
@@ -1642,7 +1642,7 @@
     padding: 20px 20px;
   }
 }
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 360px) {
   .page-container__main__block3 {
     padding: 5px 5px;
   }
@@ -1680,23 +1680,43 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
-.page-container__main__block3_posts-item:not(:last-child) {
-  margin-right: 30px;
+.page-container__main__block3_posts-item {
+  /*flex-direction: row;*/
 }
-.page-container__main__block3_posts .long {
-  width: 570px;
+@media screen and (max-width: 1440px) and (max-width: 360px) {
+  .page-container__main__block3_posts-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
 }
-.page-container__main__block3_posts .short {
-  width: 370px;
+@media screen and (max-width: 768px) {
+  .page-container__main__block3_posts-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 .page-container__main__block3_posts-item__img {
   max-width: 100%;
 }
 .page-container__main__block3_posts-item__text {
+  max-width: 340px;
+}
+.page-container__main__block3_posts-item__text-discriotion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1710,7 +1730,6 @@
   line-height: 166%;
   letter-spacing: 0.1em;
   color: #7B7B7B;
-  max-width: 370px;
 }
 .page-container__main__block3_posts-item__hdr {
   font-family: "Red Hat Display", sans-serif;
@@ -1720,7 +1739,6 @@
   line-height: 166%;
   letter-spacing: 0.1em;
   color: #000000;
-  max-width: 370px;
 }
 .page-container__main__block3_posts-item__discription {
   font-family: "Lato", sans-serif;
@@ -1730,7 +1748,6 @@
   line-height: 166%;
   letter-spacing: 0.05em;
   color: #565656;
-  max-width: 370px;
 }
 .page-container__main__block3_posts__button {
   text-align: center;
@@ -1759,12 +1776,7 @@
           justify-content: space-between;
   padding: 90px 135px;
 }
-@media screen and (max-width: 1440px) {
-  .page-container__main__block4 {
-    padding: 20px 20px;
-  }
-}
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 360px) {
   .page-container__main__block4 {
     padding: 5px 5px;
   }
@@ -1780,7 +1792,7 @@
   }
 }
 .page-container__main__block4__item {
-  width: 470px;
+  max-width: 470px;
   font-family: "Red Hat Display", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1790,7 +1802,7 @@
   color: #000000;
 }
 .page-container__main__block4__text {
-  width: 470px;
+  max-width: 470px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 19px;
@@ -1804,10 +1816,10 @@
 }
 @media screen and (max-width: 1440px) {
   .page-container__footer {
-    padding: 20px 20px;
+    padding: 10px 10px;
   }
 }
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 360px) {
   .page-container__footer {
     padding: 5px 5px;
   }
@@ -1828,7 +1840,6 @@
   letter-spacing: 0;
 }
 .page-container__footer-block-left__header {
-  width: 372px;
   font-family: "Red Hat Display", sans-serif;
   font-style: normal;
   font-weight: 400;

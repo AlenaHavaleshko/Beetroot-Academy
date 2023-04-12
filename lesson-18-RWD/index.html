@@ -38,15 +38,16 @@
       <!-- <div class=" hide-desktop burger-control"></div> -->
 
       <div class="page-container__header__search">
-        <svg class="page-container__header__search-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="none">
+        <svg class="page-container__header__search-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="16"
+          fill="none">
           <path fill="#000" fill-rule="evenodd"
             d="m13.894 11.072 3.777 3.56a.427.427 0 0 1-.019.613l-.66.623a.487.487 0 0 1-.336.132.487.487 0 0 1-.335-.132l-3.777-3.56a2.342 2.342 0 0 1-.283-.32l-.709-.89a6.868 6.868 0 0 1-4.126 1.362c-3.09.01-5.775-1.999-6.466-4.838-.69-2.838.798-5.75 3.584-7.009C7.33-.647 10.67.081 12.587 2.366c1.917 2.284 1.9 5.515-.043 7.78l.944.614c.148.089.284.194.406.312ZM2.705 6.23c0 2.458 2.114 4.45 4.721 4.45a4.871 4.871 0 0 0 3.339-1.303 4.324 4.324 0 0 0 1.383-3.147c0-2.457-2.114-4.45-4.722-4.45-2.607 0-4.72 1.993-4.72 4.45Z"
             clip-rule="evenodd" />
         </svg>
-      </div> 
+      </div>
       <div class="hide-desktop burger-control">
         <!-- is-active -->
-        <div class="hamburger hamburger--squeeze js-hamburger"> 
+        <div class="hamburger hamburger--squeeze js-hamburger">
           <div class="hamburger-box">
             <div class="hamburger-inner"></div>
           </div>
@@ -70,7 +71,12 @@
       </div>
 
       <div class="page-container__main__block2">
-        <img src="./images/image.jpg" alt="arrow" class="page-container__main__block2__image">
+        <!-- <img src="./images/image.jpg" alt="arrow" class="page-container__main__block2__image"> -->
+        <picture>
+          <source srcset="./pictures/arrow-d.jpg" media="(min-width: 1440px)" />
+          <source srcset="./pictures/arrow-t.jpg" media="(min-width: 768px)" />
+          <img src="./pictures/arrow-m.jpg" alt="arrow-mobile" />
+        </picture>
         <div class="page-container__main__block2__body">
           <p class="page-container__main__block2__body__sub-title">Technology, Interface Design</p>
           <div class="page-container__main__block2__body__header">
@@ -93,16 +99,9 @@
       <div class="page-container__main__block2 page-container__main__block2_reverse">
         <!-- <img src="./images/blog-image.jpg" alt="little-window" class="page-container__main__block2__image"> -->
         <picture>
-          <source
-            srcset="./pictures/arrow-d.jpg"
-            media="(min-width: 1440px)"
-          />
-          <source
-            srcset="./pictures/arrow-t.jpg"
-            media="(min-width: 768px)"
-          />
-          <img src="./pictures/arrow-m.jpg" alt="arrow-mobile"
-          />
+          <source srcset="./pictures/window-desc.jpg" media="(min-width: 1440px)" />
+          <source srcset="./pictures/window-tab.jpg" media="(min-width: 768px)" />
+          <img src="./pictures/window-mob.jpg" alt="arrow-mobile" />
         </picture>
 
         <div class="page-container__main__block2__body">
@@ -140,70 +139,56 @@
           <div class="page-container__main__block3_posts-item short">
             <!-- <img class="page-container__main__block3_posts-item__img" src="./images/lamp.jpg" alt="lamp" /> -->
             <picture>
-              <source
-                srcset="./pictures/lamp-desc.jpg"
-                media="(min-width: 1440px)"
-              />
-              <source
-                srcset="./pictures/lamp-tab.jpg"
-                media="(min-width: 768px)"
-              />
-              <img src="./pictures/lamp-mob.jpg" alt="lamp-mobile"
-              />
+              <source srcset="./pictures/lamp-desc.jpg" media="(min-width: 1440px)" />
+              <source srcset="./pictures/lamp-tab.jpg" media="(min-width: 768px)" />
+              <img src="./pictures/lamp-mob.jpg" alt="lamp-mobile" />
             </picture>
             <div class="page-container__main__block3_posts-item__text">
-              <p>Interface Design</p>
-              <p>8 June, 2020</p>
+              <div class="page-container__main__block3_posts-item__text-discriotion">
+                <p>Interface Design</p>
+                <p>8 June, 2020</p>
+              </div>
+              <h3 class="page-container__main__block3_posts-item__hdr">UX traffic light colours</h3>
+              <p class="page-container__main__block3_posts-item__discription">UI has to make a huge visual difference
+                between warning, an alert and a success.</p>
             </div>
-            <h3 class="page-container__main__block3_posts-item__hdr">UX traffic light colours</h3>
-            <p class="page-container__main__block3_posts-item__discription">UI has to make a huge visual difference
-              between warning, an alert and a success.</p>
           </div>
 
           <div class="page-container__main__block3_posts-item short">
             <!-- <img class="page-container__main__block3_posts-item__img" src="./images/little-arrow.jpg" -->
             <picture>
-              <source
-                srcset="./pictures/arrow3-desc.jpg"
-                media="(min-width: 1440px)"
-              />
-              <source
-                srcset="./pictures/arrow3-tab.jpg"
-                media="(min-width: 768px)"
-              />
-              <img src="./pictures/arrow3-mob.jpg" alt="arrow-mobile"
-              />
+              <source srcset="./pictures/arrow3-desc.jpg" media="(min-width: 1440px)" />
+              <source srcset="./pictures/arrow3-tab.jpg" media="(min-width: 768px)" />
+              <img src="./pictures/arrow3-mob.jpg" alt="arrow-mobile" />
             </picture>
             <div class="page-container__main__block3_posts-item__text">
-              <p>Technology</p>
-              <p>6 May, 2020</p>
+              <div class="page-container__main__block3_posts-item__text-discriotion">
+                <p>Technology</p>
+                <p>6 May, 2020</p>
+              </div>
+              <h3 class="page-container__main__block3_posts-item__hdr">Using UX Design to Build a Sustainable Future
+              </h3>
+              <p class="page-container__main__block3_posts-item__discription">UI has to make a huge visual difference
+                between warning, an alert and a success.</p>
             </div>
-            <h3 class="page-container__main__block3_posts-item__hdr">Using UX Design to Build a Sustainable Future</h3>
-            <p class="page-container__main__block3_posts-item__discription">UI has to make a huge visual difference
-              between warning, an alert and a success.</p>
           </div>
 
           <div class="page-container__main__block3_posts-item short">
             <!-- <img class="page-container__main__block3_posts-item__img" src="./images/roof.jpg" alt="roof" /> -->
             <picture>
-              <source
-                srcset="./pictures/roof-desc.jpg"
-                media="(min-width: 1440px)"
-              />
-              <source
-                srcset="./pictures/roof-tab.jpg"
-                media="(min-width: 768px)"
-              />
-              <img src="./pictures/roof-mob.jpg" alt="roof-mobile"
-              />
+              <source srcset="./pictures/roof-desc.jpg" media="(min-width: 1440px)" />
+              <source srcset="./pictures/roof-tab.jpg" media="(min-width: 768px)" />
+              <img src="./pictures/roof-mob.jpg" alt="roof-mobile" />
             </picture>
             <div class="page-container__main__block3_posts-item__text">
-              <p>Visual Design</p>
-              <p>8 June, 2020</p>
+              <div class="page-container__main__block3_posts-item__text-discriotion">
+                <p>Visual Design</p>
+                <p>8 June, 2020</p>
+              </div>
+              <h3 class="page-container__main__block3_posts-item__hdr">Creativity vs. UX</h3>
+              <p class="page-container__main__block3_posts-item__discription">Is it possible to create a delightful user
+                experience without following best UX practices?</p>
             </div>
-            <h3 class="page-container__main__block3_posts-item__hdr">Creativity vs. UX</h3>
-            <p class="page-container__main__block3_posts-item__discription">Is it possible to create a delightful user
-              experience without following best UX practices?</p>
           </div>
         </div>
       </div>
@@ -224,51 +209,43 @@
             <div class="page-container__main__block3_posts-item long">
               <!-- <img class="page-container__main__block3_posts-item__img" src="./images/mentorship.jpg"
                 alt="mentorship" /> -->
-                <picture>
-                  <source
-                    srcset="./pictures/ellips-desc.jpg"
-                    media="(min-width: 1440px)"
-                  />
-                  <source
-                    srcset="./pictures/ellips-tab.jpg"
-                    media="(min-width: 768px)"
-                  />
-                  <img src="./pictures/ellips-mob.jpg" alt="ellips-mobile"
-                  />
-                </picture>
+              <picture>
+                <source srcset="./pictures/ellips-desc.jpg" media="(min-width: 1440px)" />
+                <source srcset="./pictures/ellips-tab.jpg" media="(min-width: 768px)" />
+                <img src="./pictures/ellips-mob.jpg" alt="ellips-mobile" />
+              </picture>
               <div class="page-container__main__block3_posts-item__text">
-                <p>Interface Design</p>
-                <p>8 June, 2020</p>
+                <div class="page-container__main__block3_posts-item__text-discriotion">
+                  <p>Interface Design</p>
+                  <p>8 June, 2020</p>
+                </div>
+                <h3 class="page-container__main__block3_posts-item__hdr">Mentorship Match — How a simple LinkedIn
+                  feature
+                  can boost diversity</h3>
+                <p class="page-container__main__block3_posts-item__discription">LinkedIn is on a clear mission to make
+                  professionals more successful by connecting the global workforce and as we learned — diversity and
+                  success go hand in hand</p>
               </div>
-              <h3 class="page-container__main__block3_posts-item__hdr">Mentorship Match — How a simple LinkedIn feature
-                can boost diversity</h3>
-              <p class="page-container__main__block3_posts-item__discription">LinkedIn is on a clear mission to make
-                professionals more successful by connecting the global workforce and as we learned — diversity and
-                success go hand in hand</p>
             </div>
 
             <div class="page-container__main__block3_posts-item long">
               <!-- <img class="page-container__main__block3_posts-item__img" src="./images/creativity.jpg" -->
               <picture>
-                <source
-                  srcset="./pictures/creativ-desc.jpg"
-                  media="(min-width: 1440px)"
-                />
-                <source
-                  srcset="./pictures/creativ-tab.jpg"
-                  media="(min-width: 768px)"
-                />
-                <img src="./pictures/creativ-mob.jpg" alt="creativ-mobile"
-                />
+                <source srcset="./pictures/creativ-desc.jpg" media="(min-width: 1440px)" />
+                <source srcset="./pictures/creativ-tab.jpg" media="(min-width: 768px)" />
+                <img src="./pictures/creativ-mob.jpg" alt="creativ-mobile" />
               </picture>
               <div class="page-container__main__block3_posts-item__text">
-                <p>Visual Design</p>
-                <p>8 June, 2020</p>
+                <div class="page-container__main__block3_posts-item__text-discriotion">
+                  <p>Visual Design</p>
+                  <p>8 June, 2020</p>
+                </div>
+                <h3 class="page-container__main__block3_posts-item__hdr">Using UX Design to Build a Sustainable Future
+                </h3>
+                <p class="page-container__main__block3_posts-item__discription">Is it possible to create a delightful
+                  user
+                  experience without following best UX practices?</p>
               </div>
-              <h3 class="page-container__main__block3_posts-item__hdr">Using UX Design to Build a Sustainable Future
-              </h3>
-              <p class="page-container__main__block3_posts-item__discription">Is it possible to create a delightful user
-                experience without following best UX practices?</p>
             </div>
           </div>
           <div class="page-container__main__block3_posts__button"><button
