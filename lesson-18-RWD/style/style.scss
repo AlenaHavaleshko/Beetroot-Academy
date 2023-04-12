@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  max-width: 1440px; // вопрос зачем max-width + width: 100% 
+  max-width: 1440px;
 
   // width: 100%; 
   @media screen and (max-width: $screen-size-md) {
@@ -35,7 +35,7 @@
     }
 
     .hide-desktop {
-      @media screen and (min-width: $screen-size-sm) {
+      @media screen and (min-width: $screen-size-md) {
         display: none;
       }
     }
@@ -45,13 +45,13 @@
       position: relative;
       top: 61px;
 
-      @media screen and (min-width: $screen-size-sm) {
+      @media screen and (min-width: $screen-size-md) {
         display: none;
       }
     }
 
     .hide-mobile {
-      @media screen and (max-width: $screen-size-sm) {
+      @media screen and (max-width: $screen-size-md) {
         display: none;
       }
     }
@@ -81,7 +81,6 @@
 
           @media screen and (max-width: $screen-size-md) {
             margin-right: 10px;
-
           }
 
           a {
@@ -137,7 +136,6 @@
           &__link {
             padding-left: 10px;
           }
-
 
           a {
             text-decoration: none;
@@ -285,6 +283,7 @@
       @media screen and (max-width: $screen-size-xl) {
         padding: 20px 20px;
       }
+
       @media screen and (max-width: $screen-size-sm) {
         padding: 5px 5px;
         // margin: 10px 10px;
@@ -348,12 +347,13 @@
             flex-direction: column;
             flex-wrap: wrap-reverse;
           }
+
           /*flex-direction: row;*/
-           @media screen and (max-width: $screen-size-md) {
-             display: flex;
-             flex-direction: row;
-           }
-         
+          @media screen and (max-width: $screen-size-md) {
+            display: flex;
+            flex-direction: row;
+          }
+
 
           &__img {
             max-width: 100%;
@@ -367,24 +367,22 @@
             @media screen and (min-width: $screen-size-sm) {
               // margin-left: 20px;;
             }
-          
-            
+
             &-discriotion {
               display: flex;
-            justify-content: space-between;
-            font-family: 'Lato', sans-serif;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 166%;
-            letter-spacing: 0.1em;
-            color: #7B7B7B;
-            // max-width: 570px; 
+              justify-content: space-between;
+              font-family: 'Lato', sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 166%;
+              letter-spacing: 0.1em;
+              color: #7B7B7B;
+              // max-width: 570px; 
             }
           }
 
-
-          &__hdr {
+            &__hdr {
             font-family: 'Red Hat Display', sans-serif;
             font-style: normal;
             font-weight: 500;
@@ -427,6 +425,140 @@
           }
         }
       }
+    }
+
+    &__block5 {
+      padding: 0px 135px;
+      flex-wrap: nowrap;
+      @media screen and (max-width: $screen-size-xl) {
+        padding: 20px 20px;
+      }
+      @media screen and (max-width: $screen-size-sm) {
+        padding: 5px 5px;
+        // margin: 10px 10px;
+      }
+      &-name {
+        display: flex;
+        justify-content: space-between;
+
+        &__header {
+          font-family: 'Red Hat Display', sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 28px;
+          line-height: 166%;
+          letter-spacing: 0.1em;
+          color: #000000;
+        }
+
+        &__text {
+          font-family: 'Lato', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 166%;
+          letter-spacing: 0.1em;
+          color: #7B7B7B;
+          margin-top: 35px;
+        }
+      }
+
+      &_posts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        &-item {
+          @media screen and (max-width: $screen-size-xl) and (max-width: $screen-size-sm) {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap-reverse;
+          }
+
+           /*flex-direction: row;*/
+           @media screen and (max-width: $screen-size-md) {
+            display: flex;
+            flex-direction: row;
+          }
+
+          &__text {
+            max-width: 570px;
+
+            &-discriotion {
+              display: flex;
+              justify-content: space-between;
+              font-family: 'Lato', sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 166%;
+              letter-spacing: 0.1em;
+              color: #7B7B7B;
+            }
+
+            &__hdr {
+              font-family: 'Red Hat Display', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 166%;
+            letter-spacing: 0.1em;
+            color: #000000;
+            }
+
+            &__discription {
+              font-family: 'Lato', sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 166%;
+              letter-spacing: 0.05em;
+              color: #565656;
+            }
+          }
+
+          // &__button {
+          //   text-align: center;
+          //   margin-top: 54px;
+  
+          //   &-type {
+          //     background-color: #565656;
+          //     font-family: 'Lato';
+          //     font-style: normal;
+          //     font-weight: 700;
+          //     font-size: 16px;
+          //     line-height: 166%;
+          //     letter-spacing: 0.1em;
+          //     color: #FFFFFF;
+          //     width: 180px;
+          //     height: 46px;
+          //     border-color: none;
+          //     border: 0px;
+          //   }
+          // }
+        }
+      }
+
+      &__button {
+        text-align: center;
+        margin-top: 54px;
+
+        &-type {
+          background-color: #565656;
+          font-family: 'Lato';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 166%;
+          letter-spacing: 0.1em;
+          color: #FFFFFF;
+          width: 180px;
+          height: 46px;
+          border-color: none;
+          border: 0px;
+        }
+      }
+
     }
 
     &__block4 {
