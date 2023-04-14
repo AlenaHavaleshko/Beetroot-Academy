@@ -9,14 +9,12 @@
   max-width: 1440px;
 
   // width: 100%; 
-  @media screen and (max-width: $screen-size-md) {
-    padding: 10px 10px;
-    margin: 10px 10px;
+  @media screen and (min-width: $screen-size-md) and (max-width: $screen-size-xl) {
+    padding: 34px 34px;
   }
 
-  @media screen and (max-width: $screen-size-sm) {
-    padding: 5px 5px;
-    margin: 10px 10px;
+  @media screen and (max-width: $screen-size-md) {
+    padding: 10px 10px;
   }
 
   &__header {
@@ -26,7 +24,7 @@
     padding-right: 135px;
 
     @media screen and (max-width: $screen-size-xl) {
-      padding: 10px 10px;
+      padding: 0px 0px;
     }
 
     &__logo {
@@ -159,6 +157,11 @@
 
     &__search {
       margin-top: 42px;
+
+      // @media screen and (max-width: 825px) {
+      //   display: none;
+      // }
+
     }
   }
 
@@ -175,6 +178,10 @@
       background-repeat: no-repeat;
       background-position: center;
 
+      @media screen and (max-width: $screen-size-md) {
+        margin-top: 24px;;
+      }
+
       &__text {
         position: absolute;
         max-width: 770px;
@@ -189,8 +196,12 @@
         letter-spacing: 0.05em;
         color: #000000;
 
-        @media screen and (max-width: $screen-size-sm) {
-          left: 40px;
+        @media screen and (min-width: $screen-size-md) and (max-width: $screen-size-xl) {
+          left: 34px;
+        }
+
+        @media screen and (max-width: $screen-size-md) {
+          left: 10px;
         }
       }
     }
@@ -203,16 +214,29 @@
       grid-gap: 30px;
       flex-wrap: wrap-reverse;
 
+      @media screen and (min-width: $screen-size-md) and (max-width: $screen-size-xl) {
+       flex-wrap: nowrap;
+       margin-top: 50px;
+    }
+
       @media screen and (max-width: $screen-size-xl) {
-        padding: 20px 20px;
+        padding: 0px 0px;
       }
 
       @media screen and (max-width: $screen-size-md) {
-        padding: 5px 5px;
+        padding: 0px 0px;
       }
 
       &_reverse {
         flex-direction: row-reverse;
+        grid-gap: 30px;
+      }
+
+      &-container {
+        
+        &__hdr {
+          
+        }
       }
 
       &__image {
@@ -229,6 +253,12 @@
         grid-gap: 30px;
         max-width: 450px;
 
+        @media screen and (min-width: $screen-size-md) and (max-width: $screen-size-xl) {
+           max-width: 100%;
+           grid-gap: 0px;
+       }
+
+
         &__sub-title {
           font-family: 'Lato', sans-serif;
           font-style: normal;
@@ -237,6 +267,10 @@
           line-height: 27px;
           letter-spacing: 0.1em;
           color: #7B7B7B;
+
+          @media screen and (min-width: $screen-size-md) and (max-width: $screen-size-xl) {
+          margin-bottom: 0px;
+          }
         }
 
         &__header {}
@@ -271,6 +305,14 @@
           line-height: 27px;
           letter-spacing: 0.05em;
           color: #565656;
+
+          @media screen and (min-width: $screen-size-md) and (max-width: $screen-size-xl) {
+            margin-bottom: 0px;
+            margin-top: 0px;
+            }
+
+
+          
         }
       }
 
@@ -280,18 +322,25 @@
       padding: 0px 135px;
       flex-wrap: nowrap;
 
-      @media screen and (max-width: $screen-size-xl) {
-        padding: 20px 20px;
+      @media screen and (max-width: $screen-size-xl) and (min-width: $screen-size-md) {
+        padding: 0px 0px;
       }
 
-      @media screen and (max-width: $screen-size-sm) {
-        padding: 5px 5px;
-        // margin: 10px 10px;
+      @media screen and (max-width: $screen-size-md) {
+        padding: 0px 0px;
       }
 
       &-name {
         display: flex;
         justify-content: space-between;
+
+        @media screen and (max-width: $screen-size-xl) and (min-width: $screen-size-md) {
+          margin: 50px 0px 50px 0px;
+        }
+
+        @media screen and (max-width: $screen-size-xl) {
+          padding: 0px 0px;
+        }
 
         &__header {
           font-family: 'Red Hat Display', sans-serif;
@@ -301,6 +350,10 @@
           line-height: 166%;
           letter-spacing: 0.1em;
           color: #000000;
+
+          @media screen and (max-width: $screen-size-xl) and (min-width: $screen-size-md) {
+            margin: 0px;
+          }
         }
 
         &__text {
@@ -342,16 +395,27 @@
         // }
 
         &-item {
+          justify-content: flex-start;
+          grid-gap: 30px;
           @media screen and (max-width: $screen-size-xl) and (max-width: $screen-size-sm) {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap-reverse;
           }
 
+
           /*flex-direction: row;*/
-          @media screen and (max-width: $screen-size-md) {
+          @media screen and (min-width: $screen-size-md) and (max-width: $screen-size-xl) {
             display: flex;
             flex-direction: row;
+            padding: 0px;
+
+            &_reverse {
+              display: flex;
+              flex-direction: row-reverse;
+              margin: 50px 0px 50px 0px;
+              grid-gap: 30px;
+            }
           }
 
 
@@ -364,8 +428,8 @@
             max-width: 340px;
 
 
-            @media screen and (min-width: $screen-size-sm) {
-              // margin-left: 20px;;
+            @media screen and (min-width: $screen-size-md) and (max-width: $screen-size-xl) {
+              max-width: 100%;
             }
 
             &-discriotion {
@@ -382,7 +446,7 @@
             }
           }
 
-            &__hdr {
+          &__hdr {
             font-family: 'Red Hat Display', sans-serif;
             font-style: normal;
             font-weight: 500;
@@ -430,16 +494,22 @@
     &__block5 {
       padding: 0px 135px;
       flex-wrap: nowrap;
-      @media screen and (max-width: $screen-size-xl) {
-        padding: 20px 20px;
+
+      @media screen and (max-width: $screen-size-xl) and (min-width: $screen-size-md) {
+        padding: 0px 0px;
       }
-      @media screen and (max-width: $screen-size-sm) {
-        padding: 5px 5px;
-        // margin: 10px 10px;
+ 
+      @media screen and (max-width: $screen-size-md) {
+        padding: 0px 0px;
       }
+
       &-name {
         display: flex;
         justify-content: space-between;
+
+        @media screen and (max-width: $screen-size-xl) and (min-width: $screen-size-md) {
+          margin-top: 50px;
+        }
 
         &__header {
           font-family: 'Red Hat Display', sans-serif;
@@ -468,21 +538,46 @@
         flex-wrap: wrap;
         justify-content: space-around;
 
+        @media screen and (max-width: $screen-size-xl) and (min-width: $screen-size-md) {
+          flex-direction: row;
+          margin: 50px 0px 50px 0px;
+        }
+
+        @media screen and (max-width: $screen-size-md) {
+          display: flex;
+            flex-direction: column;
+            flex-wrap: wrap-reverse;
+          }
+
         &-item {
-          @media screen and (max-width: $screen-size-xl) and (max-width: $screen-size-sm) {
+          justify-content: flex-start;
+          grid-gap: 30px;
+
+          @media screen and (max-width: $screen-size-xl) and (max-width: $screen-size-sm) and (min-width: $screen-size-md) {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap-reverse;
           }
 
-           /*flex-direction: row;*/
-           @media screen and (max-width: $screen-size-md) {
+          @media screen and (max-width: $screen-size-xl) and (min-width: $screen-size-md) {
+            max-width: 50%;
+          }
+
+          /*flex-direction: row;*/
+          @media screen and (max-width: $screen-size-md) {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+            text-align: center;
           }
 
           &__text {
             max-width: 570px;
+            @media screen and (max-width: $screen-size-xl) and (min-width: $screen-size-md) {
+              max-width: 340px;
+            }
+            @media screen and (max-width: $screen-size-md) {
+              max-width: 300px;
+            }
 
             &-discriotion {
               display: flex;
@@ -498,12 +593,12 @@
 
             &__hdr {
               font-family: 'Red Hat Display', sans-serif;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 22px;
-            line-height: 166%;
-            letter-spacing: 0.1em;
-            color: #000000;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 22px;
+              line-height: 166%;
+              letter-spacing: 0.1em;
+              color: #000000;
             }
 
             &__discription {
@@ -520,7 +615,7 @@
           // &__button {
           //   text-align: center;
           //   margin-top: 54px;
-  
+
           //   &-type {
           //     background-color: #565656;
           //     font-family: 'Lato';
@@ -566,14 +661,16 @@
       justify-content: space-between;
       padding: 90px 135px;
 
-      // @media screen and (max-width: $screen-size-xl) {
-      //   padding: 20px 20px;
-      // }
-
-      @media screen and (max-width: $screen-size-sm) {
-        padding: 5px 5px;
-        // margin: 10px 10px;
+      @media screen and (max-width: $screen-size-xl) and (min-width: $screen-size-md) {
+         padding: 0px 0px;
+         flex-direction: column;
+         margin: 27px 0px 71px 0px;
       }
+
+      @media screen and (max-width: $screen-size-md) {
+        padding: 0px 0px;
+      }
+
 
       @media screen and (max-width: $screen-size-md) {
         flex-direction: column;
@@ -590,6 +687,10 @@
         line-height: 166%;
         letter-spacing: 0.1em;
         color: #000000;
+
+        @media screen and (max-width: $screen-size-xl) and (min-width: $screen-size-md) {
+          justify-content: flex-start;
+       }
       }
 
       &__text {
@@ -600,6 +701,11 @@
         line-height: 32px;
         letter-spacing: 0.05em;
         color: #565656;
+
+        @media screen and (max-width: $screen-size-xl) and (min-width: $screen-size-md) {
+          max-width: inherit;
+          text-align: right;
+       }
       }
     }
   }
@@ -608,13 +714,12 @@
     padding: 0px 135px;
     background-color: #F4F4F4;
 
-    @media screen and (max-width: $screen-size-xl) {
-      padding: 10px 10px;
+    @media screen and (min-width: $screen-size-md) and (max-width: $screen-size-xl) {
+      padding: 0px 0px;
     }
 
-    @media screen and (max-width: $screen-size-sm) {
-      padding: 5px 5px;
-      // margin: 10px 10px;
+    @media screen and (max-width: $screen-size-md) {
+      padding: 0px 0px;
     }
 
     &-block {
@@ -631,6 +736,10 @@
           font-size: 48px;
           line-height: 64px;
           color: #000000;
+
+          @media screen and (max-width: $screen-size-md) {
+            font-size: 32px;
+          }
         }
 
         &__phone {
@@ -668,7 +777,6 @@
         &__svg:not(:last-child) {
           margin-right: 23px;
         }
-
       }
     }
 
