@@ -1,6 +1,5 @@
 .page-container {
-
-  background: #FFFFFF;
+  background: #ffffff;
   margin: 0 auto;
   border: 1px solid grey;
   display: flex;
@@ -8,7 +7,7 @@
   min-height: 100vh;
   max-width: 1440px;
 
-  // width: 100%; 
+  // width: 100%;
   @media screen and (min-width: $screen-size-md) and (max-width: $screen-size-xl) {
     padding: 34px 34px;
   }
@@ -28,7 +27,6 @@
     }
 
     &__logo {
-
       margin-top: 44px;
     }
 
@@ -39,7 +37,6 @@
     }
 
     .burger-control {
-
       position: relative;
       top: 61px;
 
@@ -69,7 +66,7 @@
 
         &__item {
           margin-right: 42px;
-          font-family: 'Lato', sans-serif;
+          font-family: "Lato", sans-serif;
           font-style: normal;
           font-weight: 400;
           font-size: 14px;
@@ -87,7 +84,7 @@
             color: #000000;
 
             &:hover::after {
-              content: '';
+              content: "";
               position: absolute;
               border-bottom: 1px solid #000000;
               left: 0px;
@@ -105,24 +102,22 @@
       position: absolute;
       right: -8px;
       z-index: 1;
-      background-color: #FFFFFF;
+      background-color: #ffffff;
       display: none;
     }
 
-    .is-active+.navigation-mobile {
+    .is-active + .navigation-mobile {
       display: flex;
     }
 
     .navigation {
-
       &__list {
         list-style-type: none;
         padding: 0px;
         width: 150px;
 
-
         &-item {
-          font-family: 'Lato', sans-serif;
+          font-family: "Lato", sans-serif;
           font-style: normal;
           font-weight: 400;
           font-size: 14px;
@@ -141,7 +136,7 @@
             color: #000000;
 
             &:hover::after {
-              content: '';
+              content: "";
               position: absolute;
               border-bottom: 1px solid #000000;
               left: 0px;
@@ -161,7 +156,6 @@
       // @media screen and (max-width: 825px) {
       //   display: none;
       // }
-
     }
   }
 
@@ -179,7 +173,7 @@
       background-position: center;
 
       @media screen and (max-width: $screen-size-md) {
-        margin-top: 24px;;
+        margin-top: 24px;
       }
 
       &__text {
@@ -188,7 +182,7 @@
         height: 120px;
         left: 135px;
         top: 55px;
-        font-family: 'Red Hat Display', sans-serif;
+        font-family: "Red Hat Display", sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: 48px;
@@ -212,30 +206,26 @@
       align-items: center;
       justify-content: flex-start;
       grid-gap: 30px;
-      flex-wrap: wrap-reverse;
 
-      @media screen and (min-width: $screen-size-md) and (max-width: $screen-size-xl) {
-       flex-wrap: nowrap;
-       margin-top: 50px;
-    }
-
-      @media screen and (max-width: $screen-size-xl) {
-        padding: 0px 0px;
+      @media screen and (max-width: 1200px) {
+        padding: 70px 34px;
       }
 
-      @media screen and (max-width: $screen-size-md) {
-        padding: 0px 0px;
+      @media screen and (max-width: 720px) {
+        flex-direction: column;
       }
 
       &_reverse {
         flex-direction: row-reverse;
         grid-gap: 30px;
+
+        @media screen and (max-width: 720px) {
+          flex-direction: column;
+        }
       }
 
       &-container {
-        
         &__hdr {
-          
         }
       }
 
@@ -251,32 +241,31 @@
         flex-direction: column;
         justify-content: flex-start;
         grid-gap: 30px;
-        max-width: 450px;
 
         @media screen and (min-width: $screen-size-md) and (max-width: $screen-size-xl) {
-           max-width: 100%;
-           grid-gap: 0px;
-       }
-
+          max-width: 100%;
+          grid-gap: 0px;
+        }
 
         &__sub-title {
-          font-family: 'Lato', sans-serif;
+          font-family: "Lato", sans-serif;
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
           line-height: 27px;
           letter-spacing: 0.1em;
-          color: #7B7B7B;
+          color: #7b7b7b;
 
           @media screen and (min-width: $screen-size-md) and (max-width: $screen-size-xl) {
-          margin-bottom: 0px;
+            margin-bottom: 0px;
           }
         }
 
-        &__header {}
+        &__header {
+        }
 
         &__header-title {
-          font-family: 'Red Hat Display', sans-serif;
+          font-family: "Red Hat Display", sans-serif;
           font-style: normal;
           font-weight: 500;
           font-size: 23px;
@@ -288,17 +277,17 @@
         &__header-time {
           margin-top: 15px;
 
-          font-family: 'Lato', sans-serif;
+          font-family: "Lato", sans-serif;
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
           line-height: 18px;
           letter-spacing: 0.1em;
-          color: #7B7B7B;
+          color: #7b7b7b;
         }
 
         &__content {
-          font-family: 'Lato', sans-serif;
+          font-family: "Lato", sans-serif;
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
@@ -309,13 +298,9 @@
           @media screen and (min-width: $screen-size-md) and (max-width: $screen-size-xl) {
             margin-bottom: 0px;
             margin-top: 0px;
-            }
-
-
-          
+          }
         }
       }
-
     }
 
     &__block3 {
@@ -343,7 +328,7 @@
         }
 
         &__header {
-          font-family: 'Red Hat Display', sans-serif;
+          font-family: "Red Hat Display", sans-serif;
           font-style: normal;
           font-weight: 600;
           font-size: 28px;
@@ -357,21 +342,24 @@
         }
 
         &__text {
-          font-family: 'Lato', sans-serif;
+          font-family: "Lato", sans-serif;
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
           line-height: 166%;
           letter-spacing: 0.1em;
-          color: #7B7B7B;
+          color: #7b7b7b;
           margin-top: 35px;
         }
       }
 
       &_posts {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-around;
+
+        @media screen and (max-width: $screen-size-xl) {
+          flex-direction: column;
+        }
 
         // &-item:not(:last-child) {
         //   margin-right: 30px;
@@ -397,12 +385,12 @@
         &-item {
           justify-content: flex-start;
           grid-gap: 30px;
+          
           @media screen and (max-width: $screen-size-xl) and (max-width: $screen-size-sm) {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap-reverse;
           }
-
 
           /*flex-direction: row;*/
           @media screen and (min-width: $screen-size-md) and (max-width: $screen-size-xl) {
@@ -410,23 +398,51 @@
             flex-direction: row;
             padding: 0px;
 
+            .page-content-image {
+              flex: 0 0 320px;
+              width: 320px;
+              height: 240px;
+  
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+
             &_reverse {
               display: flex;
               flex-direction: row-reverse;
               margin: 50px 0px 50px 0px;
               grid-gap: 30px;
+
+              .page-content-image {
+                flex: 0 0 320px;
+                width: 320px;
+  
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
             }
           }
 
+          &_reverse {
+            .page-content-image {
+              height: 240px;
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
 
           &__img {
             max-width: 100%;
-
           }
 
           &__text {
-            max-width: 340px;
-
 
             @media screen and (min-width: $screen-size-md) and (max-width: $screen-size-xl) {
               max-width: 100%;
@@ -435,19 +451,19 @@
             &-discriotion {
               display: flex;
               justify-content: space-between;
-              font-family: 'Lato', sans-serif;
+              font-family: "Lato", sans-serif;
               font-style: normal;
               font-weight: 400;
               font-size: 12px;
               line-height: 166%;
               letter-spacing: 0.1em;
-              color: #7B7B7B;
-              // max-width: 570px; 
+              color: #7b7b7b;
+              // max-width: 570px;
             }
           }
 
           &__hdr {
-            font-family: 'Red Hat Display', sans-serif;
+            font-family: "Red Hat Display", sans-serif;
             font-style: normal;
             font-weight: 500;
             font-size: 22px;
@@ -458,7 +474,7 @@
           }
 
           &__discription {
-            font-family: 'Lato', sans-serif;
+            font-family: "Lato", sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -466,6 +482,15 @@
             letter-spacing: 0.05em;
             color: #565656;
             // max-width: 370px;
+          }
+
+          .page-content-image {
+            height: 240px;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
           }
         }
 
@@ -475,13 +500,13 @@
 
           &-type {
             background-color: #565656;
-            font-family: 'Lato';
+            font-family: "Lato";
             font-style: normal;
             font-weight: 700;
             font-size: 16px;
             line-height: 166%;
             letter-spacing: 0.1em;
-            color: #FFFFFF;
+            color: #ffffff;
             width: 180px;
             height: 46px;
             border-color: none;
@@ -498,7 +523,7 @@
       @media screen and (max-width: $screen-size-xl) and (min-width: $screen-size-md) {
         padding: 0px 0px;
       }
- 
+
       @media screen and (max-width: $screen-size-md) {
         padding: 0px 0px;
       }
@@ -508,11 +533,11 @@
         justify-content: space-between;
 
         @media screen and (max-width: $screen-size-xl) and (min-width: $screen-size-md) {
-          margin-top: 50px;
+          margin-top: 50px;max-width: 300px;
         }
 
         &__header {
-          font-family: 'Red Hat Display', sans-serif;
+          font-family: "Red Hat Display", sans-serif;
           font-style: normal;
           font-weight: 600;
           font-size: 28px;
@@ -522,13 +547,13 @@
         }
 
         &__text {
-          font-family: 'Lato', sans-serif;
+          font-family: "Lato", sans-serif;
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
           line-height: 166%;
           letter-spacing: 0.1em;
-          color: #7B7B7B;
+          color: #7b7b7b;
           margin-top: 35px;
         }
       }
@@ -545,9 +570,9 @@
 
         @media screen and (max-width: $screen-size-md) {
           display: flex;
-            flex-direction: column;
-            flex-wrap: wrap-reverse;
-          }
+          flex-direction: column;
+          flex-wrap: wrap-reverse;
+        }
 
         &-item {
           justify-content: flex-start;
@@ -571,28 +596,28 @@
           }
 
           &__text {
-            max-width: 570px;
+            // max-width: 570px;
             @media screen and (max-width: $screen-size-xl) and (min-width: $screen-size-md) {
-              max-width: 340px;
+              // max-width: 340px;
             }
             @media screen and (max-width: $screen-size-md) {
-              max-width: 300px;
+              // max-width: 300px;
             }
 
             &-discriotion {
               display: flex;
               justify-content: space-between;
-              font-family: 'Lato', sans-serif;
+              font-family: "Lato", sans-serif;
               font-style: normal;
               font-weight: 400;
               font-size: 12px;
               line-height: 166%;
               letter-spacing: 0.1em;
-              color: #7B7B7B;
+              color: #7b7b7b;
             }
 
             &__hdr {
-              font-family: 'Red Hat Display', sans-serif;
+              font-family: "Red Hat Display", sans-serif;
               font-style: normal;
               font-weight: 500;
               font-size: 22px;
@@ -602,7 +627,7 @@
             }
 
             &__discription {
-              font-family: 'Lato', sans-serif;
+              font-family: "Lato", sans-serif;
               font-style: normal;
               font-weight: 400;
               font-size: 16px;
@@ -640,20 +665,19 @@
 
         &-type {
           background-color: #565656;
-          font-family: 'Lato';
+          font-family: "Lato";
           font-style: normal;
           font-weight: 700;
           font-size: 16px;
           line-height: 166%;
           letter-spacing: 0.1em;
-          color: #FFFFFF;
+          color: #ffffff;
           width: 180px;
           height: 46px;
           border-color: none;
           border: 0px;
         }
       }
-
     }
 
     &__block4 {
@@ -662,15 +686,14 @@
       padding: 90px 135px;
 
       @media screen and (max-width: $screen-size-xl) and (min-width: $screen-size-md) {
-         padding: 0px 0px;
-         flex-direction: column;
-         margin: 27px 0px 71px 0px;
+        padding: 0px 0px;
+        flex-direction: column;
+        margin: 27px 0px 71px 0px;
       }
 
       @media screen and (max-width: $screen-size-md) {
         padding: 0px 0px;
       }
-
 
       @media screen and (max-width: $screen-size-md) {
         flex-direction: column;
@@ -680,7 +703,7 @@
 
       &__item {
         max-width: 470px;
-        font-family: 'Red Hat Display', sans-serif;
+        font-family: "Red Hat Display", sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 23px;
@@ -690,12 +713,12 @@
 
         @media screen and (max-width: $screen-size-xl) and (min-width: $screen-size-md) {
           justify-content: flex-start;
-       }
+        }
       }
 
       &__text {
         max-width: 470px;
-        font-family: 'Lato', sans-serif;
+        font-family: "Lato", sans-serif;
         font-weight: 400;
         font-size: 19px;
         line-height: 32px;
@@ -705,14 +728,14 @@
         @media screen and (max-width: $screen-size-xl) and (min-width: $screen-size-md) {
           max-width: inherit;
           text-align: right;
-       }
+        }
       }
     }
   }
 
   &__footer {
     padding: 0px 135px;
-    background-color: #F4F4F4;
+    background-color: #f4f4f4;
 
     @media screen and (min-width: $screen-size-md) and (max-width: $screen-size-xl) {
       padding: 0px 0px;
@@ -725,12 +748,15 @@
     &-block {
       display: flex;
       justify-content: space-between;
-      position: relative;
+      align-items: center;
+
+      @media screen and (max-width: 720px) {
+        flex-direction: column;        
+      }
 
       &-left {
-
         &__header {
-          font-family: 'Red Hat Display', sans-serif;
+          font-family: "Red Hat Display", sans-serif;
           font-style: normal;
           font-weight: 400;
           font-size: 48px;
@@ -746,7 +772,7 @@
           width: 200px;
           left: 0px;
           top: 90px;
-          font-family: 'Lato', sans-serif;
+          font-family: "Lato", sans-serif;
           font-style: normal;
           letter-spacing: 0.1em;
           color: #000000;
@@ -758,7 +784,7 @@
         letter-spacing: 0;
 
         &__mail {
-          font-family: 'Lato', sans-serif;
+          font-family: "Lato", sans-serif;
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
@@ -766,14 +792,9 @@
           letter-spacing: 0.1em;
           color: #000000;
         }
-
       }
 
       &-right {
-        position: absolute;
-        top: 95px;
-        right: 1px;
-
         &__svg:not(:last-child) {
           margin-right: 23px;
         }
@@ -782,7 +803,7 @@
 
     &-bottom {
       text-align: center;
-      font-family: 'Lato', sans-serif;
+      font-family: "Lato", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 12px;
@@ -790,5 +811,15 @@
       letter-spacing: 0.1em;
       color: #000000;
     }
+  }
+}
+
+.page-content-image {
+  width: 100%;
+  text-align: center;
+
+  img {
+    object-fit: cover;
+    width: 100%;
   }
 }
