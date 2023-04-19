@@ -1,0 +1,791 @@
+$myPadding: 300px;
+$my-Padding-top: 220px;
+
+
+$screen-size-xs: 576px;
+$screen-size-sm: 768px;
+$screen-size-md: 1024px;
+$screen-size-xl: 1440px;
+$screen-size-xxl: 1920px;
+
+$screen-size-xs-padding-left: 18px;
+$screen-size-xs-padding-right: 18px;
+$screen-size-sm-padding-left: 24px;
+$screen-size-sm-padding-right: 24px;
+$screen-size-md-padding-left: 32px;
+$screen-size-md-padding-right: 32px;
+$screen-size-xl-padding-left: 110px;
+$screen-size-xl-padding-right: 110px;
+
+
+
+.container {
+  min-height: 100vh;
+  max-width: 1920px;
+  margin: 0 auto;
+
+  &__header {
+    background-image: url(../images/HeaderBackground.jpg);
+    height: 862px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+    &__name {
+      text-align: center;
+      padding-top: 295px;
+      padding-bottom: 8px;
+      max-height: 92px;
+      font-family: 'Josefin Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 52px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-top: 0px;
+    }
+
+    &__text {
+      text-align: center;
+      padding-top: 8px;
+      padding-bottom: 48px;
+      max-height: 28px;
+      font-family: 'Josefin Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 28px;
+      letter-spacing: 0.31em;
+      color: #FFFFFF;
+    }
+
+    &__field {
+      background-color: #FFFFFF;
+      display:flex;
+      flex-direction:row;
+      margin: 0 auto;
+      max-width: 647px;
+      max-height: 60px;
+      padding: 4px 5px;
+
+      input::placeholder {
+        font-family: 'Josefin Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2em;
+        color: #999999;
+      }
+
+      &-input {
+        flex-grow:2;
+        border:none;
+        background: #FFFFFF;
+        outline: none;
+        margin-left: 25px;
+        height: inherit;
+
+      }
+      &-button {
+        background: #5373FD;
+        border: 1px solid #5373FD;
+        color: #FFFFFF;
+
+        &-block {
+          display: flex;
+          flex-direction: row;
+          padding: 16px 24px;
+
+          &__svg {
+            margin-right: 12px;
+          }
+
+          &__text {
+            font-family: 'Aleo', serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+          }
+        }
+       }
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    &__scroll {
+      margin: 0 auto;
+      padding-top: 211px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &-text {
+        font-family: 'Josefin Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.2em;
+        color: #FFFFFF;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #FFFFFF;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &-main {
+    background-color: #5373FD;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px $myPadding;
+
+    @media screen and (max-width: $screen-size-xl){
+      padding-left: $screen-size-xl-padding-left;
+      padding-right: $screen-size-xl-padding-right;
+    }
+
+    @media screen and (max-width: $screen-size-md){
+      padding-left: $screen-size-md-padding-left;
+      padding-right: $screen-size-md-padding-right;
+    }
+
+    @media screen and (max-width: $screen-size-sm){
+      padding-left: $screen-size-sm-padding-left;
+      padding-right: $screen-size-sm-padding-right;
+      flex-direction: column;
+      text-align: center;
+    }
+    @media screen and (max-width: 880px){
+      flex-direction: column;
+      text-align: center;
+    }
+
+    
+    @media screen and (max-width: $screen-size-xs){
+      padding-left: $screen-size-xs-padding-left;
+      padding-right: $screen-size-xs-padding-right;
+    }
+
+    &__logo {
+      margin-top: 47px;
+
+      @media screen and (max-width: $screen-size-sm){
+        margin-top: 0px;
+      padding-top: 32px;
+      padding-bottom: 20px;
+      }
+    }
+
+    &__nav {
+      margin-top: 32px;
+      margin-bottom: 32px;
+
+      @media screen and (max-width: $screen-size-sm){
+        margin-top: 5px;
+      margin-bottom: 5px;
+      }
+
+      &__list {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        list-style-type: none;
+
+        @media screen and (max-width: 880px){
+          justify-content: center;
+        }
+
+        @media screen and (max-width: $screen-size-sm){
+          display: none;
+        }
+
+        &__item {
+          text-decoration: none;
+          font-family: 'Aleo', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          display: flex;
+          align-items: center;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: #FFFFFF;
+        }
+      }
+    }
+
+
+
+
+    // .navigation-mobile {
+    //   position: absolute;
+    //   right: -8px;
+    //   z-index: 1;
+    //   background-color: #ffffff;
+    //   display: none;
+    // }
+
+    // .is-active + .navigation-mobile {
+    //   display: flex;
+    // }
+
+    // .navigation {
+    //   &__list {
+    //     list-style-type: none;
+    //     padding: 0px;
+    //     width: 150px;
+
+    //     &-item {
+    //       font-family: "Lato", sans-serif;
+    //       font-style: normal;
+    //       font-weight: 400;
+    //       font-size: 14px;
+    //       line-height: 17px;
+    //       letter-spacing: 0.3em;
+    //       text-transform: uppercase;
+    //       border-bottom: 1px solid #000000;
+
+    //       &__link {
+    //         padding-left: 10px;
+    //       }
+
+    //       a {
+    //         text-decoration: none;
+    //         position: relative;
+    //         color: #000000;
+
+    //         &:hover::after {
+    //           content: "";
+    //           position: absolute;
+    //           border-bottom: 1px solid #000000;
+    //           left: 0px;
+    //           right: 0px;
+    //           margin: 0 auto;
+    //           top: 20px;
+    //           width: 40px;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+  }
+
+  &-block1 {
+    background-image: url(../images/WhyBackground.jpg);
+    height: 704px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px $myPadding;
+
+    @media screen and (max-width: $screen-size-xl){
+      padding-left: $screen-size-xl-padding-left;
+      padding-right: $screen-size-xl-padding-right;
+    }
+
+    @media screen and (max-width: $screen-size-md){
+      padding-left: $screen-size-md-padding-left;
+      padding-right: $screen-size-md-padding-right;
+    }
+
+    @media screen and (max-width: $screen-size-sm){
+      padding-left: $screen-size-sm-padding-left;
+      padding-right: $screen-size-sm-padding-right;
+      flex-direction: column-reverse;
+    }
+
+    
+    @media screen and (max-width: $screen-size-xs){
+      padding-left: $screen-size-xs-padding-left;
+      padding-right: $screen-size-xs-padding-right;
+    }
+
+    &-text {
+       
+
+
+      &__hdr {
+        font-family: 'Aleo', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 40px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        margin-bottom: 24px;
+
+        @media screen and (max-width: $screen-size-sm){
+          text-align: center;
+        }
+    
+        
+        @media screen and (max-width: $screen-size-xs){
+          text-align: center;
+        }
+      }
+
+      &__discription {
+        font-family: 'Josefin Sans', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+        margin-bottom: 32px;
+      }
+
+      &-btn {
+        @media screen and (max-width: $screen-size-sm){
+          text-align: center;
+        }
+    
+        
+        @media screen and (max-width: $screen-size-xs){
+          text-align: center;
+        }
+
+
+      &__button {
+        background-color:  #5373FD;
+        color: #FFFFFF;
+        font-family: 'Aleo', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        padding: 20px 32px;
+        border: none;
+      }
+    }
+    }
+
+    &-pictures {
+
+      @media screen and (max-width: $screen-size-sm){
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+          width: 100%;
+       }
+
+      &__image-up {
+        padding-left: 136px;
+        padding-bottom: 8px;
+
+        @media screen and (max-width: $screen-size-md){
+          padding-left: 30px;
+        }
+
+        @media screen and (max-width: $screen-size-sm){
+          padding-left: initial;
+        }       
+
+      }
+
+      &__image-bottom {
+        padding-left: 210px;
+        @media screen and (max-width: $screen-size-md){
+          padding-left: 50px;
+        }
+
+        @media screen and (max-width: $screen-size-sm){
+          padding-left: initial;
+        }       
+
+      }
+    }
+  }
+
+  &-block2 {
+    position: relative;
+    background: #333333;
+    margin: 0 auto;
+    align-items: center;
+    height: 306px;
+    padding: 60px $myPadding 0px;
+
+    @media screen and (max-width: $screen-size-sm){
+      height: 658px;
+      padding-top: 0px;
+    }
+
+    @media screen and (max-width: $screen-size-xl){
+      padding-left: $screen-size-xl-padding-left;
+      padding-right: $screen-size-xl-padding-right;
+    }
+
+    @media screen and (max-width: $screen-size-md){
+      padding-left: $screen-size-md-padding-left;
+      padding-right: $screen-size-md-padding-right;
+    }
+
+    @media screen and (max-width: $screen-size-sm){
+      padding-left: $screen-size-sm-padding-left;
+      padding-right: $screen-size-sm-padding-right;
+    }
+
+    
+    @media screen and (max-width: $screen-size-xs){
+      padding-left: $screen-size-xs-padding-left;
+      padding-right: $screen-size-xs-padding-right;
+    }
+
+    &__line {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0px;
+      padding-top: inherit;
+      text-align: center;
+
+      @media screen and (max-width: $screen-size-sm){
+        display: none;
+      }
+      &__svg {
+
+      }
+    }
+
+    &__icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      justify-content: space-around;
+      padding-top: 71px;
+
+      @media screen and (max-width: $screen-size-sm){
+        flex-direction: column;
+      }
+
+      &-block {
+        text-align: center;
+
+        &__name {
+          font-family: 'Aleo', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 36px;
+          line-height: 40px;
+          text-align: center;
+          text-transform: capitalize;
+          color: #FFFFFF;
+        }
+      }
+    }  
+  }
+
+  &-block3  { 
+    &.background-first {
+      background-image: url(../images/house-block3.jpg);
+    }
+    &.background-second {
+      background-image: url(../images/spain-block4.jpg);
+    }
+    height: 684px;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: $my-Padding-top $myPadding 0;
+
+    @media screen and (max-width: $screen-size-xl){
+      padding-left: $screen-size-xl-padding-left;
+      padding-right: $screen-size-xl-padding-right;
+    }
+
+    @media screen and (max-width: $screen-size-md){
+      padding-left: $screen-size-md-padding-left;
+      padding-right: $screen-size-md-padding-right;
+    }
+
+    @media screen and (max-width: $screen-size-sm){
+      padding-left: $screen-size-sm-padding-left;
+      padding-right: $screen-size-sm-padding-right;
+      padding-top: initial;
+      height: 588px;
+
+      display: flex; 
+      align-items: center;
+    }
+
+    
+    @media screen and (max-width: $screen-size-xs){
+      padding-left: $screen-size-xs-padding-left;
+      padding-right: $screen-size-xs-padding-right;
+    }
+
+    &-content {
+     background: rgba(35, 35, 35, 0.9);    //  height: 344px;
+     padding: 44px 32px;
+     max-width: 648px;
+
+      &__contry {
+        font-family: 'Josefin Sans', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+      }
+
+      &__hdr {
+        font-family: 'Josefin Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+      }
+
+      &__text {
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+      }
+
+      &__button {
+        background-color:  #5373FD;
+        color: #FFFFFF;
+        font-family: 'Aleo', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        padding: 20px 32px;
+        border: none;
+      }
+    }
+      .right {
+        margin-left: auto; 
+        margin-right: 0;
+    }
+  }
+
+  &-block5 {
+    background-image: url(../images/BG-block5.jpg);
+    height: 680px;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: $my-Padding-top $myPadding 0;
+
+    // @media screen and (max-width: $screen-size-1360) {
+    //  padding-left: 8%;
+    //  padding-right: 8%;
+   
+    //   // display: flex;
+    //  // flex-direction: column;
+    //   // flex-wrap: wrap-reverse;
+    // }
+
+
+    @media screen and (max-width: $screen-size-xl){
+      padding-left: $screen-size-xl-padding-left;
+      padding-right: $screen-size-xl-padding-right;
+    }
+
+    @media screen and (max-width: $screen-size-md){
+      padding-left: $screen-size-md-padding-left;
+      padding-right: $screen-size-md-padding-right;
+      padding-top: 120px;
+      
+    }
+
+    @media screen and (max-width: $screen-size-sm){
+      padding-left: $screen-size-sm-padding-left;
+      padding-right: $screen-size-sm-padding-right;
+    }
+
+    
+    @media screen and (max-width: $screen-size-xs){
+      padding-left: $screen-size-xs-padding-left;
+      padding-right: $screen-size-xs-padding-right;
+    }
+
+
+    &__hdr {
+      font-family: 'Aleo', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 40px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #FFFFFF;
+      margin-bottom: 60px;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      @media screen and (max-width: $screen-size-sm) {
+        flex-direction: column;
+        
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      &__image {
+        flex: 0 0 440px;
+
+        @media screen and  (max-width: $screen-size-xl){
+          flex-basis: 380px;
+        }
+
+        @media screen and  (max-width: $screen-size-md){
+          flex-basis: 320px;
+        }
+
+        @media screen and (max-width: $screen-size-sm){
+          flex-basis: 720px;
+        }
+
+        @media screen and (max-width: $screen-size-xs){
+          flex-basis: 540px;
+        }
+
+      }
+
+      &__text {
+       
+        padding: 48px 60px;
+        background-color: #333333;
+
+        &__name {
+          font-family: 'Josefin Sans', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 28px;
+          text-transform: uppercase;
+          color: #FFFFFF;
+        }
+
+        &__discription {
+          font-family: 'Josefin Sans', sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 28px;
+          letter-spacing: 0.1em;
+          color: #FFFFFF;
+          margin-top: 0px;
+          margin-bottom: 0px;
+
+          &__svg {
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  &__footer {
+    background-color: #000000;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 80px $myPadding;
+
+    @media screen and (max-width: $screen-size-xl){
+      padding-left: $screen-size-xl-padding-left;
+      padding-right: $screen-size-xl-padding-right;
+    }
+
+    @media screen and (max-width: $screen-size-md){
+      padding-left: $screen-size-md-padding-left;
+      padding-right: $screen-size-md-padding-right;
+      padding-top: 120px;
+    }
+
+    @media screen and (max-width: $screen-size-sm){
+      padding-left: $screen-size-sm-padding-left;
+      padding-right: $screen-size-sm-padding-right;
+    }
+
+    
+    @media screen and (max-width: $screen-size-xs){
+      padding-left: $screen-size-xs-padding-left;
+      padding-right: $screen-size-xs-padding-right;
+    }
+
+    &__hdr {
+      font-family: 'Josefin Sans', sans-serif;
+      font-style: normal;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      text-align: center;
+    }
+
+    &__text {
+      font-family: 'Josefin Sans', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.2em;
+      color: #FFFFFF;
+      text-align: center;
+    }
+
+    
+    &__sotial {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      &__icon {
+        path:hover {
+          fill:#5373FD;
+        }
+      }
+
+      &__icon:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+}
