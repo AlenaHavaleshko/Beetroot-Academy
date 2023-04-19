@@ -24,6 +24,12 @@ $screen-size-xl-padding-right: 110px;
   max-width: 1920px;
   margin: 0 auto;
 
+  // .hide-mobile {
+  //   @media screen and (max-width: $screen-size-xs){
+  //     display: none;
+  //   }
+  // }
+
   &__header {
     background-image: url(../images/HeaderBackground.jpg);
     height: 862px;
@@ -170,11 +176,14 @@ $screen-size-xl-padding-right: 110px;
       padding-right: $screen-size-sm-padding-right;
       flex-direction: column;
       text-align: center;
+
+      // here we also work with menu
     }
     @media screen and (max-width: 880px){
       flex-direction: column;
       text-align: center;
     }
+    
 
     
     @media screen and (max-width: $screen-size-xs){
@@ -196,10 +205,22 @@ $screen-size-xl-padding-right: 110px;
       margin-top: 32px;
       margin-bottom: 32px;
 
-      @media screen and (max-width: $screen-size-sm){
-        margin-top: 5px;
-      margin-bottom: 5px;
+      // @media screen and (max-width: $screen-size-sm){
+      //   margin-top: 5px;
+      //   margin-bottom: 5px;
+      // }
+      @media screen and (max-width: $screen-size-sm){ 
+        display: none;
+        
+        &.is-active {
+          display: block;
+          ul { 
+            flex-direction: column;
+            align-items: center;
+          }
+        }
       }
+
 
       &__list {
         display: flex;
@@ -211,9 +232,6 @@ $screen-size-xl-padding-right: 110px;
           justify-content: center;
         }
 
-        @media screen and (max-width: $screen-size-sm){
-          display: none;
-        }
 
         &__item {
           text-decoration: none;
@@ -229,6 +247,38 @@ $screen-size-xl-padding-right: 110px;
           color: #FFFFFF;
         }
       }
+    }
+
+    .hide-desktop {
+      @media screen and (min-width: $screen-size-sm) {
+        display: none;
+      }
+    }
+
+    .burger-control {
+      // width: 40px;
+      // height: 40px;
+      // background-color: red;
+      position: relative;
+    }
+
+    .navigation-mobile {
+      position: absolute;
+      right: 0;
+      z-index: 1;
+      background-color: #5373FD;
+      // display: none;
+
+      .is-active + .navigation-mobile {
+        display: flex;
+      }
+
+
+      .container-main__nav__list {
+        flex-direction: column;
+
+      }
+
     }
 
 

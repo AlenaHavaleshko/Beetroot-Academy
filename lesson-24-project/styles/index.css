@@ -236,8 +236,19 @@
 }
 @media screen and (max-width: 768px) {
   .container-main__nav {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    display: none;
+  }
+  .container-main__nav.is-active {
+    display: block;
+  }
+  .container-main__nav.is-active ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .container-main__nav__list {
@@ -258,11 +269,6 @@
             justify-content: center;
   }
 }
-@media screen and (max-width: 768px) {
-  .container-main__nav__list {
-    display: none;
-  }
-}
 .container-main__nav__list__item {
   text-decoration: none;
   font-family: "Aleo", serif;
@@ -279,6 +285,31 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  .container-main .hide-desktop {
+    display: none;
+  }
+}
+.container-main .burger-control {
+  position: relative;
+}
+.container-main .navigation-mobile {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  background-color: #5373FD;
+}
+.container-main .navigation-mobile .is-active + .navigation-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.container-main .navigation-mobile .container-main__nav__list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .container-block1 {
   background-image: url(../images/WhyBackground.jpg);
