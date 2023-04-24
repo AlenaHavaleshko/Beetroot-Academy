@@ -517,6 +517,7 @@ $screen-size-xl-padding-right: 110px;
         display: none;
       }
       &__svg {
+        width: 874px;
 
       }
     }
@@ -677,6 +678,7 @@ $screen-size-xl-padding-right: 110px;
     @media screen and (max-width: $screen-size-sm){
       padding-left: $screen-size-sm-padding-left;
       padding-right: $screen-size-sm-padding-right;
+      padding-top: 20px;
     }
 
     
@@ -725,7 +727,7 @@ $screen-size-xl-padding-right: 110px;
         }
 
         @media screen and (max-width: $screen-size-sm){
-          flex-basis: 720px;
+          flex-basis: 100%;
         }
 
         @media screen and (max-width: $screen-size-xs){
