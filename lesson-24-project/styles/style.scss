@@ -430,6 +430,7 @@ $screen-size-xl-padding-right: 110px;
         text-transform: uppercase;
         padding: 20px 32px;
         border: none;
+        cursor: pointer;
       }
     }
     }
@@ -507,13 +508,13 @@ $screen-size-xl-padding-right: 110px;
 
     &__line {
       position: absolute;
-      left: 0;
+      left: -6px;
       right: 0;
       top: 0px;
       padding-top: inherit;
       text-align: center;
 
-      @media screen and (max-width: $screen-size-sm){
+      @media screen and (max-width: $screen-size-md){
         display: none;
       }
       &__svg {
@@ -528,12 +529,20 @@ $screen-size-xl-padding-right: 110px;
       justify-content: space-around;
       padding-top: 71px;
 
+
       @media screen and (max-width: $screen-size-sm){
         flex-direction: column;
       }
 
       &-block {
         text-align: center;
+
+        &__svg {
+          path:hover {
+          fill: #FF6363;
+          }
+
+        }
 
         &__name {
           font-family: 'Aleo', serif;
@@ -636,6 +645,7 @@ $screen-size-xl-padding-right: 110px;
         text-transform: uppercase;
         padding: 20px 32px;
         border: none;
+        cursor: pointer;
       }
     }
       .right {
@@ -670,19 +680,22 @@ $screen-size-xl-padding-right: 110px;
     @media screen and (max-width: $screen-size-md){
       padding-left: $screen-size-md-padding-left;
       padding-right: $screen-size-md-padding-right;
-      padding-top: 120px;
+      padding-top: 60px;
       
     }
 
     @media screen and (max-width: $screen-size-sm){
       padding-left: $screen-size-sm-padding-left;
       padding-right: $screen-size-sm-padding-right;
+      padding-top: 20px;
+      height: 880px;
     }
 
     
     @media screen and (max-width: $screen-size-xs){
       padding-left: $screen-size-xs-padding-left;
       padding-right: $screen-size-xs-padding-right;
+      min-height: 1180px;
     }
 
 
