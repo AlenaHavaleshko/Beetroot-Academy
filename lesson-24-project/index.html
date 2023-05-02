@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/normolize.css">
+  <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100;0,200;0,400;0,600;0,700;1,200;1,300;1,500;1,700&family=Lato:wght@100;300;400;700;900&family=Nunito+Sans:ital,wght@0,200;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="container__header">
+      <h2 class="container__header__name">Bhromaon</h2>
+      <p class="container__header__text">Safe Travel Anywhere</p>
+      <div class="container__header__field">
+        <input class="container__header__field-input" placeholder="Search Your Travel Destination" type="text"
+          id="search">
+        <button class="container__header__field-button" id="search-button">
+          <div class="container__header__field-button-block">
+            <span>
+              <svg class="container__header__field-button-block__svg" xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="none">
+                <g clip-path="url(#a)">
+                  <path fill="#fff"
+                    d="m15.782 13.833-3.115-3.115a.75.75 0 0 0-.532-.219h-.51a6.467 6.467 0 0 0 1.376-4c0-3.59-2.91-6.499-6.5-6.499a6.499 6.499 0 1 0 0 12.999 6.47 6.47 0 0 0 4-1.375v.51c0 .2.078.39.219.53l3.115 3.116a.747.747 0 0 0 1.06 0l.884-.885a.753.753 0 0 0 .003-1.062ZM6.5 10.499c-2.21 0-4-1.787-4-4 0-2.209 1.788-4 4-4 2.21 0 4 1.788 4 4 0 2.21-1.787 4-4 4Z" />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h16v16H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+            <span class="container__header__field-button-block__text">search</span>
+          </div>
+        </button>
+      </div>
+
+      <div class="container__header__scroll">
+        <a href="#"><span class="container__header__scroll-text">Scroll</span></a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" fill="none">
+          <path fill="#fff"
+            d="M6.47 11.921.396 5.848a.75.75 0 0 1 0-1.06l.709-.71a.75.75 0 0 1 1.06 0L7 8.89l4.836-4.813a.75.75 0 0 1 1.06 0l.707.71a.75.75 0 0 1 0 1.06L7.53 11.92a.75.75 0 0 1-1.06 0Z" />
+        </svg>
+      </div>
+    </header>
+
+    <main>
+      <div class="container-main">
+        <div class="container-main__logo">
+
+          <div class="burger-control hide-desktop">
+            <!-- Here will be add new class 'is-active' when menu is open --> 
+          <div style="    position: absolute;right: 0; top: 14px;" class="hamburger hamburger--squeeze js-hamburger">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+          </div>
+        </div>
+
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="163" height="19" fill="none">
+            <path fill="#fff"
+              d="M5.464 1.336c1.84 0 3.304.376 4.392 1.128 1.088.736 1.632 1.84 1.632 3.312 0 .896-.192 1.672-.576 2.328a4.287 4.287 0 0 1-1.536 1.584c.912.432 1.632 1 2.16 1.704.528.688.792 1.488.792 2.4 0 .96-.176 1.776-.528 2.448a4.366 4.366 0 0 1-1.392 1.608 6.13 6.13 0 0 1-1.968.888A9.77 9.77 0 0 1 6.16 19H.28V1.336h5.184Zm.408 7.224c.688 0 1.192-.208 1.512-.624.336-.416.504-.888.504-1.416 0-.608-.208-1.064-.624-1.368-.4-.304-.944-.456-1.632-.456H3.76V8.56h2.112Zm.12 7.2c.768 0 1.416-.152 1.944-.456.528-.32.792-.824.792-1.512 0-.512-.144-.896-.432-1.152-.288-.272-.664-.456-1.128-.552a5.819 5.819 0 0 0-1.416-.168H3.76v3.84h2.232ZM33.075 1.336V19h-3.48v-7.176H21.7V19h-3.48V1.336h3.48v7.128h7.896V1.336h3.48Zm12.302 0c2.224 0 3.928.544 5.112 1.632 1.2 1.072 1.8 2.512 1.8 4.32 0 1.008-.216 2-.648 2.976-.416.976-1.128 1.752-2.136 2.328L53.61 19h-4.056l-3.72-5.616h-2.328V19h-3.48V1.336h5.352Zm.6 8.688c.704 0 1.248-.144 1.632-.432.4-.304.68-.656.84-1.056.16-.416.24-.792.24-1.128 0-.192-.032-.432-.096-.72a2.641 2.641 0 0 0-.336-.912c-.176-.304-.448-.56-.816-.768-.352-.208-.832-.312-1.44-.312h-2.496v5.328h2.472Zm11.212.168c0-1.216.232-2.368.696-3.456a9.265 9.265 0 0 1 4.8-4.872 8.583 8.583 0 0 1 3.504-.72c1.232 0 2.392.24 3.48.72a9.202 9.202 0 0 1 2.88 1.992 8.875 8.875 0 0 1 1.968 2.88c.48 1.088.72 2.24.72 3.456 0 1.248-.24 2.416-.72 3.504a8.875 8.875 0 0 1-1.968 2.88 9.265 9.265 0 0 1-2.88 1.92 8.778 8.778 0 0 1-3.48.696 8.838 8.838 0 0 1-3.504-.696 9.265 9.265 0 0 1-2.88-1.92 9.265 9.265 0 0 1-1.92-2.88 8.838 8.838 0 0 1-.696-3.504Zm3.6 0c0 1.04.24 1.992.72 2.856a5.792 5.792 0 0 0 1.992 2.04c.832.496 1.768.744 2.808.744 1.008 0 1.912-.248 2.712-.744a5.467 5.467 0 0 0 1.92-2.04c.464-.864.696-1.816.696-2.856 0-1.072-.24-2.032-.72-2.88a5.417 5.417 0 0 0-1.944-2.04c-.816-.512-1.736-.768-2.76-.768-1.024 0-1.944.256-2.76.768a5.417 5.417 0 0 0-1.944 2.04c-.48.848-.72 1.808-.72 2.88ZM81.107 19V.616h.024l8.952 12.696L99.25.616h.048V19h-3.48v-8.424l-5.76 8.184h-.048l-5.544-7.656V19h-3.36Zm23.165 0L112.24.64h.192L120.4 19h-4.032L115 15.544h-5.856L107.704 19h-3.432Zm6.096-6.384h3.48l-1.704-4.296-1.776 4.296Zm12.732-2.424c0-1.216.232-2.368.696-3.456a9.265 9.265 0 0 1 4.8-4.872 8.583 8.583 0 0 1 3.504-.72c1.232 0 2.392.24 3.48.72a9.202 9.202 0 0 1 2.88 1.992 8.875 8.875 0 0 1 1.968 2.88c.48 1.088.72 2.24.72 3.456 0 1.248-.24 2.416-.72 3.504a8.875 8.875 0 0 1-1.968 2.88 9.265 9.265 0 0 1-2.88 1.92 8.778 8.778 0 0 1-3.48.696 8.838 8.838 0 0 1-3.504-.696 9.265 9.265 0 0 1-2.88-1.92 9.265 9.265 0 0 1-1.92-2.88 8.838 8.838 0 0 1-.696-3.504Zm3.6 0c0 1.04.24 1.992.72 2.856a5.792 5.792 0 0 0 1.992 2.04c.832.496 1.768.744 2.808.744 1.008 0 1.912-.248 2.712-.744a5.467 5.467 0 0 0 1.92-2.04c.464-.864.696-1.816.696-2.856 0-1.072-.24-2.032-.72-2.88a5.417 5.417 0 0 0-1.944-2.04c-.816-.512-1.736-.768-2.76-.768-1.024 0-1.944.256-2.76.768a5.417 5.417 0 0 0-1.944 2.04c-.48.848-.72 1.808-.72 2.88Zm36.134 9.528-12.36-11.16.072 10.44h-3.528V.64h.144l12.336 11.328-.072-10.632h3.504V19.72h-.096Z" />
+          </svg>
+        </div>      
+
+        <!-- Here will be add new class 'is-active' when menu is open -->
+        <nav class="container-main__nav">
+          <ul class="container-main__nav__list">
+            <li class="container-main__nav__list__item"><a class="" href="#">Who We Are</a></li>
+            <li class="container-main__nav__list__item"><a class="" href="#">What We Do</a></li>
+            <li class="container-main__nav__list__item"><a class="" href="#">Travel With Us</a></li>
+            <li class="container-main__nav__list__item"><a class="" href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+
+       
+        <!-- <nav class="navigation navigation-mobile">
+          <ul class="container-main__nav__list">
+            <li class="container-main__nav__list__item"><a class="" href="#">Who We Are</a></li>
+            <li class="container-main__nav__list__item"><a class="" href="#">What We Do</a></li>
+            <li class="container-main__nav__list__item"><a class="" href="#">Travel With Us</a></li>
+            <li class="container-main__nav__list__item"><a class="" href="#">Contact Us</a></li>
+          </ul>
+        </nav> -->
+
+
+        <!-- <div class="hide-desktop burger-control"> -->
+           <!-- is-active  -->
+
+           
+
+      </div>
+      <div class="container-block1">
+        <div class="container-block1-text">
+          <h2 class="container-block1-text__hdr">Why Choose Us</h2>
+          <p class="container-block1-text__discription">Tion and dislike men who are so beguiled and demoralized by
+            desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee <br />
+
+            Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by
+            desire, that.</p>
+          <div class="container-block1-text-btn">
+            <button type="explore" class="container-block1-text-btn__button">
+              Explore Places
+            </button>
+          </div>
+        </div>
+        <div class="container-block1-pictures">
+          <div class="container-block1-pictures__image-up">
+            <picture>
+              <!-- todo: don't repeat -->
+              <source srcset="./images/house.jpg" media="(min-width: 1920px)" />
+              <source srcset="./images/house.jpg" media="(min-width: 1440px)" />
+              <source srcset="./images/house.jpg" media="(min-width: 1024px)" />
+              <source srcset="./images/house.jpg" media="(min-width: 768px)" />
+              <img src="./images/house-mob.jpg" alt="house-mobile" />
+            </picture>
+          </div>
+          <div class="container-block1-pictures__image-bottom">
+            <picture>
+              <!-- todo: don't repeat -->
+              <source srcset="./images/mountine.jpg" media="(min-width: 1920px)" />
+              <source srcset="./images/mountine.jpg" media="(min-width: 1440px)" />
+              <source srcset="./images/mountine.jpg" media="(min-width: 1024px)" />
+              <source srcset="./images/mountine.jpg" media="(min-width: 768px)" />
+              <img src="./images/mountine-mob.jpg" alt="mountine-mobile" />
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="container-block2">
+        <div class="container-block2__line">
+          <svg class="container-block2__line__svg" xmlns="http://www.w3.org/2000/svg" width="874" height="92"
+            fill="none">
+            <path stroke="#fff" stroke-dasharray="2 5" stroke-linecap="round"
+              d="M1 91s216.014-201.278 441.118 0c0 0 197.821-202.5 430.882 0" opacity=".502" />
+          </svg>
+        </div>
+        <div class="container-block2__icons">
+          <div class="container-block2__icons-block">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none">
+              <path fill="#5373FD"
+                d="M63.13 55.332 50.666 42.871a2.998 2.998 0 0 0-2.125-.875h-2.038a25.867 25.867 0 0 0 5.5-15.999C52.004 11.637 40.366 0 26.003 0 11.638 0 0 11.636 0 25.997 0 40.36 11.638 51.995 26.002 51.995c6.038 0 11.588-2.05 16.001-5.5v2.038c0 .8.313 1.562.875 2.125l12.464 12.46a2.988 2.988 0 0 0 4.237 0l3.538-3.536a3.013 3.013 0 0 0 .013-4.25ZM26.002 41.996C17.164 41.996 10 34.846 10 25.997 10 17.161 17.15 10 26 10c8.839 0 16.002 7.15 16.002 15.998 0 8.837-7.15 15.999-16.001 15.999Z" />
+            </svg>
+            <p class="container-block2__icons-block__name">Search Places</p>
+          </div>
+
+          <div class="container-block2__icons-block">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none">
+              <path fill="#FF6363"
+                d="M32 1C14.88 1 1 14.88 1 32c0 17.12 13.88 31 31 31 17.12 0 31-13.88 31-31C63 14.88 49.12 1 32 1Zm0 6c13.816 0 25 11.181 25 25 0 13.816-11.181 25-25 25C18.183 57 7 45.819 7 32 7 18.183 18.181 7 32 7Zm17.526 16.283-2.818-2.84a1.5 1.5 0 0 0-2.12-.008l-17.67 17.527-7.474-7.535a1.5 1.5 0 0 0-2.121-.008l-2.84 2.817a1.5 1.5 0 0 0-.008 2.121l11.347 11.44a1.5 1.5 0 0 0 2.122.008l21.573-21.4a1.5 1.5 0 0 0 .008-2.122Z" />
+            </svg>
+            <p class="container-block2__icons-block__name">Select Places</p>
+          </div>
+          <div class="container-block2__icons-block">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none">
+              <path fill="#00A2FF"
+                d="M58.284 35.836C59.38 33.98 60 32 60 29.606c0-5.502-4.652-10.697-10.727-10.697h-4.56c.614-1.601 1.106-3.516 1.106-5.818C45.819 3.992 41.107 0 33.91 0c-7.7 0-7.262 11.867-8.97 13.575-2.843 2.843-6.202 8.306-8.595 10.425H4a4 4 0 0 0-4 4v30a4 4 0 0 0 4 4h8a4.002 4.002 0 0 0 3.872-2.994C21.436 59.131 25.255 64 38.097 64l2.778.001c9.64 0 13.998-4.928 14.117-11.916 1.665-2.303 2.538-5.39 2.168-8.374a11.609 11.609 0 0 0 1.124-7.874Zm-7.719 6.729c1.57 2.641.157 6.176-1.742 7.196C49.785 55.86 46.62 58 42.182 58h-4.728C28.5 57.999 22.701 53.27 16 53.27V30h1.365c3.545 0 8.498-8.861 11.818-12.183C32.727 14.273 31.546 8.364 33.91 6c5.909 0 5.909 4.123 5.909 7.091 0 4.897-3.545 7.09-3.545 11.818h12.998c2.64 0 4.717 2.364 4.728 4.727.011 2.363-1.602 4.726-2.784 4.726 1.686 1.82 2.047 5.655-.651 8.203ZM11 54a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            </svg>
+            <p class="container-block2__icons-block__name">Book & Enjoy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-block3 background-first">
+        <div class="container-block3-content">
+          <span class="container-block3-content__contry"> Spain</span>
+          <h2 class="container-block3-content__hdr">Grand Spain Madrid</h2>
+          <p class="container-block3-content__text">But I must explain to you how all this mistaken idea of account to
+            denouncing pleasure and praising pain was account born and I account will give you a complete account of the
+            system</p>
+          <button class="container-block3-content__button" type="explore" class="">book now</button>
+        </div>
+      </div>
+
+      <div class="container-block3 background-second">
+        <div class="container-block3-content right">
+          <span class="container-block3-content__contry"> Spain</span>
+          <h2 class="container-block3-content__hdr">Grand Spain Madrid</h2>
+          <p class="container-block3-content__text">But I must explain to you how all this mistaken idea of account to
+            denouncing pleasure and praising pain was account born and I account will give you a complete account of the
+            system</p>
+          <button class="container-block3-content__button" type="explore" class="">book now</button>
+        </div>
+      </div>
+
+      <div class="container-block5">
+        <h2 class="container-block5__hdr">What Our Tourists Say</h2>
+        <div class="container-block5-content">
+          <div class="container-block5-content__image">
+            <picture>
+              <source srcset="./images/men-block5-desc1.jpg" media="(min-width: 1441px)" />
+              <source srcset="./images/men-block5-desc2.jpg" media="(min-width: 1025px)" />
+              <source srcset="./images/men-block5-desc3.jpg" media="(min-width: 769px)" />
+              <source srcset="./images/men-block5-tab.jpg" media="(min-width: 577px)" />
+              <img src="./images/men-block5-mob.jpg" alt="house-mobile" />
+            </picture>
+          </div>
+          <div class="container-block5-content__text">
+            <span class="container-block5-content__text__name">Sam Sumon</span>
+            <p class="container-block5-content__text__discription"><svg
+                class="container-block5-content__text__discription__svg" xmlns="http://www.w3.org/2000/svg" width="20"
+                height="20" fill="none">
+                <path fill="#5373FD"
+                  d="M18.125 10H15V7.5C15 6.121 16.121 5 17.5 5h.313c.519 0 .937-.418.937-.938V2.188a.935.935 0 0 0-.938-.937H17.5a6.248 6.248 0 0 0-6.25 6.25v9.375c0 1.035.84 1.875 1.875 1.875h5c1.035 0 1.875-.84 1.875-1.875v-5C20 10.84 19.16 10 18.125 10Zm-11.25 0H3.75V7.5c0-1.379 1.121-2.5 2.5-2.5h.313c.519 0 .937-.418.937-.938V2.188a.935.935 0 0 0-.938-.937H6.25A6.248 6.248 0 0 0 0 7.5v9.375c0 1.035.84 1.875 1.875 1.875h5c1.035 0 1.875-.84 1.875-1.875v-5C8.75 10.84 7.91 10 6.875 10Z" />
+              </svg>But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising
+              pain
+              But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising
+              pain was account born and I account will give you a complete account of the system was account born and
+              I account will give you a nai the complete account of the system</p>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <footer class="container__footer">
+      <h2 class="container__footer__hdr">Bhromaon</h2>
+      <p class="container__footer__text">Safe Travel Anywhere</p>
+      <div class="container__footer__sotial">
+        <svg class="container__footer__sotial__icon" width="20" height="32" viewBox="0 0 20 32" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M17.4463 18L18.335 12.2087H12.7782V8.45063C12.7782 6.86625 13.5544 5.32188 16.0432 5.32188H18.5694V0.39125C18.5694 0.39125 16.2769 0 14.085 0C9.50879 0 6.51754 2.77375 6.51754 7.795V12.2087H1.43066V18H6.51754V32H12.7782V18H17.4463Z"
+            fill="white" />
+        </svg>
+        <svg class="container__footer__sotial__icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M28.7106 9.48201C28.7309 9.76626 28.7309 10.0506 28.7309 10.3348C28.7309 19.0048 22.132 28.9947 10.0711 28.9947C6.35531 28.9947 2.90356 27.9185 0 26.0506C0.527937 26.1114 1.0355 26.1318 1.58375 26.1318C4.64969 26.1318 7.47206 25.0963 9.72587 23.3298C6.84262 23.2688 4.42637 21.3805 3.59387 18.7815C4 18.8424 4.40606 18.883 4.8325 18.883C5.42131 18.883 6.01019 18.8018 6.55837 18.6597C3.55331 18.0505 1.29944 15.4109 1.29944 12.2231V12.1419C2.1725 12.6293 3.18781 12.9338 4.26388 12.9744C2.49738 11.7967 1.34006 9.78657 1.34006 7.51245C1.34006 6.2942 1.66488 5.17745 2.23344 4.20282C5.46187 8.18251 10.3147 10.7814 15.7563 11.0658C15.6548 10.5784 15.5938 10.0709 15.5938 9.56326C15.5938 5.94901 18.5177 3.00488 22.1522 3.00488C24.0405 3.00488 25.7461 3.79676 26.9441 5.07595C28.4263 4.7917 29.8476 4.24345 31.1065 3.4922C30.6191 5.01507 29.5836 6.29426 28.2232 7.10638C29.5431 6.96432 30.8222 6.59876 31.9999 6.0912C31.1066 7.39063 29.9898 8.54795 28.7106 9.48201Z"
+            fill="white" />
+        </svg>
+        <svg class="container__footer__sotial__icon" width="28" height="32" viewBox="0 0 28 32" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M26 2H1.99375C0.89375 2 0 2.90625 0 4.01875V27.9813C0 29.0938 0.89375 30 1.99375 30H26C27.1 30 28 29.0938 28 27.9813V4.01875C28 2.90625 27.1 2 26 2ZM8.4625 26H4.3125V12.6375H8.46875V26H8.4625ZM6.3875 10.8125C5.05625 10.8125 3.98125 9.73125 3.98125 8.40625C3.98125 7.08125 5.05625 6 6.3875 6C7.7125 6 8.79375 7.08125 8.79375 8.40625C8.79375 9.7375 7.71875 10.8125 6.3875 10.8125ZM24.0187 26H19.8687V19.5C19.8687 17.95 19.8375 15.9563 17.7125 15.9563C15.55 15.9563 15.2188 17.6438 15.2188 19.3875V26H11.0688V12.6375H15.05V14.4625H15.1062C15.6625 13.4125 17.0188 12.3062 19.0375 12.3062C23.2375 12.3062 24.0187 15.075 24.0187 18.675V26Z"
+            fill="#5373FD" />
+        </svg>
+        <svg class="container__footer__sotial__icon" width="36" height="32" viewBox="0 0 36 32" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M34.3534 7.75519C33.9609 6.27706 32.8042 5.11294 31.3357 4.71788C28.6738 4 18 4 18 4C18 4 7.32623 4 4.66429 4.71788C3.19573 5.113 2.0391 6.27706 1.64654 7.75519C0.933289 10.4344 0.933289 16.0243 0.933289 16.0243C0.933289 16.0243 0.933289 21.6141 1.64654 24.2933C2.0391 25.7714 3.19573 26.8871 4.66429 27.2821C7.32623 28 18 28 18 28C18 28 28.6737 28 31.3357 27.2821C32.8042 26.8871 33.9609 25.7714 34.3534 24.2933C35.0667 21.6141 35.0667 16.0243 35.0667 16.0243C35.0667 16.0243 35.0667 10.4344 34.3534 7.75519ZM14.509 21.0994V10.9491L23.4302 16.0244L14.509 21.0994Z"
+            fill="white" />
+        </svg>
+        <svg class="container__footer__sotial__icon" width="31" height="32" viewBox="0 0 31 32" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_1_297)">
+            <path
+              d="M31 16C31 24.5625 24.0625 31.5 15.5 31.5C13.9 31.5 12.3625 31.2563 10.9125 30.8062C11.5438 29.775 12.4875 28.0875 12.8375 26.7437C13.025 26.0187 13.8 23.0562 13.8 23.0562C14.3063 24.0187 15.7812 24.8375 17.35 24.8375C22.025 24.8375 25.3937 20.5375 25.3937 15.1938C25.3937 10.075 21.2125 6.24375 15.8375 6.24375C9.15 6.24375 5.59375 10.7312 5.59375 15.625C5.59375 17.9 6.80625 20.7313 8.7375 21.6313C9.03125 21.7688 9.1875 21.7062 9.25625 21.425C9.30625 21.2125 9.56875 20.1562 9.6875 19.6688C9.725 19.5125 9.70625 19.375 9.58125 19.225C8.95 18.4438 8.4375 17.0187 8.4375 15.6875C8.4375 12.2688 11.025 8.9625 15.4375 8.9625C19.2437 8.9625 21.9125 11.5562 21.9125 15.2688C21.9125 19.4625 19.7938 22.3687 17.0375 22.3687C15.5188 22.3687 14.375 21.1125 14.7437 19.5688C15.1812 17.725 16.025 15.7375 16.025 14.4062C16.025 13.2188 15.3875 12.225 14.0625 12.225C12.5063 12.225 11.2563 13.8313 11.2563 15.9875C11.2563 17.3625 11.7188 18.2875 11.7188 18.2875C11.7188 18.2875 10.1875 24.775 9.90625 25.9875C9.59375 27.325 9.71875 29.2125 9.85 30.4375C4.0875 28.1812 0 22.5688 0 16C0 7.4375 6.9375 0.5 15.5 0.5C24.0625 0.5 31 7.4375 31 16Z"
+              fill="white" />
+          </g>
+          <defs>
+            <clipPath id="clip0_1_297">
+              <rect width="31" height="32" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+
+    </footer>
+
+  </div>
+<script src="./scripts/index.js"></script>
+</body>
+
+</html>
