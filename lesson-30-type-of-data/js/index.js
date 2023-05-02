@@ -7,7 +7,7 @@
 // // 2th task
 // let two = 2;
 // let one = Number("1");
-// const sum = (one + two);
+// const sum = one + two;
 // console.log (sum);
 // // OR
 // let ONE = +"1";
@@ -23,7 +23,7 @@
 // console.log (memory);
 // const mbInGb = 1024;
 // const fileSize = 820; // розмір файлу
-// const finalResult = ((memory*mbInGb)/fileSize);
+// const finalResult = ((memory * mbInGb) / fileSize);
 // console.log(Math.floor(finalResult));
 // const wholeFinalResult = (Math.floor(finalResult));
 // alert (` На флешку поміщається ${wholeFinalResult} файлів по ${fileSize} Мб`)
@@ -33,19 +33,25 @@
 
 // //script for calculating chocolate
 
-// let sumOfMoney = prompt ("Enter amount your money");
+// const sumOfMoney = prompt ("Enter amount your money");
 // sumOfMoney = Number (sumOfMoney);
 // let priceOneChocolate = prompt ("Enter the price of chocolate");
 // priceOneChocolate = Number (priceOneChocolate);
-// let amountOfChocolate = (sumOfMoney / priceOneChocolate);
+// const amountOfChocolate = (sumOfMoney / priceOneChocolate);
 // console.log (Math.floor(amountOfChocolate));
-// let wholeAmountOfChocolate = (Math.floor(amountOfChocolate));
-// let oddMoney = (sumOfMoney - (wholeAmountOfChocolate * priceOneChocolate));
+// const wholeAmountOfChocolate = (Math.floor(amountOfChocolate));
+// const oddMoney = (sumOfMoney - (wholeAmountOfChocolate * priceOneChocolate));
 // console.log ((oddMoney));
 // alert (` You can buy ${wholeAmountOfChocolate} chocolates and you odd money is ${oddMoney} $`)
 // console.log (oddMoney);
 
 // //script for backwards digit
+
+const userNumber = prompt("user input");
+const lasNumber = +userNumber % 10; // буде остання цифра
+const secondNumber = (Math.floor(+userNumber / 10)) % 10; // середня цифра
+const firstNumber = (Math.floor(+userNumber / 100)) % 10; // перша
+console.log(`${lasNumber}${secondNumber}${firstNumber}`);
 
 // // // document.querySelector("#userDigit") .addEventListener("change", backwardDigit);
 
@@ -178,9 +184,9 @@ const family = [userAlex, userAlona, userMax];
 // family.push (userAlex);
 
 // Перебрала масив і вибрала те,що теба по завданню
-family.forEach((mamber) => {
+family.forEach((namber) => {
   console.log(
-    `The names of mamberss your family are ${mamber.firstName}, your last names is/are ${mamber.lastName}, your ${mamber.height}`
+    `The names of mamberss your family are ${namber.firstName}, your last names is/are ${mamber.lastName}, your ${mamber.height}`
   );
 });
 
@@ -232,3 +238,5 @@ family.forEach((mamber) => {
 
 // Excellent, Good, Satisfactory, Unsatisfactory, Failed, Invalid grade.
 
+if ("0") { alert("Hello World"); }
+console.log();
