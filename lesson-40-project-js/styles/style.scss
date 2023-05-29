@@ -188,7 +188,7 @@
           
         }
 
-        &__btn:hover {
+        &__btn:focus {
               background-color: #5373FD;
               transition: 0.7s;
             }
@@ -247,6 +247,7 @@
     }
 
     &-list {
+      position: relative;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -254,13 +255,14 @@
       padding-left: 0px;
 
       &__arrow {
+        position: absolute;
         margin-left: 115px;
         margin-right: 60px;
       }
       
       &-item:not(:last-child)  {
         // margin-right: 30px;
-        width: 370px;
+        width: 370px !important;
         list-style-type:none;
       }
 
@@ -402,16 +404,15 @@
        }
 
     }
-    &-button {
-      background-color: #5373FD;
-      transition: 0.7s;
-    }
 
     &__button {
       text-align: center;
       margin-top: 60px;
 
-      
+      &-btn:focus {
+        background-color: #5373FD;
+        transition: 0.7s;
+      }
       &-btn {
         font-family: 'Montserrat';
         font-style: normal;
@@ -526,7 +527,7 @@
 
           }
 
-          &-button:hover {
+          &-button:focus {
             background-color: #5373FD;
             transition: 0.7s;
           }
@@ -591,6 +592,7 @@
 
 /* SWIPER */
 .swiper {
-  width: 1170px;
+  width: 1400px;
   height: 514px;
 }
+
