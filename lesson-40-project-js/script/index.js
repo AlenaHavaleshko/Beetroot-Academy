@@ -37,33 +37,83 @@ function moveTo(type) {
 
 
 
-const swiper = new Swiper('.swiper', {
+const swiper1 = new Swiper('.swiper1', {
  // Optional parameters
- direction: 'horizontal',
+ // slidesPerView: 1,
+ direction: 'vertical',
  loop: true,
- slidesPerView: 3,
- spaceBetween: 30,
- 
+ autoplay: {
+  delay: 2500,
+  disableOnInteraction: false,
+},
+ // effect: "fade",
 
  // If we need pagination
  pagination: {
    el: '.swiper-pagination',
-   dynamicBullets: true,
+   clickable: true,
  },
 
  // Navigation arrows
- navigation: {
-   nextEl: '.swiper-button-next',
-   prevEl: '.swiper-button-prev',
- },
-
- autoplay: {
-  delay: 4000, 
-},
+ // navigation: {
+ //   nextEl: '.swiper-button-next',
+ //   prevEl: '.swiper-button-prev',
+ // },
 
  // And if we need scrollbar
  // scrollbar: {
  //   el: '.swiper-scrollbar',
  // },
 });
+
+
+
+
+// const swiper2 = new Swiper('.swiper2', {
+//  // Optional parameters
+//  direction: 'horizontal',
+//  loop: true,
+//  slidesPerView: 3,
+//  spaceBetween: 30,
+ 
+
+//  // If we need pagination
+//  pagination: {
+//    el: '.swiper-pagination2',
+//    clickable: true,
+//    // renderBullet: function(index, className) {
+//    //  return `<span class=>GO111111111111111</span>`
+//    // }
+//  },
+
+//  // Navigation arrows
+//  navigation: {
+//    nextEl: '.swiper-button-next',
+//    prevEl: '.swiper-button-prev',
+//  },
+
+//  autoplay: {
+//   delay: 4000,
+//   disableOnInteraction: false,
+// },
+
+// });
+
+
+var swiper = new Swiper(".swiper2", {
+ slidesPerView: 3,
+ spaceBetween: 30,
+ loop: true,
+ pagination: {
+   el: ".swiper-pagination2",
+   clickable: true,
+ },
+ navigation: {
+   nextEl: ".swiper-button-next-unique",
+   prevEl: ".swiper-button-prev-unique",
+ },
+});
+
+
+
 

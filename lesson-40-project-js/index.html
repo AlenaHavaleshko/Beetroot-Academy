@@ -5,21 +5,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <link rel="stylesheet" href="./styles/normolize.css">
-  <link rel="stylesheet" href="./styles/style.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,400;1,700;1,900&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,400;1,700;1,900&display=swap"
     rel="stylesheet">
   <title>Monticello</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./styles/style.css">
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   <script type="module" src="script/map.js"></script>
-  
+
 </head>
 
 <body>
@@ -31,30 +33,37 @@
         </div>
         <nav class="container__header-block-navigation">
           <ul class="container__header-block-navigation__list">
-            <li  class="container__header-block-navigation__list__item"><span
+            <li class="container__header-block-navigation__list__item"><span
                 class="container__header-block-navigation__list__item__svg"><svg width="9" height="9" viewBox="0 0 9 9"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="4.5" cy="4.5" r="4.5" fill="white" />
                 </svg></span>
-                <span onclick="moveTo('about')" class="container__header-block-navigation__list__item-link" >ABOUT US</span></li>
+              <span onclick="moveTo('about')" class="container__header-block-navigation__list__item-link">ABOUT
+                US</span>
+            </li>
             <li class="container__header-block-navigation__list__item"><span
                 class="container__header-block-navigation__list__item__svg"><svg width="9" height="9" viewBox="0 0 9 9"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="4.5" cy="4.5" r="4" stroke="white" />
                 </svg></span>
-                <span onclick="moveTo('projects')" class="container__header-block-navigation__list__item-link" >PROJECTS</span></li>
+              <span onclick="moveTo('projects')"
+                class="container__header-block-navigation__list__item-link">PROJECTS</span>
+            </li>
             <li class="container__header-block-navigation__list__item"><span
                 class="container__header-block-navigation__list__item__svg"><svg width="9" height="9" viewBox="0 0 9 9"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="4.5" cy="4.5" r="4" stroke="white" />
                 </svg></span>
-                <span onclick="moveTo('news')" class="container__header-block-navigation__list__item-link">NEWS</span></li>
+              <span onclick="moveTo('news')" class="container__header-block-navigation__list__item-link">NEWS</span>
+            </li>
             <li class="container__header-block-navigation__list__item"><span
                 class="container__header-block-navigation__list__item__svg"><svg width="9" height="9" viewBox="0 0 9 9"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="4.5" cy="4.5" r="4" stroke="white" />
                 </svg></span>
-                <span onclick="moveTo('contact')" class="container__header-block-navigation__list__item-link">CONTACT</span></li>
+              <span onclick="moveTo('contact')"
+                class="container__header-block-navigation__list__item-link">CONTACT</span>
+            </li>
           </ul>
         </nav>
         <div class="container__header-block-social">
@@ -81,10 +90,48 @@
           </svg>
         </div>
       </div>
-      <h1 class="container__header__hdr align">SIMPLE & MODERN</h1>
-      <p class="container__header__text align">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+
+      <div class="swiper swiper1">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide swiper-slide1">
+           
+              <h1 class="container__header__hdr align">SIMPLE & MODERN</h1>
+              <p class="container__header__text align">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+          </div>
+          <div class="swiper-slide swiper-slide1">
+              <h1 class="container__header__hdr align">SIMPLE & MODERN</h1>
+              <p class="container__header__text align">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+          </div>
+
+          <div class="swiper-slide swiper-slide1">
+              <h1 class="container__header__hdr align">SIMPLE & MODERN</h1>
+              <p class="container__header__text align">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+      
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+
+      <!-- <h1 class="container__header__hdr align">SIMPLE & MODERN</h1>
+      <p class="container__header__text align">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p> -->
+
+
+      
+      <!-- Slider main container -->
+
+
       <div class="container__header__arrow align">
-        <svg onclick="moveTo('arrow')" class="container__header__arrow-svg" width="42" height="40" viewBox="0 0 42 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg onclick="moveTo('arrow')" class="container__header__arrow-svg" width="42" height="40" viewBox="0 0 42 40"
+          fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M24.9048 19.111C24.9606 19.1669 24.9885 19.231 24.9885 19.3036C24.9885 19.3761 24.9606 19.4403 24.9048 19.4961L21.0041 23.3968C20.9483 23.4526 20.8841 23.4805 20.8116 23.4805C20.7391 23.4805 20.6749 23.4526 20.6191 23.3968L16.7184 19.4961C16.6626 19.4403 16.6347 19.3761 16.6347 19.3036C16.6347 19.231 16.6626 19.1669 16.7184 19.111L17.1369 18.6925C17.1927 18.6367 17.2569 18.6088 17.3295 18.6088C17.402 18.6088 17.4662 18.6367 17.522 18.6925L20.8116 21.9821L24.1012 18.6925C24.157 18.6367 24.2212 18.6088 24.2937 18.6088C24.3663 18.6088 24.4305 18.6367 24.4863 18.6925L24.9048 19.111Z"
             fill="white" />
@@ -107,7 +154,7 @@
           <h2 class="container__block1-main-text__hdr">TRADE CENTER</h2>
           <p class="container__block1-main-text__discription">Increasing prosperity in our lives can be accomplished by
             having the right frame of mind. The truth is, our thoughts are very powerful.</p>
-          <button type="more-datails" class="container__block1-main-text__btn">
+          <button type="button" class="container__block1-main-text__btn">
             MORE DETAILS
           </button>
           <div>
@@ -135,7 +182,7 @@
           <p class="container__block1-main-text__discription">Successful businesses have many things in common, today
             we’ll
             look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
-          <button type="more-datails" class="container__block1-main-text__btn">
+          <button type="button" class="container__block1-main-text__btn">
             MORE DETAILS
           </button>
           <div>
@@ -150,95 +197,166 @@
           </div>
         </div>
       </div>
-      
+
       <div class="container__block2">
         <div class="container__block2__line"></div>
         <h2 class="container__block2__hdr">LATEST NEWS</h2>
-        <div class="swiper">
-        
-        <ul class="container__block2-list swiper-wrapper">
-          <svg class="container__block2-list__arrow" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle opacity="0.5" cx="20" cy="20" r="19.5" stroke="white"/>
-            <path d="M21.8984 17.25C21.8984 17.1797 21.8672 17.1172 21.8203 17.0703L21.4297 16.6797C21.3828 16.6328 21.3125 16.6016 21.25 16.6016C21.1875 16.6016 21.1172 16.6328 21.0703 16.6797L17.4297 20.3203C17.3828 20.3672 17.3516 20.4375 17.3516 20.5C17.3516 20.5625 17.3828 20.6328 17.4297 20.6797L21.0703 24.3203C21.1172 24.3672 21.1875 24.3984 21.25 24.3984C21.3125 24.3984 21.3828 24.3672 21.4297 24.3203L21.8203 23.9297C21.8672 23.8828 21.8984 23.8125 21.8984 23.75C21.8984 23.6875 21.8672 23.6172 21.8203 23.5703L18.75 20.5L21.8203 17.4297C21.8672 17.3828 21.8984 17.3125 21.8984 17.25Z" fill="white"/>
-          </svg>
-          <li class="container__block2-list-item swiper-slide">
-            <img  class="container__block2-list-item__image" src="./images/Image-4-1.jpg" alt="SEE THE UNMATCHED BEAUTY OF THE GREAT.">
-            <div class="container__block2-list-item-discr">
-              <h3 class="container__block2-list-item-discr__hdr">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
-              <p class="container__block2-list-item-discr__text">Free directories: directories are perfect for customers that are searching for...</p>
-              <div class="container__block2-list-item-discr__block">
-                <img class="container__block2-list-item-discr__block__img" src="./images/photos-1.jpg" alt="ALJA BRUN">
-                <div class="container__block2-list-item-discr__block__people" >
-                  <p class="container__block2-list-item-discr__block__people__name">ALJA BRUN</p>
-                  <p class="container__block2-list-item-discr__block__people__date">20 Jan 2020</p>
+        <div class="swiper swiper2">
+
+          <ul class="container__block2-list swiper-wrapper">
+            <!-- <svg class="container__block2-list__arrow" width="40" height="40" viewBox="0 0 40 40" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle opacity="0.5" cx="20" cy="20" r="19.5" stroke="white" />
+              <path
+                d="M21.8984 17.25C21.8984 17.1797 21.8672 17.1172 21.8203 17.0703L21.4297 16.6797C21.3828 16.6328 21.3125 16.6016 21.25 16.6016C21.1875 16.6016 21.1172 16.6328 21.0703 16.6797L17.4297 20.3203C17.3828 20.3672 17.3516 20.4375 17.3516 20.5C17.3516 20.5625 17.3828 20.6328 17.4297 20.6797L21.0703 24.3203C21.1172 24.3672 21.1875 24.3984 21.25 24.3984C21.3125 24.3984 21.3828 24.3672 21.4297 24.3203L21.8203 23.9297C21.8672 23.8828 21.8984 23.8125 21.8984 23.75C21.8984 23.6875 21.8672 23.6172 21.8203 23.5703L18.75 20.5L21.8203 17.4297C21.8672 17.3828 21.8984 17.3125 21.8984 17.25Z"
+                fill="white" />
+            </svg> -->
+            <li class="container__block2-list-item swiper-slide">
+              <img class="container__block2-list-item__image" src="./images/Image-4-1.jpg"
+                alt="SEE THE UNMATCHED BEAUTY OF THE GREAT.">
+              <div class="container__block2-list-item-discr">
+                <h3 class="container__block2-list-item-discr__hdr">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                <p class="container__block2-list-item-discr__text">Free directories: directories are perfect for
+                  customers that are searching for...</p>
+                <div class="container__block2-list-item-discr__block">
+                  <img class="container__block2-list-item-discr__block__img" src="./images/photos-1.jpg"
+                    alt="ALJA BRUN">
+                  <div class="container__block2-list-item-discr__block__people">
+                    <p class="container__block2-list-item-discr__block__people__name">ALJA BRUN</p>
+                    <p class="container__block2-list-item-discr__block__people__date">20 Jan 2020</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="container__block2-list-item swiper-slide">
-            <img class="container__block2-list-item__image" src="./images/Image-4-2.jpg" alt="EFFECTIVE ADVERTISING POINTERS.">
-            <div class="container__block2-list-item-discr">
-              <h3 class="container__block2-list-item-discr__hdr">EFFECTIVE ADVERTISING POINTERS.</h3>
-              <p class="container__block2-list-item-discr__text">Having a home based business is a wonderful asset to your life...</p>
-              <div class="container__block2-list-item-discr__block">
-                <img class="container__block2-list-item-discr__block__img" src="./images/photos-2.jpg" alt="DOMINIC FREEMAN">
-                <div class="container__block2-list-item-discr__block__people">
-                  <p class="container__block2-list-item-discr__block__people__name">DOMINIC FREEMAN</p>
-                  <p class="container__block2-list-item-discr__block__people__date">13 Dec 2019</p>
+            <li class="container__block2-list-item swiper-slide">
+              <img class="container__block2-list-item__image" src="./images/Image-4-2.jpg"
+                alt="EFFECTIVE ADVERTISING POINTERS.">
+              <div class="container__block2-list-item-discr">
+                <h3 class="container__block2-list-item-discr__hdr">EFFECTIVE ADVERTISING POINTERS.</h3>
+                <p class="container__block2-list-item-discr__text">Having a home based business is a wonderful asset to
+                  your life...</p>
+                <div class="container__block2-list-item-discr__block">
+                  <img class="container__block2-list-item-discr__block__img" src="./images/photos-2.jpg"
+                    alt="DOMINIC FREEMAN">
+                  <div class="container__block2-list-item-discr__block__people">
+                    <p class="container__block2-list-item-discr__block__people__name">DOMINIC FREEMAN</p>
+                    <p class="container__block2-list-item-discr__block__people__date">13 Dec 2019</p>
+                  </div>
                 </div>
-             </div>
-            </div>
-          </li>
+              </div>
+            </li>
 
-          <li class="container__block2-list-item swiper-slide">
-            <img class="container__block2-list-item__image" src="./images/Image-4-3.jpg" alt="HYPNOTIZE YOURSELF INTO THE GHOST.">
-            <div class="container__block2-list-item-discr">
-              <h3 class="container__block2-list-item-discr__hdr">HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
-              <p class="container__block2-list-item-discr__text">There are many things that are important to catalog design...</p>
-              <div class="container__block2-list-item-discr__block">
-                <img class="container__block2-list-item-discr__block__img" src="./images/photos-3.jpg" alt="ALICE WARD">
-                <div class="container__block2-list-item-discr__block__people">
-                  <p class="container__block2-list-item-discr__block__people__name">ALICE WARD</p>
-                  <p class="container__block2-list-item-discr__block__people__date">30 Nov 2019</p>
-               </div>
+            <li class="container__block2-list-item swiper-slide">
+              <img class="container__block2-list-item__image" src="./images/Image-4-3.jpg"
+                alt="HYPNOTIZE YOURSELF INTO THE GHOST.">
+              <div class="container__block2-list-item-discr">
+                <h3 class="container__block2-list-item-discr__hdr">HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
+                <p class="container__block2-list-item-discr__text">There are many things that are important to catalog
+                  design...</p>
+                <div class="container__block2-list-item-discr__block">
+                  <img class="container__block2-list-item-discr__block__img" src="./images/photos-3.jpg"
+                    alt="ALICE WARD">
+                  <div class="container__block2-list-item-discr__block__people">
+                    <p class="container__block2-list-item-discr__block__people__name">ALICE WARD</p>
+                    <p class="container__block2-list-item-discr__block__people__date">30 Nov 2019</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="container__block2-list-item swiper-slide">
-            <img class="container__block2-list-item__image" src="./images/Image-4-3.jpg" alt="HYPNOTIZE YOURSELF INTO THE GHOST.">
-            <div class="container__block2-list-item-discr">
-              <h3 class="container__block2-list-item-discr__hdr">HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
-              <p class="container__block2-list-item-discr__text">There are many things that are important to catalog design...</p>
-              <div class="container__block2-list-item-discr__block">
-                <img class="container__block2-list-item-discr__block__img" src="./images/photos-3.jpg" alt="ALICE WARD">
-                <div class="container__block2-list-item-discr__block__people">
-                  <p class="container__block2-list-item-discr__block__people__name">ALICE WARD</p>
-                  <p class="container__block2-list-item-discr__block__people__date">30 Nov 2019</p>
-               </div>
+            </li>
+            <li class="container__block2-list-item swiper-slide">
+              <img class="container__block2-list-item__image" src="./images/Image-4-3.jpg"
+                alt="HYPNOTIZE YOURSELF INTO THE GHOST.">
+              <div class="container__block2-list-item-discr">
+                <h3 class="container__block2-list-item-discr__hdr">HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
+                <p class="container__block2-list-item-discr__text">There are many things that are important to catalog
+                  design...</p>
+                <div class="container__block2-list-item-discr__block">
+                  <img class="container__block2-list-item-discr__block__img" src="./images/photos-3.jpg"
+                    alt="ALICE WARD">
+                  <div class="container__block2-list-item-discr__block__people">
+                    <p class="container__block2-list-item-discr__block__people__name">ALICE WARD</p>
+                    <p class="container__block2-list-item-discr__block__people__date">30 Nov 2019</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="container__block2-list-item swiper-slide">
-            <img class="container__block2-list-item__image" src="./images/Image-4-3.jpg" alt="HYPNOTIZE YOURSELF INTO THE GHOST.">
-            <div class="container__block2-list-item-discr">
-              <h3 class="container__block2-list-item-discr__hdr">HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
-              <p class="container__block2-list-item-discr__text">There are many things that are important to catalog design...</p>
-              <div class="container__block2-list-item-discr__block">
-                <img class="container__block2-list-item-discr__block__img" src="./images/photos-3.jpg" alt="ALICE WARD">
-                <div class="container__block2-list-item-discr__block__people">
-                  <p class="container__block2-list-item-discr__block__people__name">ALICE WARD</p>
-                  <p class="container__block2-list-item-discr__block__people__date">30 Nov 2019</p>
-               </div>
+            </li>
+            <li class="container__block2-list-item swiper-slide">
+              <img class="container__block2-list-item__image" src="./images/Image-4-3.jpg"
+                alt="HYPNOTIZE YOURSELF INTO THE GHOST.">
+              <div class="container__block2-list-item-discr">
+                <h3 class="container__block2-list-item-discr__hdr">HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
+                <p class="container__block2-list-item-discr__text">There are many things that are important to catalog
+                  design...</p>
+                <div class="container__block2-list-item-discr__block">
+                  <img class="container__block2-list-item-discr__block__img" src="./images/photos-3.jpg"
+                    alt="ALICE WARD">
+                  <div class="container__block2-list-item-discr__block__people">
+                    <p class="container__block2-list-item-discr__block__people__name">ALICE WARD</p>
+                    <p class="container__block2-list-item-discr__block__people__date">30 Nov 2019</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </li>
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle opacity="0.5" cx="20" cy="20" r="19.5" stroke="white"/>
-            <path d="M22.6484 20.5C22.6484 20.4375 22.6172 20.3672 22.5703 20.3203L18.9297 16.6797C18.8828 16.6328 18.8125 16.6016 18.75 16.6016C18.6875 16.6016 18.6172 16.6328 18.5703 16.6797L18.1797 17.0703C18.1328 17.1172 18.1016 17.1875 18.1016 17.25C18.1016 17.3125 18.1328 17.3828 18.1797 17.4297L21.25 20.5L18.1797 23.5703C18.1328 23.6172 18.1016 23.6875 18.1016 23.75C18.1016 23.8203 18.1328 23.8828 18.1797 23.9297L18.5703 24.3203C18.6172 24.3672 18.6875 24.3984 18.75 24.3984C18.8125 24.3984 18.8828 24.3672 18.9297 24.3203L22.5703 20.6797C22.6172 20.6328 22.6484 20.5625 22.6484 20.5Z" fill="white"/>
-          </svg>
-        </ul>
-        <!-- <div class="container__block2-slider">
+            </li>
+            <li class="container__block2-list-item swiper-slide">
+              <img class="container__block2-list-item__image" src="./images/Image-4-3.jpg"
+                alt="HYPNOTIZE YOURSELF INTO THE GHOST.">
+              <div class="container__block2-list-item-discr">
+                <h3 class="container__block2-list-item-discr__hdr">HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
+                <p class="container__block2-list-item-discr__text">There are many things that are important to catalog
+                  design...</p>
+                <div class="container__block2-list-item-discr__block">
+                  <img class="container__block2-list-item-discr__block__img" src="./images/photos-3.jpg"
+                    alt="ALICE WARD">
+                  <div class="container__block2-list-item-discr__block__people">
+                    <p class="container__block2-list-item-discr__block__people__name">ALICE WARD</p>
+                    <p class="container__block2-list-item-discr__block__people__date">30 Nov 2019</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="container__block2-list-item swiper-slide">
+              <img class="container__block2-list-item__image" src="./images/Image-4-3.jpg"
+                alt="HYPNOTIZE YOURSELF INTO THE GHOST.">
+              <div class="container__block2-list-item-discr">
+                <h3 class="container__block2-list-item-discr__hdr">HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
+                <p class="container__block2-list-item-discr__text">There are many things that are important to catalog
+                  design...</p>
+                <div class="container__block2-list-item-discr__block">
+                  <img class="container__block2-list-item-discr__block__img" src="./images/photos-3.jpg"
+                    alt="ALICE WARD">
+                  <div class="container__block2-list-item-discr__block__people">
+                    <p class="container__block2-list-item-discr__block__people__name">ALICE WARD</p>
+                    <p class="container__block2-list-item-discr__block__people__date">30 Nov 2019</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="container__block2-list-item swiper-slide">
+              <img class="container__block2-list-item__image" src="./images/Image-4-3.jpg"
+                alt="HYPNOTIZE YOURSELF INTO THE GHOST.">
+              <div class="container__block2-list-item-discr">
+                <h3 class="container__block2-list-item-discr__hdr">HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
+                <p class="container__block2-list-item-discr__text">There are many things that are important to catalog
+                  design...</p>
+                <div class="container__block2-list-item-discr__block">
+                  <img class="container__block2-list-item-discr__block__img" src="./images/photos-3.jpg"
+                    alt="ALICE WARD">
+                  <div class="container__block2-list-item-discr__block__people">
+                    <p class="container__block2-list-item-discr__block__people__name">ALICE WARD</p>
+                    <p class="container__block2-list-item-discr__block__people__date">30 Nov 2019</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle opacity="0.5" cx="20" cy="20" r="19.5" stroke="white" />
+              <path
+                d="M22.6484 20.5C22.6484 20.4375 22.6172 20.3672 22.5703 20.3203L18.9297 16.6797C18.8828 16.6328 18.8125 16.6016 18.75 16.6016C18.6875 16.6016 18.6172 16.6328 18.5703 16.6797L18.1797 17.0703C18.1328 17.1172 18.1016 17.1875 18.1016 17.25C18.1016 17.3125 18.1328 17.3828 18.1797 17.4297L21.25 20.5L18.1797 23.5703C18.1328 23.6172 18.1016 23.6875 18.1016 23.75C18.1016 23.8203 18.1328 23.8828 18.1797 23.9297L18.5703 24.3203C18.6172 24.3672 18.6875 24.3984 18.75 24.3984C18.8125 24.3984 18.8828 24.3672 18.9297 24.3203L22.5703 20.6797C22.6172 20.6328 22.6484 20.5625 22.6484 20.5Z"
+                fill="white" />
+            </svg> -->
+          </ul>
+          <!-- <div class="container__block2-slider">
           <svg class="container__block2-slider-svg" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="5" cy="5" r="4.5" stroke="white"/>
           </svg>
@@ -256,16 +374,32 @@
           </svg>
         </div> -->
 
-        
-      <div class="swiper-pagination"></div>
 
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+          <div class="swiper-pagination swiper-pagination2">
+            
+          </div>
 
-      <!-- If we need scrollbar -->
-      <div class="swiper-scrollbar"></div>
-      </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev-unique">
+            <svg class="container__block2-list__arrow" width="40" height="40" viewBox="0 0 40 40" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle opacity="0.5" cx="20" cy="20" r="19.5" stroke="white" />
+            <path
+              d="M21.8984 17.25C21.8984 17.1797 21.8672 17.1172 21.8203 17.0703L21.4297 16.6797C21.3828 16.6328 21.3125 16.6016 21.25 16.6016C21.1875 16.6016 21.1172 16.6328 21.0703 16.6797L17.4297 20.3203C17.3828 20.3672 17.3516 20.4375 17.3516 20.5C17.3516 20.5625 17.3828 20.6328 17.4297 20.6797L21.0703 24.3203C21.1172 24.3672 21.1875 24.3984 21.25 24.3984C21.3125 24.3984 21.3828 24.3672 21.4297 24.3203L21.8203 23.9297C21.8672 23.8828 21.8984 23.8125 21.8984 23.75C21.8984 23.6875 21.8672 23.6172 21.8203 23.5703L18.75 20.5L21.8203 17.4297C21.8672 17.3828 21.8984 17.3125 21.8984 17.25Z"
+              fill="white" />
+          </svg>
+          </div>
+          <div class="swiper-button-next-unique">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle opacity="0.5" cx="20" cy="20" r="19.5" stroke="white"/>
+              <path d="M22.6484 20.5C22.6484 20.4375 22.6172 20.3672 22.5703 20.3203L18.9297 16.6797C18.8828 16.6328 18.8125 16.6016 18.75 16.6016C18.6875 16.6016 18.6172 16.6328 18.5703 16.6797L18.1797 17.0703C18.1328 17.1172 18.1016 17.1875 18.1016 17.25C18.1016 17.3125 18.1328 17.3828 18.1797 17.4297L21.25 20.5L18.1797 23.5703C18.1328 23.6172 18.1016 23.6875 18.1016 23.75C18.1016 23.8203 18.1328 23.8828 18.1797 23.9297L18.5703 24.3203C18.6172 24.3672 18.6875 24.3984 18.75 24.3984C18.8125 24.3984 18.8828 24.3672 18.9297 24.3203L22.5703 20.6797C22.6172 20.6328 22.6484 20.5625 22.6484 20.5Z" fill="white"/>
+              </svg>
+              
+          </div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
       </div>
 
 
@@ -274,19 +408,19 @@
         <h2 class="container__block3__hdr">GALLERY</h2>
         <div class="container__block3__grid">
           <div class="container__block3__grid-item">
-            <img  class="container__block3__grid-item__image1" src="./images/Image-5-1.jpg" alt="galary-1"/>
+            <img class="container__block3__grid-item__image1" src="./images/Image-5-1.jpg" alt="galary-1" />
           </div>
           <div class="container__block3__grid-item">
-            <img class="container__block3__grid-item__image" src="./images/Image-5-2.jpg" alt="galary-2"/>
+            <img class="container__block3__grid-item__image" src="./images/Image-5-2.jpg" alt="galary-2" />
           </div>
           <div class="container__block3__grid-item">
-            <img class="container__block3__grid-item__image" src="./images/Image-5-3.jpg" alt="galary-3"/>
+            <img class="container__block3__grid-item__image" src="./images/Image-5-3.jpg" alt="galary-3" />
           </div>
           <div class="container__block3__grid-item">
-            <img class="container__block3__grid-item__image" src="./images/Image-5-4.jpg" alt="galary-4"/>
+            <img class="container__block3__grid-item__image" src="./images/Image-5-4.jpg" alt="galary-4" />
           </div>
           <div class="container__block3__grid-item">
-            <img class="container__block3__grid-item__image" src="./images/Image-5-5.jpg" alt="galary-5"/>
+            <img class="container__block3__grid-item__image" src="./images/Image-5-5.jpg" alt="galary-5" />
           </div>
         </div>
         <div class="container__block3__button">
@@ -300,7 +434,7 @@
       <div style="width: 100%; height: 500px;" id="map"></div>
 
       <footer class="container__footer">
-        <form class="container__footer__form" action="">
+        <form class="container__footer__form">
           <div class="container__footer__form__line"></div>
           <p class="container__footer__form__hdr">GET IN TOUCH</p>
           <div class="container__footer__form__data">
@@ -310,16 +444,18 @@
             <div class="container__footer__form__data-right">
               <div class="container__footer__form__data-right-name">
                 <label class="container__footer__form__data-right-name-lable" for="name"></label><br />
-                <input class="container__footer__form__data-right-name-input" placeholder="Name" type="text" id="name" name="name" required>
+                <input class="container__footer__form__data-right-name-input" placeholder="Name" type="text" id="name"
+                  name="name" required>
               </div>
               <div class="container__footer__form__data-right-emaile">
                 <label class="container__footer__form__data-right-emaile-label" for="email"></label><br />
-                <input class="container__footer__form__data-right-emaile-input" placeholder="Email" type="text" id="email" name="email" required>
+                <input class="container__footer__form__data-right-emaile-input" placeholder="Email" type="text"
+                  id="email" name="email" required>
               </div>
 
               <button class="container__footer__form__data-right-button">Submit</button>
             </div>
-        </div>
+          </div>
         </form>
         <div class="container__footer__logo">
           <img class="container__footer__logo-img" src="./images/Logo.png" alt="logo-footer">
@@ -340,7 +476,7 @@
               fill="white" />
             <circle opacity="0.4" cx="20" cy="20" r="19.5" stroke="white" />
           </svg>
-          <svg class="container__footer-social__svg"width="40" height="40" viewBox="0 0 40 40" fill="none"
+          <svg class="container__footer-social__svg" width="40" height="40" viewBox="0 0 40 40" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
               d="M17.4688 17.4688C18.1771 16.7604 19.0312 16.4062 20.0312 16.4062C21.0312 16.4062 21.875 16.7604 22.5625 17.4688C23.2708 18.1562 23.625 19 23.625 20C23.625 21 23.2708 21.8542 22.5625 22.5625C21.875 23.25 21.0312 23.5938 20.0312 23.5938C19.0312 23.5938 18.1771 23.25 17.4688 22.5625C16.7812 21.8542 16.4375 21 16.4375 20C16.4375 19 16.7812 18.1562 17.4688 17.4688ZM18.375 21.6562C18.8333 22.1146 19.3854 22.3438 20.0312 22.3438C20.6771 22.3438 21.2292 22.1146 21.6875 21.6562C22.1458 21.1979 22.375 20.6458 22.375 20C22.375 19.3542 22.1458 18.8021 21.6875 18.3438C21.2292 17.8854 20.6771 17.6562 20.0312 17.6562C19.3854 17.6562 18.8333 17.8854 18.375 18.3438C17.9167 18.8021 17.6875 19.3542 17.6875 20C17.6875 20.6458 17.9167 21.1979 18.375 21.6562ZM24.3438 15.6875C24.5104 15.8333 24.5938 16.0208 24.5938 16.25C24.5938 16.4792 24.5104 16.6771 24.3438 16.8438C24.1979 17.0104 24.0104 17.0938 23.7812 17.0938C23.5521 17.0938 23.3542 17.0104 23.1875 16.8438C23.0208 16.6771 22.9375 16.4792 22.9375 16.25C22.9375 16.0208 23.0208 15.8333 23.1875 15.6875C23.3542 15.5208 23.5521 15.4375 23.7812 15.4375C24.0104 15.4375 24.1979 15.5208 24.3438 15.6875ZM27 17.125C27.0208 17.6875 27.0312 18.6458 27.0312 20C27.0312 21.3542 27.0208 22.3125 27 22.875C26.9375 24.1458 26.5521 25.1354 25.8438 25.8438C25.1562 26.5312 24.1771 26.8958 22.9062 26.9375C22.3438 26.9792 21.3854 27 20.0312 27C18.6771 27 17.7188 26.9792 17.1562 26.9375C15.8854 26.875 14.9062 26.5 14.2188 25.8125C13.9479 25.5625 13.7292 25.2708 13.5625 24.9375C13.3958 24.6042 13.2708 24.2812 13.1875 23.9688C13.125 23.6562 13.0938 23.2917 13.0938 22.875C13.0521 22.3125 13.0312 21.3542 13.0312 20C13.0312 18.6458 13.0521 17.6771 13.0938 17.0938C13.1562 15.8438 13.5312 14.875 14.2188 14.1875C14.9062 13.4792 15.8854 13.0938 17.1562 13.0312C17.7188 13.0104 18.6771 13 20.0312 13C21.3854 13 22.3438 13.0104 22.9062 13.0312C24.1771 13.0938 25.1562 13.4792 25.8438 14.1875C26.5521 14.875 26.9375 15.8542 27 17.125ZM25.5 24.125C25.5625 23.9583 25.6146 23.75 25.6562 23.5C25.6979 23.2292 25.7292 22.9167 25.75 22.5625C25.7708 22.1875 25.7812 21.8854 25.7812 21.6562C25.7812 21.4271 25.7812 21.1042 25.7812 20.6875C25.7812 20.2708 25.7812 20.0417 25.7812 20C25.7812 19.9375 25.7812 19.7083 25.7812 19.3125C25.7812 18.8958 25.7812 18.5729 25.7812 18.3438C25.7812 18.1146 25.7708 17.8229 25.75 17.4688C25.7292 17.0938 25.6979 16.7812 25.6562 16.5312C25.6146 16.2604 25.5625 16.0417 25.5 15.875C25.25 15.2292 24.8021 14.7812 24.1562 14.5312C23.9896 14.4688 23.7708 14.4167 23.5 14.375C23.25 14.3333 22.9375 14.3021 22.5625 14.2812C22.2083 14.2604 21.9167 14.25 21.6875 14.25C21.4792 14.25 21.1562 14.25 20.7188 14.25C20.3021 14.25 20.0729 14.25 20.0312 14.25C19.9896 14.25 19.7604 14.25 19.3438 14.25C18.9271 14.25 18.6042 14.25 18.375 14.25C18.1458 14.25 17.8438 14.2604 17.4688 14.2812C17.1146 14.3021 16.8021 14.3333 16.5312 14.375C16.2812 14.4167 16.0729 14.4688 15.9062 14.5312C15.2604 14.7812 14.8125 15.2292 14.5625 15.875C14.5 16.0417 14.4479 16.2604 14.4062 16.5312C14.3646 16.7812 14.3333 17.0938 14.3125 17.4688C14.2917 17.8229 14.2812 18.1146 14.2812 18.3438C14.2812 18.5521 14.2812 18.875 14.2812 19.3125C14.2812 19.7292 14.2812 19.9583 14.2812 20C14.2812 20.0833 14.2812 20.2812 14.2812 20.5938C14.2812 20.8854 14.2812 21.1354 14.2812 21.3438C14.2812 21.5312 14.2812 21.7812 14.2812 22.0938C14.3021 22.4062 14.3229 22.6771 14.3438 22.9062C14.3646 23.1146 14.3958 23.3333 14.4375 23.5625C14.4792 23.7917 14.5208 23.9792 14.5625 24.125C14.8333 24.7708 15.2812 25.2188 15.9062 25.4688C16.0729 25.5312 16.2812 25.5833 16.5312 25.625C16.8021 25.6667 17.1146 25.6979 17.4688 25.7188C17.8438 25.7396 18.1354 25.75 18.3438 25.75C18.5729 25.75 18.8958 25.75 19.3125 25.75C19.75 25.75 19.9896 25.75 20.0312 25.75C20.0938 25.75 20.3229 25.75 20.7188 25.75C21.1354 25.75 21.4583 25.75 21.6875 25.75C21.9167 25.75 22.2083 25.7396 22.5625 25.7188C22.9375 25.6979 23.25 25.6667 23.5 25.625C23.7708 25.5833 23.9896 25.5312 24.1562 25.4688C24.8021 25.1979 25.25 24.75 25.5 24.125Z"
@@ -349,16 +485,16 @@
           </svg>
         </div>
 
-        </div>
+        <!-- </div> -->
       </footer>
 
+    </div>
+
+    <script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+        ({ key: "AIzaSyCjyR2MX8gHUF3osQCkg0bmDMtf1X1zerg", v: "beta" });</script>
+
+    <script src="./script/index.js"></script>
   </div>
-   
-    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
-      ({key: "AIzaSyCjyR2MX8gHUF3osQCkg0bmDMtf1X1zerg", v: "beta"});</script>
-
-<script src="./script/index.js"></script>
-
 </body>
 
 </html>
