@@ -1,9 +1,10 @@
+// smooth scrolling
 
 function moveTo(type) {
  console.log(type);
 
  if(type === 'about') {
-  const hdr = document.getElementsByClassName("container__header__hdr align");
+  const hdr = document.getElementsByClassName("container__header__hdr");
   console.log(hdr);
   hdr[0].scrollIntoView({behavior: "smooth"});
  }
@@ -31,12 +32,16 @@ function moveTo(type) {
   console.log(hdr);
   hdr[0].scrollIntoView({behavior: "smooth"});
  }
- 
+}
 
+// event.preventDefault() in form
+function submitData(event) {
+ event.preventDefault();
+ alert('Your data is accepted!')
 }
 
 
-
+// swiper 1
 const swiper1 = new Swiper('.swiper1', {
  // Optional parameters
  // slidesPerView: 1,
@@ -46,10 +51,9 @@ const swiper1 = new Swiper('.swiper1', {
   delay: 2500,
   disableOnInteraction: false,
 },
- // effect: "fade",
 
  // If we need pagination
- pagination: {
+   pagination: {
    el: '.swiper-pagination',
    clickable: true,
  },
@@ -60,13 +64,7 @@ const swiper1 = new Swiper('.swiper1', {
  //   prevEl: '.swiper-button-prev',
  // },
 
- // And if we need scrollbar
- // scrollbar: {
- //   el: '.swiper-scrollbar',
- // },
 });
-
-
 
 
 // const swiper2 = new Swiper('.swiper2', {
@@ -99,7 +97,7 @@ const swiper1 = new Swiper('.swiper1', {
 
 // });
 
-
+// swiper 2
 var swiper = new Swiper(".swiper2", {
  slidesPerView: 3,
  spaceBetween: 30,
@@ -109,10 +107,11 @@ var swiper = new Swiper(".swiper2", {
    clickable: true,
  },
  navigation: {
-   nextEl: ".swiper-button-next-unique",
-   prevEl: ".swiper-button-prev-unique",
+   nextEl: ".swiper-button-next",
+   prevEl: ".swiper-button-prev",
  },
 });
+
 
 
 
