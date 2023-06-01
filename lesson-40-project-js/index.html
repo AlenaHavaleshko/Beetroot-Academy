@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="./styles/normolize.css">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -15,12 +14,13 @@
     rel="stylesheet">
   <title>Monticello</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./styles/style.css">
+  <link type="Image/x-icon" href="./images/icons8-favicon-16.png" rel="icon">
+  <!-- <link rel="stylesheet" href="./styles/style.css"> -->
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-  <script type="module" src="script/map.js"></script>
+  <!-- <script type="module" src="build/map.js"></script> -->
 
 </head>
 
@@ -34,35 +34,40 @@
         </div>
         <nav class="container__header-block-navigation">
           <ul class="container__header-block-navigation__list">
-            <li class="container__header-block-navigation__list__item"><span
-                class="container__header-block-navigation__list__item__svg"><svg width="9" height="9" viewBox="0 0 9 9"
+            <li class="container__header-block-navigation__list__item">
+              <span class="container__header-block-navigation__list__item-wrapper">
+                <svg class="container__header-block-navigation__list__item-wrapper__svg" width="9" height="9" viewBox="0 0 9 9"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="4.5" cy="4.5" r="4.5" fill="white" />
-                </svg></span>
-              <span onclick="moveTo('about')" class="container__header-block-navigation__list__item-link">ABOUT
+                </svg>
+              </span>
+              <span onclick="moveToComponent('about')" class="container__header-block-navigation__list__item-link">ABOUT
                 US</span>
             </li>
-            <li class="container__header-block-navigation__list__item"><span
-                class="container__header-block-navigation__list__item__svg"><svg width="9" height="9" viewBox="0 0 9 9"
+            <li class="container__header-block-navigation__list__item">
+              <span class="container__header-block-navigation__list__item-wrapper">
+                <svg class="container__header-block-navigation__list__item-wrapper__svg" width="9" height="9" viewBox="0 0 9 9"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="4.5" cy="4.5" r="4" stroke="white" />
                 </svg></span>
-              <span onclick="moveTo('projects')"
+              <span onclick="moveToComponent('projects')"
                 class="container__header-block-navigation__list__item-link">PROJECTS</span>
             </li>
-            <li class="container__header-block-navigation__list__item"><span
-                class="container__header-block-navigation__list__item__svg"><svg width="9" height="9" viewBox="0 0 9 9"
+            <li class="container__header-block-navigation__list__item">
+              <span class="container__header-block-navigation__list__item-wrapper">
+              <svg class="container__header-block-navigation__list__item-wrapper__svg" width="9" height="9" viewBox="0 0 9 9"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="4.5" cy="4.5" r="4" stroke="white" />
                 </svg></span>
-              <span onclick="moveTo('news')" class="container__header-block-navigation__list__item-link">NEWS</span>
+              <span onclick="moveToComponent('news')" class="container__header-block-navigation__list__item-link">NEWS</span>
             </li>
-            <li class="container__header-block-navigation__list__item"><span
-                class="container__header-block-navigation__list__item__svg"><svg width="9" height="9" viewBox="0 0 9 9"
+            <li class="container__header-block-navigation__list__item">
+              <span class="container__header-block-navigation__list__item-wrapper">
+                <svg class="container__header-block-navigation__list__item-wrapper__svg" width="9" height="9" viewBox="0 0 9 9"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="4.5" cy="4.5" r="4" stroke="white" />
                 </svg></span>
-              <span onclick="moveTo('contact')"
+              <span onclick="moveToComponent('contact')"
                 class="container__header-block-navigation__list__item-link">CONTACT</span>
             </li>
           </ul>
@@ -122,7 +127,7 @@
       </div>
 
       <div class="container__header__arrow align">
-        <svg onclick="moveTo('arrow')" class="container__header__arrow-svg" width="42" height="40" viewBox="0 0 42 40"
+        <svg onclick="moveToComponent('arrow')" class="container__header__arrow-svg" width="42" height="40" viewBox="0 0 42 40"
           fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M24.9048 19.111C24.9606 19.1669 24.9885 19.231 24.9885 19.3036C24.9885 19.3761 24.9606 19.4403 24.9048 19.4961L21.0041 23.3968C20.9483 23.4526 20.8841 23.4805 20.8116 23.4805C20.7391 23.4805 20.6749 23.4526 20.6191 23.3968L16.7184 19.4961C16.6626 19.4403 16.6347 19.3761 16.6347 19.3036C16.6347 19.231 16.6626 19.1669 16.7184 19.111L17.1369 18.6925C17.1927 18.6367 17.2569 18.6088 17.3295 18.6088C17.402 18.6088 17.4662 18.6367 17.522 18.6925L20.8116 21.9821L24.1012 18.6925C24.157 18.6367 24.2212 18.6088 24.2937 18.6088C24.3663 18.6088 24.4305 18.6367 24.4863 18.6925L24.9048 19.111Z"
@@ -541,7 +546,7 @@
 
   <script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
       ({ key: "AIzaSyDSd5y3BUH4C7QxzCFamHG-VDJkYdtJLTs", v: "beta" });</script>
-  <script src="./script/index.js"></script>
+  <script type="text/javascript" src="./build/index.js"></script>
   </div>
 </body>
 

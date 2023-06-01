@@ -1,3 +1,6 @@
+// @import "/styles/normolize.css";
+@import "/styles/footer.scss";
+
 :root {
   --swiper-theme-color: #FFF;
   --swiper-pagination-color: var(--swiper-theme-color);
@@ -25,7 +28,6 @@
   bottom: var(--swiper-pagination-bottom,180px);
 }
 
-
 .container {
   
   min-height: 100vh;
@@ -34,33 +36,12 @@
 
   &__header {
     position: relative;
-    // background-image: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%), url(../images/header-shadow.jpg);
-    // background-image: url('../images/header-shadow.jpg'), linear-gradient(red, yellow);;
     background-image: linear-gradient(243.43deg, var(--primary), var(--secondary)),  url(../images/header-shadow.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     padding: 53px 52px  20px 215px;
-
-    // &:before {
-    //   content: "";
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 800px;
-    //     background-image: url(../images/header-shadow.jpg);
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    //     background-position: center;
-    //     mix-blend-mode: multiply;
-    //   }
-    
-  //   &-shadow {
-  //     position: absolute;
-  //     z-index: -1;
-  //   }
 
     &-block {
       cursor: pointer;
@@ -73,7 +54,6 @@
         &-svg {
 
         }
-
       }
 
       &-navigation {
@@ -90,13 +70,19 @@
             font-weight: 400;
             font-size: 14px;
             line-height: 18px;
-            // color: #a712a0; ?????
-            margin-right: 70px;
-            
+            margin-right: 60px;
 
-            &__svg{
-              margin-right: 14px;
+            &-wrapper {
+              
+              &__svg {
+                path:hover {
+                fill:#5373FD;
+                }
+              }
 
+              &__svg{
+               margin-right: 14px;
+              }
             }
 
             &-link {
@@ -112,7 +98,7 @@
 
         &__svg {
           path:hover {
-            fill:#2C4058;;
+            fill: #2C4058;
           }
         }
 
@@ -232,9 +218,9 @@
         }
 
         &__btn:focus {
-              background-color: #5373FD;
-              transition: 0.7s;
-            }
+            background-color: #5373FD;
+            transition: 0.7s;
+          }
 
         &__btn {
           box-sizing: border-box;
@@ -271,7 +257,6 @@
     background: linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
     padding-top: 90px;
 
-
     &__line {
       border: 1px solid #FFFFFF;
       width: 100px;
@@ -297,7 +282,6 @@
       justify-content: space-between;
       vertical-align:middle;
       padding-left: 0px;
-
       
       &-item:not(:last-child)  {
         list-style-type:none;
@@ -460,203 +444,8 @@
       }
     }
   }
-
-  &__footer {
-    background: url(../images/footer-background.jpg);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    min-height: 549px;
-    position: relative;
-
-    &__form {
-    background: url(../images/footer-form.png);
-    // opacity: 0.06;
-    border: 1px solid  #FFFFFF;
-    background-color: #FFFFFF;
-    position: absolute;
-    width: 770px;
-    height: 450px;
-    bottom: 389px;
-    padding-top: 60px;
-
-
-
-      &__line {
-        border: 1px solid #2C4058;
-        width: 100px;
-        height: 0px;
-        margin-bottom: 150px;
-        margin: 0 auto;
-      }
-
-      &__hdr {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 44px;
-        line-height: 54px;
-        text-align: center;
-        color: #2C4058;
-      }
-
-      &__data {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-
-        &-left {
-          margin-right: 54px;
-
-          &-item {
-            // font-family: 'Montserrat';
-            // font-style: normal;
-            // font-weight: 400;
-            // font-size: 18px;
-            // line-height: 27px;
-            // color: #000000;
-
-          &-text {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 27px;
-            color: #000000;
-
-            &-svg {
-              fill: #5373FD;
-              stroke: #5373FD;
-            }
-          }
-        }
-
-        }
-
-        &-right {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-          
-
-          &-name {
-            border-bottom: 1px solid #2C4058;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 27px;
-            color: #000000;
-            max-width: 300px;
-
-            &-lable {
-
-            }
-
-            &-input {
-              border-bottom: 1px solid #2C4058;
-              border: none;
-              outline:none;
-
-            }
-          }
-
-          &-emaile {
-            border-bottom: 1px solid #2C4058;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 27px;
-            color: #4B5562;
-            // opacity: 0.2;
-            border: none;
-            box-shadow: #FFF;
-            max-width: 300px;
-            
-
-            &-label {
-
-            }
-
-            &-input {
-            margin-bottom: 50px;
-            border: none;
-            outline:none;
-            }
-
-
-          }
-
-          &-button:focus {
-            background-color: #5373FD;
-            transition: 0.7s;
-          }
-
-          &-button {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 27px;
-            color: #000000;
-            padding: 11px 34px;
-            background-color: #FFFFFF;
-            cursor: pointer;
-            width: 140px;
-            height: 50px;
-            // margin-top: 30px;
-          }
-
-
-        }
-      }
-    }
- 
-
-    &__logo {
-      margin-right: 369px;
-      margin-bottom: 40px;
-
-      &-img {
-
-      }
-
-      &-text {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        color: #FFFFFF;
-        
-      }
-
-    }
-
-    &-social {
-
-      &__svg {
-
-      path:hover {
-        fill: #2C4058;;
-      }
-    }
-
-      &__svg {
-        margin-right: 20px;
-        cursor: pointer;
-      }
-
-      
-    }
-
-  }
-
-
-
 }
+
 a {
   text-decoration: none;
   color: #000000;

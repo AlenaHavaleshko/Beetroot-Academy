@@ -26,10 +26,12 @@ async function initMap() {
   var marker = new google.maps.Marker({
   position: position,
   map: map,
-  icon: '/images/map-marker.svg'
+  icon: './images/map-marker.svg'
 });
 }
 
-initMap();
+
+
+export default initMap;
 
   
