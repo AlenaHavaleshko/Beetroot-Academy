@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 //assets
 import "../../assets/styles/containers/todo-list.scss";
+import ToDoListItem from "../TodoListItem";
 
 let permanentToDo = [
  {
@@ -10,7 +11,7 @@ let permanentToDo = [
  },
  {
    task: "Brush your teeth",
-   isChecked: true
+   isChecked: false
  },
  {
    task: "Have breakfast",
@@ -23,12 +24,9 @@ function ToDoList() {
 
  const [whatNeedToDo, setWhatNeedToDo] = useState("");   // зберігаємо те,що вводим в інпуті (в імпорті додали useState)
  const [tasksToDisplay , addNewTasksToDisplay] = useState(permanentToDo);
-//const [taskIsChecked, setTaskIsChecked] = useState(isChecked);
 
-//  const handleClick = () => {
-//   setTastIsChecked(isChecked === true);
-//   };
-//   console.log("handleClick");
+
+
 
  const handleSubmit = e => {
   e.preventDefault();                     // щоб не перезагружалася форма
@@ -37,9 +35,11 @@ function ToDoList() {
    ...tasksToDisplay,
     {
       task: whatNeedToDo,                   // розпакували повністю новий масив в масив, роблю распакову і додаємо нове з інпута значення
-      isChecked: true
+      isChecked: false
     }
  ]);
+
+ setWhatNeedToDo("");
 
 }
   // console.log(tasksToDisplay);            // вивели  пуш з інпута у консоль (не додаєтья ще в todo list )
@@ -60,7 +60,7 @@ function ToDoList() {
           className="todo-list__form__input"
           placeholder="Create a new todo..."
           name="task"
-          // value={whatNeedToDo}
+          value={whatNeedToDo}
           onChange = {e => setWhatNeedToDo(e.target.value)}
         />
         <button type="submit" className="todo-list__form__button">
@@ -97,41 +97,11 @@ function ToDoList() {
            tasksToDisplay.map((item, index) => {           // додала існуючий постійний массив
             console.log(item)
             return (
-            <li 
-              className={`todo-list__item ${
-                item.isChecked ? ' line-through-item' : '' // тернарнік закреслюєм
-              }`}
-              key={`todo-list__item-${index}`}
-            >
-             <div className="todo-list__item-block">
-                <b className="todo-list__item-block__text"> 
-                <input 
-                  type="checkbox" 
-                  defaultChecked={false}         // при натисканні зявляється і пропадає галочка
-                  // checked={item.isChecked}
-                  // onChange = {e => setTaskIsChecked(e.target.checked)}
-                >
-
-                </input>
-                  {/* <svg
-                    width="44"
-                  viewBox="0 0 44 45"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle
-                      cx="21.7575"
-                      cy="22.6597"
-                      r="20.708"
-                      stroke="#BF56FF"
-                      stroke-opacity="0.79"
-                      stroke-width="2"
-                    />
-                  </svg> */}
-                  {item.task}
-                </b>
-            </div>
-             </li>
+              <ToDoListItem
+              taskName= {item.task}
+              isChecked = {item.isChecked}
+              key = {index}
+              ></ToDoListItem>
              )
            })
         }
