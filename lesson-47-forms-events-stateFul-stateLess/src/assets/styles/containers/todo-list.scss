@@ -1,0 +1,110 @@
+.todo-list-wrapper {
+  position: relative;
+  width: 1440px;
+  min-height: 1024px;
+  background: #181824;
+  margin: 0 auto;
+}
+
+.todo-list {
+ background-color: #25273c;
+ width: 666px;
+ margin: 0 auto;
+
+ .line-through-item {
+  text-decoration: line-through;
+ }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+
+    &-block {
+     display: flex;
+     justify-content:flex-start;
+
+     padding-top: 19px;
+     padding-left: 16px;
+      width: 666px;
+      height: 82.49px;
+      background-color: #25273c;
+      border-bottom: 4px solid rgba(72, 64, 64, 0.37);
+
+      &__text {
+        font-family: "Monda", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 59px;
+        letter-spacing: 0.1em;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+}
+
+.todo-list__header {
+  font-family: "Monda", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 156px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin-bottom: 13px;
+  margin-left: 60px;
+}
+svg {
+ margin-right: 15px;
+}
+.todo-list__form {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-bottom: 50px;
+
+  &__input {
+    margin: 0 auto;
+    width: 656.58px;
+    height: 63px;
+    background: #25273c;
+    border-radius: 30px;
+    padding-left: 33px;
+    border-color: #25273c;
+    font-family: "Monda", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 59px;
+      letter-spacing: 0.1em;
+      color: rgba(255, 255, 255, 0.7);
+
+    &::placeholder {
+      font-family: "Monda", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 59px;
+      letter-spacing: 0.1em;
+      color: rgba(255, 255, 255, 0.7);
+      text-align: start;
+      opacity: 0.3;
+      // margin-top: 10px ;
+      // margin-bottom: 20px;
+      // margin-left: 33px;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    width: 110.43px;
+    height: 68.56px;
+    height: 68.56px;
+    left: 956px;
+
+    background: rgba(90, 255, 49, 0.6);
+    border-radius: 0px 30px 30px 0px;
+  }
+}

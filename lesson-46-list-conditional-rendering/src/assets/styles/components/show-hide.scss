@@ -1,0 +1,16 @@
+.show-hide {
+margin: 100px;
+
+  &__block {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+  }
+
+  &__button {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid;
+  }
+}
+ 

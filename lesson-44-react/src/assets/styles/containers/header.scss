@@ -1,0 +1,20 @@
+.header {
+ position: relative;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background-color: #D9D9D9;
+ width: 1177px;
+ height: 48px;
+
+ &-text {
+  position: absolute;
+  right: 572px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+}
