@@ -1,0 +1,25 @@
+.main-layout {
+ min-height: 100vh;
+
+ &__page-content {
+   flex: 1 1 auto;
+   padding: 16px 24px;
+ }
+
+ &__page-footer {
+   background-color: rgba(0, 0, 0, 0.88);
+ }
+}
+
+.logo-tekst {
+  font-family: 'Dancing Script', cursive;
+  color: aliceblue;
+  display: inline-block;
+  font-weight: 450px;
+  text-align: center;
+  margin: 5px;
+}
+
+.logo-svg {
+  align-items: center;
+}
