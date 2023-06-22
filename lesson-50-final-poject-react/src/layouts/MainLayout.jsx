@@ -93,11 +93,8 @@ function MainLayout({ children }) {
         />
         <Button
         onClick={handleClick}
-        style={{
-            position: 'absolute',
-             color: 'blue',
-             bottom: '32px'
-            }}>Logout</Button>
+        className="sider-logout"
+        >Logout</Button>
       </Sider>
       <Layout>
         <Header style={{ padding: 0, background: colorBgContainer }}>

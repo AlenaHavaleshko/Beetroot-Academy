@@ -1,3 +1,5 @@
+@import "../variables.scss";
+
 .main-layout {
  min-height: 100vh;
 
@@ -22,4 +24,21 @@
 
 .logo-svg {
   align-items: center;
+}
+
+.sider-logout {
+  position: absolute;
+  bottom: 65px;
+  right: 53px;
+  display: flex;
+  // -webkit-box-align: center;
+  align-items: center;
+  // -webkit-box-pack: center;
+  justify-content: center;
+  padding: 14px 28px;
+  color: var(--btn-text-color);
+  background-color: var(--accent-background-color);
+  box-shadow: var(--shadow-logout-btn);
+  border-radius: 10px;
+  transition: background-color var(--animation);
 }
