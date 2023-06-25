@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useNavigate } from 'react';
 import {Link} from "react-router-dom";
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { Button, Checkbox, Form, Input } from 'antd';
@@ -28,6 +28,8 @@ const LogIn = () => {
       console.log("Received values of form: ", values);
     };
   }
+
+  const navigate = useNavigate();
 
 
   return (
@@ -91,8 +93,13 @@ const LogIn = () => {
       </Form.Item>
 
       <Form.Item>
-        <Button type="primary" htmlType="submit" className="login-form-button">
-          Log in
+        <Button 
+        type="primary" 
+        htmlType="submit" 
+        className="login-form-button"
+        onClick={() => navigate("/calendar")}
+        >
+          Sign up
         </Button>
         Or&nbsp;
         <Link 

@@ -13,6 +13,16 @@
  }
 }
 
+.sider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .logo-tekst {
   font-family: 'Dancing Script', cursive;
   color: aliceblue;
@@ -29,11 +39,10 @@
 .sider-logout {
   position: absolute;
   bottom: 65px;
-  right: 53px;
+  right: 37px;
   display: flex;
-  // -webkit-box-align: center;
+  border-color: var(--accent-background-color);
   align-items: center;
-  // -webkit-box-pack: center;
   justify-content: center;
   padding: 14px 28px;
   color: var(--btn-text-color);
@@ -41,4 +50,51 @@
   box-shadow: var(--shadow-logout-btn);
   border-radius: 10px;
   transition: background-color var(--animation);
+}
+
+.general-font {
+  margin-right: 10px;
+  padding-right: 6px;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+}
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header {
+  height: 80px;
+
+  
+
+  &-page {
+    margin-left: 40px;
+
+  }
+
+  &-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 16px;
+
+    &__theme {
+      width: 50px;
+      height: 50px;
+    }
+
+    &__name {
+
+    }
+
+    &__icon {
+      width: 50px;
+      height: 50px;
+    }
+  }
 }

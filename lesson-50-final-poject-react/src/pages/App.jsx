@@ -11,6 +11,9 @@ import SignUp from "../container/AuthForm/SignUp/SignUp";
 //layouts
 import MainLayout from "../layouts/AuthLayout";
 
+//css
+import "react-big-calendar/lib/css/react-big-calendar.css";
+
 function App() {
 
   return (

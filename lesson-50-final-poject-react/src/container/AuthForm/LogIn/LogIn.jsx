@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { Button, Checkbox, Form, Input } from 'antd';
 
 //assets
 import "../../../assets/styles/containers/auth-form-log-in.scss";
 
-const LogIn = () => {
+const LogIn = () => { //function LogIn() {
   const onFinish = (values) => {
     console.log('Received values of form: ', values);
   };
@@ -22,6 +22,30 @@ const LogIn = () => {
       console.log("Received values of form: ", values);
     };
   }
+
+  const handleLoginClick = e => { //- або так на onClik навігувати при натисканні на кнопку
+
+    // logout: https://goose-track-api-3uhn.onrender.com/api/user/logout
+    // login: https://goose-track-api-3uhn.onrender.com/api/auth/login
+    const loginData = {
+      email: 'alena.havaleshko@gmail.com',
+      password: ''
+    }
+
+    const requestOptions = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(loginData)
+    };
+  fetch('https://goose-track-api-3uhn.onrender.com/api/auth/login', requestOptions)
+      .then(response => response.json())
+      .then(data => console.log(data));
+
+    
+    navigate("/calendar", { replace: true });
+  }
+
+  const navigate = useNavigate();
 
 
   return (
@@ -76,13 +100,17 @@ const LogIn = () => {
           
           type="primary" 
           htmlType="submit" 
-          className="login-form-button">
+          className="login-form-button"
+          // onClick={() => handleLoginClick()}
+          onClick={() => navigate("/calendar")}>
           Log in
         </Button>
         Or&nbsp;
         <Link 
           to="/signup"         
-          className="login-form-button">
+          className="login-form-button"
+          onClick={() => navigate("/calendar")}
+          >
           Sign up!
         </Link>
       </Form.Item>
